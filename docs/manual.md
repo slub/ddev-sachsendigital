@@ -33,3 +33,12 @@ ddev typo3cms install:setup \
     --site-setup-type=site \
     --site-name="Sachsen.Digital"
 ```
+
+## `.htaccess`
+
+To allow TYPO3 to process requests to arbitrary subpaths (pretty URLs), URL rewriting needs to be configured. We do this by adding the TYPO3 example `.htaccess` file.
+
+```bash
+wget -O public/.htaccess https://raw.githubusercontent.com/TYPO3/typo3/v9.5.30/typo3/sysext/install/Resources/Private/FolderStructureTemplateFiles/root-htaccess
+echo '!/public/.htaccess' >> .gitignore
+```
