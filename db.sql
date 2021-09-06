@@ -807,7 +807,7 @@ CREATE TABLE `pages` (
   KEY `parent` (`pid`,`deleted`,`hidden`),
   KEY `translation_source` (`l10n_source`),
   KEY `t3ver_oid` (`t3ver_oid`,`t3ver_wsid`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -816,7 +816,7 @@ CREATE TABLE `pages` (
 
 LOCK TABLES `pages` WRITE;
 /*!40000 ALTER TABLE `pages` DISABLE KEYS */;
-INSERT INTO `pages` VALUES (1,0,1630931885,1630931885,1,0,0,0,0,'0',0,NULL,0,0,0,0,NULL,0,NULL,0,0,'',0,0,0,0,0,0,1,1,31,31,1,'Home','/',1,NULL,1,0,'',0,0,'',0,'',0,0,NULL,0,'',0,NULL,0,1630931885,NULL,'',0,'','','',0,0,0,0,'',0,0,'','',NULL,0,0,'',0,0,'',NULL,0,'',NULL,0,'',0);
+INSERT INTO `pages` VALUES (1,0,1630931885,1630931885,1,0,0,0,0,'0',0,NULL,0,0,0,0,NULL,0,NULL,0,0,'',0,0,0,0,0,0,1,1,31,31,1,'Home','/',1,NULL,1,0,'',0,0,'',0,'',0,0,NULL,0,'',0,NULL,0,1630931885,NULL,'',0,'','','',0,0,0,0,'',0,0,'','',NULL,0,0,'',0,0,'',NULL,0,'',NULL,0,'',0),(2,1,1630932473,1630932460,1,0,0,0,0,'',256,'',0,0,0,0,NULL,0,'a:12:{s:7:\"doktype\";N;s:5:\"title\";N;s:14:\"backend_layout\";N;s:25:\"backend_layout_next_level\";N;s:6:\"module\";N;s:5:\"media\";N;s:17:\"tsconfig_includes\";N;s:8:\"TSconfig\";N;s:6:\"hidden\";N;s:8:\"editlock\";N;s:10:\"categories\";N;s:14:\"rowDescription\";N;}',0,0,'',0,0,0,0,0,0,1,0,31,27,0,'Kitodo.Presentation','/1',254,'',0,0,'',0,0,'',0,'',0,0,'',0,'',0,'',0,0,'','',0,'','','',0,0,0,0,'',0,0,'','','',0,0,'',0,0,'','',0,'','',0,'',0);
 /*!40000 ALTER TABLE `pages` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -1316,7 +1316,7 @@ CREATE TABLE `sys_file_storage` (
   `processingfolder` tinytext COLLATE utf8_unicode_ci DEFAULT NULL,
   PRIMARY KEY (`uid`),
   KEY `parent` (`pid`,`deleted`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1325,6 +1325,7 @@ CREATE TABLE `sys_file_storage` (
 
 LOCK TABLES `sys_file_storage` WRITE;
 /*!40000 ALTER TABLE `sys_file_storage` DISABLE KEYS */;
+INSERT INTO `sys_file_storage` VALUES (1,0,1630932455,1630932455,0,0,'This is the local fileadmin/ directory. This storage mount has been created automatically by TYPO3.','fileadmin/ (auto-created)','Local','<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\" ?>\n<T3FlexForms>\n    <data>\n        <sheet index=\"sDEF\">\n            <language index=\"lDEF\">\n                <field index=\"basePath\">\n                    <value index=\"vDEF\">fileadmin/</value>\n                </field>\n                <field index=\"pathType\">\n                    <value index=\"vDEF\">relative</value>\n                </field>\n                <field index=\"caseSensitive\">\n                    <value index=\"vDEF\">1</value>\n                </field>\n            </language>\n        </sheet>\n    </data>\n</T3FlexForms>',1,1,1,1,1,1,NULL);
 /*!40000 ALTER TABLE `sys_file_storage` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -1651,6 +1652,7 @@ CREATE TABLE `sys_refindex` (
 
 LOCK TABLES `sys_refindex` WRITE;
 /*!40000 ALTER TABLE `sys_refindex` DISABLE KEYS */;
+INSERT INTO `sys_refindex` VALUES ('000447944b7e965b415fe0fc68453d4d','tx_dlf_metadata',20,'format','','','',0,0,0,'tx_dlf_metadataformat',38,''),('0075f2acfa174e64ef3d662505777d68','tx_dlf_metadataformat',12,'encoded','','','',0,0,0,'tx_dlf_formats',1,''),('023cb3e32d87847e6276b605da5f63f2','tx_dlf_metadata',12,'format','','','',0,0,0,'tx_dlf_metadataformat',21,''),('03978c5061c2b15ff94a40012460525a','tx_dlf_metadataformat',29,'encoded','','','',0,0,0,'tx_dlf_formats',5,''),('04e397f57dbe63c88e07e1832ef6a97c','tx_dlf_metadata',18,'format','','','',0,0,0,'tx_dlf_metadataformat',34,''),('0a0266f64d2836b2dbbee3fbc89b9e34','tx_dlf_metadata',8,'format','','','',2,0,0,'tx_dlf_metadataformat',10,''),('112151e599b1bcf745cd5e9bbf363ba7','tx_dlf_metadata',14,'format','','','',1,0,0,'tx_dlf_metadataformat',26,''),('187bedf02a8c41e22365151bc02bf669','tx_dlf_metadataformat',15,'encoded','','','',0,0,0,'tx_dlf_formats',2,''),('18ee27530711a2f9108a199e831cff4d','tx_dlf_metadataformat',2,'encoded','','','',0,0,0,'tx_dlf_formats',1,''),('1e994b9c6c587325fe3740f417874dc7','tx_dlf_metadata',11,'format','','','',1,0,0,'tx_dlf_metadataformat',18,''),('22b888b5ca89beaec430d8f089eba411','tx_dlf_metadataformat',36,'encoded','','','',0,0,0,'tx_dlf_formats',5,''),('22ff74720e03cec5505692758bf3881e','tx_dlf_metadata',14,'format','','','',0,0,0,'tx_dlf_metadataformat',27,''),('2f9355eac04f6fca3de7812061925cf4','tx_dlf_metadata',1,'format','','','',0,0,0,'tx_dlf_metadataformat',1,''),('33ad9e7269da302d8eedb40a5193bbaf','tx_dlf_metadataformat',31,'encoded','','','',0,0,0,'tx_dlf_formats',5,''),('35f3f9b4a9fc5d08bf32db9bca14672c','tx_dlf_metadataformat',25,'encoded','','','',0,0,0,'tx_dlf_formats',5,''),('429bc85e1c7d0c6f16a3123ea3970aff','tx_dlf_metadata',7,'format','','','',1,0,0,'tx_dlf_metadataformat',8,''),('444fb7f788d97f1e7a1d306c8888e1a6','tx_dlf_metadataformat',38,'encoded','','','',0,0,0,'tx_dlf_formats',1,''),('45da6d7c34ad57ef6d2903a3082e7418','tx_dlf_metadataformat',9,'encoded','','','',0,0,0,'tx_dlf_formats',1,''),('46856096d5e99afb758d25d30932b20c','tx_dlf_metadataformat',27,'encoded','','','',0,0,0,'tx_dlf_formats',1,''),('46a5589e1e3c705bfc92567bab063840','tx_dlf_metadataformat',18,'encoded','','','',0,0,0,'tx_dlf_formats',2,''),('473b1f1987099892908653a9b21a691c','tx_dlf_metadata',9,'format','','','',0,0,0,'tx_dlf_metadataformat',14,''),('47dcf0a2ed2167e9c90e025944f665e7','tx_dlf_metadataformat',22,'encoded','','','',0,0,0,'tx_dlf_formats',5,''),('48cc77b19b8e53a58862d02e4b0f62c2','tx_dlf_metadataformat',6,'encoded','','','',0,0,0,'tx_dlf_formats',1,''),('518d0e7609add3167563b0d2d3acf482','tx_dlf_metadataformat',37,'encoded','','','',0,0,0,'tx_dlf_formats',2,''),('5c3adbd97d056645324fce8ea8a23f69','tx_dlf_metadata',17,'format','','','',0,0,0,'tx_dlf_metadataformat',32,''),('5d0daac8125d2138b330185bbc868452','tx_dlf_metadata',7,'format','','','',0,0,0,'tx_dlf_metadataformat',9,''),('5e5ccb335e7854912c87b7f19fdeca38','tx_dlf_metadataformat',14,'encoded','','','',0,0,0,'tx_dlf_formats',1,''),('60d9df1512ebc084aea485721892ccb8','tx_dlf_metadata',12,'format','','','',1,0,0,'tx_dlf_metadataformat',20,''),('650c79e38b11b9ec476fef5095c56a83','tx_dlf_metadataformat',20,'encoded','','','',0,0,0,'tx_dlf_formats',2,''),('65b236710fe3a3029d8dc5b62214f437','tx_dlf_metadata',2,'format','','','',0,0,0,'tx_dlf_metadataformat',2,''),('6b32820f8b697ffc8a6fdc149d8f4dc3','tx_dlf_metadata',9,'format','','','',1,0,0,'tx_dlf_metadataformat',13,''),('6cdf67dbaa437acf12df7cecde146f01','tx_dlf_metadata',5,'format','','','',0,0,0,'tx_dlf_metadataformat',5,''),('6e6919d545d458197b6b2e205e474fdd','tx_dlf_metadataformat',24,'encoded','','','',0,0,0,'tx_dlf_formats',1,''),('710d6dc8cc5473a73cc284f2052b3195','tx_dlf_metadata',20,'format','','','',1,0,0,'tx_dlf_metadataformat',37,''),('715e9343823fab6743ac0143d2112fd8','tx_dlf_metadata',16,'format','','','',0,0,0,'tx_dlf_metadataformat',30,''),('726b1e19c47b6749826f493557752fdb','tx_dlf_metadataformat',5,'encoded','','','',0,0,0,'tx_dlf_formats',1,''),('74af6b1584f2567f4b28f60ce2ff694d','tx_dlf_metadataformat',21,'encoded','','','',0,0,0,'tx_dlf_formats',1,''),('765aa56f29a86cd4930912eeacba195c','tx_dlf_metadata',19,'format','','','',0,0,0,'tx_dlf_metadataformat',35,''),('7a61e3b3791e0841e589d880c21b77ba','tx_dlf_metadataformat',17,'encoded','','','',0,0,0,'tx_dlf_formats',5,''),('7e9687406c84dba2286f5566b757c4ef','tx_dlf_metadataformat',10,'encoded','','','',0,0,0,'tx_dlf_formats',5,''),('7f0038c0815d80fbcc2a447c878203b6','tx_dlf_metadata',4,'format','','','',0,0,0,'tx_dlf_metadataformat',4,''),('85bbf1a82475adaff53ab413752a1bb0','tx_dlf_metadata',16,'format','','','',1,0,0,'tx_dlf_metadataformat',29,''),('86594571594f89224b063defb602109c','tx_dlf_metadataformat',13,'encoded','','','',0,0,0,'tx_dlf_formats',2,''),('86cd3602321044ae16e0490005879571','tx_dlf_metadataformat',16,'encoded','','','',0,0,0,'tx_dlf_formats',1,''),('8b88ceea81b937c5752462a7802331b7','tx_dlf_metadata',13,'format','','','',0,0,0,'tx_dlf_metadataformat',24,''),('8d8ac51de84835e2f4ee4dcfb1459440','tx_dlf_metadata',17,'format','','','',1,0,0,'tx_dlf_metadataformat',31,''),('8e6eb050e8e76d7486fc7a2d74bc0337','tx_dlf_metadata',8,'format','','','',1,0,0,'tx_dlf_metadataformat',11,''),('971a0b204fdddc514fd4b81d01a00e5f','tx_dlf_metadata',10,'format','','','',0,0,0,'tx_dlf_metadataformat',16,''),('99717449204dc3dc44edb6897c039f48','tx_dlf_metadata',7,'format','','','',2,0,0,'tx_dlf_metadataformat',7,''),('a2d220218c3b536a24de0d00042a4781','tx_dlf_metadata',18,'format','','','',1,0,0,'tx_dlf_metadataformat',33,''),('a58f2b7376bb99cf7b34081d15fde403','tx_dlf_metadataformat',35,'encoded','','','',0,0,0,'tx_dlf_formats',1,''),('abbd3ebd07934e1b0a8aad15326a2905','tx_dlf_metadataformat',30,'encoded','','','',0,0,0,'tx_dlf_formats',2,''),('ad9154ee33bc2fd4ef30310a14dd6638','tx_dlf_metadata',11,'format','','','',2,0,0,'tx_dlf_metadataformat',17,''),('ae5f8ba6be21fa5141abffa1f8a7b8f8','tx_dlf_metadataformat',32,'encoded','','','',0,0,0,'tx_dlf_formats',2,''),('b185be0113444f3a55d454ad5bc9a84a','tx_dlf_metadata',6,'format','','','',0,0,0,'tx_dlf_metadataformat',6,''),('b633a37756891be4bb2eb012ca2503ea','tx_dlf_metadata',8,'format','','','',0,0,0,'tx_dlf_metadataformat',12,''),('bfccd642a7dd7c6620dd0809f8380f92','tx_dlf_metadata',13,'format','','','',2,0,0,'tx_dlf_metadataformat',22,''),('c1304c959d93a6a7bf1805fb07456f1a','tx_dlf_metadata',21,'format','','','',0,0,0,'tx_dlf_metadataformat',39,''),('c1403026134c112ddca9b3a408d5c551','tx_dlf_metadata',15,'format','','','',0,0,0,'tx_dlf_metadataformat',28,''),('c56846b88eeafa51b5e84f6f24981a6d','tx_dlf_metadata',20,'format','','','',2,0,0,'tx_dlf_metadataformat',36,''),('c6b769669fb61b9c856e090e2712be3d','tx_dlf_metadataformat',4,'encoded','','','',0,0,0,'tx_dlf_formats',1,''),('c8e9ad29e9dd0dc9b1308cb507e1ee3d','tx_dlf_metadata',14,'format','','','',2,0,0,'tx_dlf_metadataformat',25,''),('d0b5b2222ab19f69f3f9934839851b2a','tx_dlf_metadataformat',11,'encoded','','','',0,0,0,'tx_dlf_formats',2,''),('d276d8f98c2bf7d8c5ec5bc240380331','tx_dlf_metadata',11,'format','','','',0,0,0,'tx_dlf_metadataformat',19,''),('e128dfa6b3f4d6bfb11241ee32862c79','tx_dlf_metadataformat',7,'encoded','','','',0,0,0,'tx_dlf_formats',5,''),('e26476d4086e95b61a8adf3b85850782','tx_dlf_metadataformat',28,'encoded','','','',0,0,0,'tx_dlf_formats',1,''),('f0c3f3db8bdeba6947457a9c3e2a17f0','tx_dlf_metadataformat',34,'encoded','','','',0,0,0,'tx_dlf_formats',2,''),('f1996d58b4e1dfa58e3fdeb2a1d50a77','tx_dlf_metadataformat',3,'encoded','','','',0,0,0,'tx_dlf_formats',1,''),('f1be1edc330ef2d5d439f50f8ae37523','tx_dlf_metadata',13,'format','','','',1,0,0,'tx_dlf_metadataformat',23,''),('f66941f4d688bbc259f59634265fe66f','tx_dlf_metadata',3,'format','','','',0,0,0,'tx_dlf_metadataformat',3,''),('f6814ee8d36e8ec0418b3a07754d1e17','tx_dlf_metadataformat',33,'encoded','','','',0,0,0,'tx_dlf_formats',5,''),('f71e8a57f495428a75fcb9c4465bf3c6','tx_dlf_metadataformat',23,'encoded','','','',0,0,0,'tx_dlf_formats',2,''),('f8325bb2b0d434e9fcfca607b81c1d86','tx_dlf_metadataformat',1,'encoded','','','',0,0,0,'tx_dlf_formats',1,''),('fc1acc0086bee070ce20b7cb65946b5c','tx_dlf_metadata',10,'format','','','',1,0,0,'tx_dlf_metadataformat',15,''),('fc1dab03d6ea42807d41a3636a821b77','tx_dlf_metadataformat',8,'encoded','','','',0,0,0,'tx_dlf_formats',2,''),('fc9338dfcac76e6898747f1bcb81d871','tx_dlf_metadataformat',26,'encoded','','','',0,0,0,'tx_dlf_formats',2,''),('fc9e3b5a0b45a9c80761c81c82bdbcca','tx_dlf_metadataformat',39,'encoded','','','',0,0,0,'tx_dlf_formats',5,''),('fe22b05a214bf4abd42b0934b7fa766a','tx_dlf_metadataformat',19,'encoded','','','',0,0,0,'tx_dlf_formats',1,'');
 /*!40000 ALTER TABLE `sys_refindex` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -1677,7 +1679,7 @@ CREATE TABLE `sys_registry` (
 
 LOCK TABLES `sys_registry` WRITE;
 /*!40000 ALTER TABLE `sys_registry` DISABLE KEYS */;
-INSERT INTO `sys_registry` VALUES (1,'installUpdate','TYPO3\\CMS\\Form\\Hooks\\FormFileExtensionUpdate','i:1;'),(2,'installUpdate','TYPO3\\CMS\\Install\\Updates\\WizardDoneToRegistry','i:1;'),(3,'installUpdate','TYPO3\\CMS\\Install\\Updates\\StartModuleUpdate','i:1;'),(4,'installUpdate','TYPO3\\CMS\\Install\\Updates\\FrontendUserImageUpdateWizard','i:1;'),(5,'installUpdate','TYPO3\\CMS\\Install\\Updates\\FillTranslationSourceField','i:1;'),(6,'installUpdate','TYPO3\\CMS\\Install\\Updates\\SectionFrameToFrameClassUpdate','i:1;'),(7,'installUpdate','TYPO3\\CMS\\Install\\Updates\\SplitMenusUpdate','i:1;'),(8,'installUpdate','TYPO3\\CMS\\Install\\Updates\\BulletContentElementUpdate','i:1;'),(9,'installUpdate','TYPO3\\CMS\\Install\\Updates\\UploadContentElementUpdate','i:1;'),(10,'installUpdate','TYPO3\\CMS\\Install\\Updates\\MigrateFscStaticTemplateUpdate','i:1;'),(11,'installUpdate','TYPO3\\CMS\\Install\\Updates\\FileReferenceUpdate','i:1;'),(12,'installUpdate','TYPO3\\CMS\\Install\\Updates\\MigrateFeSessionDataUpdate','i:1;'),(13,'installUpdate','TYPO3\\CMS\\Install\\Updates\\Compatibility7ExtractionUpdate','i:1;'),(14,'installUpdate','TYPO3\\CMS\\Install\\Updates\\FormLegacyExtractionUpdate','i:1;'),(15,'installUpdate','TYPO3\\CMS\\Install\\Updates\\RteHtmlAreaExtractionUpdate','i:1;'),(16,'installUpdate','TYPO3\\CMS\\Install\\Updates\\LanguageSortingUpdate','i:1;'),(17,'installUpdate','TYPO3\\CMS\\Install\\Updates\\Typo3DbExtractionUpdate','i:1;'),(18,'installUpdate','TYPO3\\CMS\\Install\\Updates\\FuncExtractionUpdate','i:1;'),(19,'installUpdate','TYPO3\\CMS\\Install\\Updates\\MigrateUrlTypesInPagesUpdate','i:1;'),(20,'installUpdate','TYPO3\\CMS\\Install\\Updates\\RedirectExtractionUpdate','i:1;'),(21,'installUpdate','TYPO3\\CMS\\Install\\Updates\\BackendUserStartModuleUpdate','i:1;'),(22,'installUpdate','TYPO3\\CMS\\Install\\Updates\\MigratePagesLanguageOverlayUpdate','i:1;'),(23,'installUpdate','TYPO3\\CMS\\Install\\Updates\\MigratePagesLanguageOverlayBeGroupsAccessRights','i:1;'),(24,'installUpdate','TYPO3\\CMS\\Install\\Updates\\BackendLayoutIconUpdateWizard','i:1;'),(25,'installUpdate','TYPO3\\CMS\\Install\\Updates\\RedirectsExtensionUpdate','i:1;'),(26,'installUpdate','TYPO3\\CMS\\Install\\Updates\\AdminPanelInstall','i:1;'),(27,'installUpdate','TYPO3\\CMS\\Install\\Updates\\PopulatePageSlugs','i:1;'),(28,'installUpdate','TYPO3\\CMS\\Install\\Updates\\Argon2iPasswordHashes','i:1;'),(29,'installUpdate','TYPO3\\CMS\\Install\\Updates\\BackendUserConfigurationUpdate','i:1;'),(30,'installUpdate','TYPO3\\CMS\\Install\\Updates\\SvgFilesSanitization','i:1;'),(31,'installUpdateRows','rowUpdatersDone','a:3:{i:0;s:52:\"TYPO3\\CMS\\Install\\Updates\\RowUpdater\\L10nModeUpdater\";i:1;s:53:\"TYPO3\\CMS\\Install\\Updates\\RowUpdater\\ImageCropUpdater\";i:2;s:57:\"TYPO3\\CMS\\Install\\Updates\\RowUpdater\\RteLinkSyntaxUpdater\";}'),(32,'extensionDataImport','typo3/sysext/core/ext_tables_static+adt.sql','s:0:\"\";'),(33,'extensionDataImport','typo3/sysext/scheduler/ext_tables_static+adt.sql','s:0:\"\";'),(34,'extensionDataImport','typo3/sysext/extbase/ext_tables_static+adt.sql','s:0:\"\";'),(35,'extensionDataImport','typo3/sysext/fluid/ext_tables_static+adt.sql','s:0:\"\";'),(36,'extensionDataImport','typo3/sysext/frontend/ext_tables_static+adt.sql','s:0:\"\";'),(37,'extensionDataImport','typo3/sysext/fluid_styled_content/ext_tables_static+adt.sql','s:0:\"\";'),(38,'extensionDataImport','typo3/sysext/filelist/ext_tables_static+adt.sql','s:0:\"\";'),(39,'extensionDataImport','typo3/sysext/impexp/ext_tables_static+adt.sql','s:0:\"\";'),(40,'extensionDataImport','typo3/sysext/form/ext_tables_static+adt.sql','s:0:\"\";'),(41,'extensionDataImport','typo3/sysext/install/ext_tables_static+adt.sql','s:0:\"\";'),(42,'extensionDataImport','typo3/sysext/recordlist/ext_tables_static+adt.sql','s:0:\"\";'),(43,'extensionDataImport','typo3/sysext/backend/ext_tables_static+adt.sql','s:0:\"\";'),(44,'extensionDataImport','typo3/sysext/reports/ext_tables_static+adt.sql','s:0:\"\";'),(45,'extensionDataImport','typo3/sysext/setup/ext_tables_static+adt.sql','s:0:\"\";'),(46,'extensionDataImport','typo3/sysext/rte_ckeditor/ext_tables_static+adt.sql','s:0:\"\";'),(47,'extensionDataImport','typo3/sysext/about/ext_tables_static+adt.sql','s:0:\"\";'),(48,'extensionDataImport','typo3/sysext/adminpanel/ext_tables_static+adt.sql','s:0:\"\";'),(49,'extensionDataImport','typo3/sysext/belog/ext_tables_static+adt.sql','s:0:\"\";'),(50,'extensionDataImport','typo3/sysext/beuser/ext_tables_static+adt.sql','s:0:\"\";'),(51,'extensionDataImport','typo3/sysext/extensionmanager/ext_tables_static+adt.sql','s:32:\"9beb0be917f14fdde2c9cb940a47d38e\";'),(52,'extensionDataImport','typo3/sysext/felogin/ext_tables_static+adt.sql','s:0:\"\";'),(53,'extensionDataImport','typo3/sysext/info/ext_tables_static+adt.sql','s:0:\"\";'),(54,'extensionDataImport','typo3/sysext/redirects/ext_tables_static+adt.sql','s:0:\"\";'),(55,'extensionDataImport','typo3/sysext/seo/ext_tables_static+adt.sql','s:0:\"\";'),(56,'extensionDataImport','typo3/sysext/sys_note/ext_tables_static+adt.sql','s:0:\"\";'),(57,'extensionDataImport','typo3/sysext/t3editor/ext_tables_static+adt.sql','s:0:\"\";'),(58,'extensionDataImport','typo3/sysext/tstemplate/ext_tables_static+adt.sql','s:0:\"\";'),(59,'extensionDataImport','typo3/sysext/viewpage/ext_tables_static+adt.sql','s:0:\"\";'),(60,'core','formProtectionSessionToken:1','s:64:\"c819be9dcb3ada7dfcc3b9776204b27f5e62c98d890e11e3dc5e30dc78c967d8\";');
+INSERT INTO `sys_registry` VALUES (1,'installUpdate','TYPO3\\CMS\\Form\\Hooks\\FormFileExtensionUpdate','i:1;'),(2,'installUpdate','TYPO3\\CMS\\Install\\Updates\\WizardDoneToRegistry','i:1;'),(3,'installUpdate','TYPO3\\CMS\\Install\\Updates\\StartModuleUpdate','i:1;'),(4,'installUpdate','TYPO3\\CMS\\Install\\Updates\\FrontendUserImageUpdateWizard','i:1;'),(5,'installUpdate','TYPO3\\CMS\\Install\\Updates\\FillTranslationSourceField','i:1;'),(6,'installUpdate','TYPO3\\CMS\\Install\\Updates\\SectionFrameToFrameClassUpdate','i:1;'),(7,'installUpdate','TYPO3\\CMS\\Install\\Updates\\SplitMenusUpdate','i:1;'),(8,'installUpdate','TYPO3\\CMS\\Install\\Updates\\BulletContentElementUpdate','i:1;'),(9,'installUpdate','TYPO3\\CMS\\Install\\Updates\\UploadContentElementUpdate','i:1;'),(10,'installUpdate','TYPO3\\CMS\\Install\\Updates\\MigrateFscStaticTemplateUpdate','i:1;'),(11,'installUpdate','TYPO3\\CMS\\Install\\Updates\\FileReferenceUpdate','i:1;'),(12,'installUpdate','TYPO3\\CMS\\Install\\Updates\\MigrateFeSessionDataUpdate','i:1;'),(13,'installUpdate','TYPO3\\CMS\\Install\\Updates\\Compatibility7ExtractionUpdate','i:1;'),(14,'installUpdate','TYPO3\\CMS\\Install\\Updates\\FormLegacyExtractionUpdate','i:1;'),(15,'installUpdate','TYPO3\\CMS\\Install\\Updates\\RteHtmlAreaExtractionUpdate','i:1;'),(16,'installUpdate','TYPO3\\CMS\\Install\\Updates\\LanguageSortingUpdate','i:1;'),(17,'installUpdate','TYPO3\\CMS\\Install\\Updates\\Typo3DbExtractionUpdate','i:1;'),(18,'installUpdate','TYPO3\\CMS\\Install\\Updates\\FuncExtractionUpdate','i:1;'),(19,'installUpdate','TYPO3\\CMS\\Install\\Updates\\MigrateUrlTypesInPagesUpdate','i:1;'),(20,'installUpdate','TYPO3\\CMS\\Install\\Updates\\RedirectExtractionUpdate','i:1;'),(21,'installUpdate','TYPO3\\CMS\\Install\\Updates\\BackendUserStartModuleUpdate','i:1;'),(22,'installUpdate','TYPO3\\CMS\\Install\\Updates\\MigratePagesLanguageOverlayUpdate','i:1;'),(23,'installUpdate','TYPO3\\CMS\\Install\\Updates\\MigratePagesLanguageOverlayBeGroupsAccessRights','i:1;'),(24,'installUpdate','TYPO3\\CMS\\Install\\Updates\\BackendLayoutIconUpdateWizard','i:1;'),(25,'installUpdate','TYPO3\\CMS\\Install\\Updates\\RedirectsExtensionUpdate','i:1;'),(26,'installUpdate','TYPO3\\CMS\\Install\\Updates\\AdminPanelInstall','i:1;'),(27,'installUpdate','TYPO3\\CMS\\Install\\Updates\\PopulatePageSlugs','i:1;'),(28,'installUpdate','TYPO3\\CMS\\Install\\Updates\\Argon2iPasswordHashes','i:1;'),(29,'installUpdate','TYPO3\\CMS\\Install\\Updates\\BackendUserConfigurationUpdate','i:1;'),(30,'installUpdate','TYPO3\\CMS\\Install\\Updates\\SvgFilesSanitization','i:1;'),(31,'installUpdateRows','rowUpdatersDone','a:3:{i:0;s:52:\"TYPO3\\CMS\\Install\\Updates\\RowUpdater\\L10nModeUpdater\";i:1;s:53:\"TYPO3\\CMS\\Install\\Updates\\RowUpdater\\ImageCropUpdater\";i:2;s:57:\"TYPO3\\CMS\\Install\\Updates\\RowUpdater\\RteLinkSyntaxUpdater\";}'),(32,'extensionDataImport','typo3/sysext/core/ext_tables_static+adt.sql','s:0:\"\";'),(33,'extensionDataImport','typo3/sysext/scheduler/ext_tables_static+adt.sql','s:0:\"\";'),(34,'extensionDataImport','typo3/sysext/extbase/ext_tables_static+adt.sql','s:0:\"\";'),(35,'extensionDataImport','typo3/sysext/fluid/ext_tables_static+adt.sql','s:0:\"\";'),(36,'extensionDataImport','typo3/sysext/frontend/ext_tables_static+adt.sql','s:0:\"\";'),(37,'extensionDataImport','typo3/sysext/fluid_styled_content/ext_tables_static+adt.sql','s:0:\"\";'),(38,'extensionDataImport','typo3/sysext/filelist/ext_tables_static+adt.sql','s:0:\"\";'),(39,'extensionDataImport','typo3/sysext/impexp/ext_tables_static+adt.sql','s:0:\"\";'),(40,'extensionDataImport','typo3/sysext/form/ext_tables_static+adt.sql','s:0:\"\";'),(41,'extensionDataImport','typo3/sysext/install/ext_tables_static+adt.sql','s:0:\"\";'),(42,'extensionDataImport','typo3/sysext/recordlist/ext_tables_static+adt.sql','s:0:\"\";'),(43,'extensionDataImport','typo3/sysext/backend/ext_tables_static+adt.sql','s:0:\"\";'),(44,'extensionDataImport','typo3/sysext/reports/ext_tables_static+adt.sql','s:0:\"\";'),(45,'extensionDataImport','typo3/sysext/setup/ext_tables_static+adt.sql','s:0:\"\";'),(46,'extensionDataImport','typo3/sysext/rte_ckeditor/ext_tables_static+adt.sql','s:0:\"\";'),(47,'extensionDataImport','typo3/sysext/about/ext_tables_static+adt.sql','s:0:\"\";'),(48,'extensionDataImport','typo3/sysext/adminpanel/ext_tables_static+adt.sql','s:0:\"\";'),(49,'extensionDataImport','typo3/sysext/belog/ext_tables_static+adt.sql','s:0:\"\";'),(50,'extensionDataImport','typo3/sysext/beuser/ext_tables_static+adt.sql','s:0:\"\";'),(51,'extensionDataImport','typo3/sysext/extensionmanager/ext_tables_static+adt.sql','s:32:\"9beb0be917f14fdde2c9cb940a47d38e\";'),(52,'extensionDataImport','typo3/sysext/felogin/ext_tables_static+adt.sql','s:0:\"\";'),(53,'extensionDataImport','typo3/sysext/info/ext_tables_static+adt.sql','s:0:\"\";'),(54,'extensionDataImport','typo3/sysext/redirects/ext_tables_static+adt.sql','s:0:\"\";'),(55,'extensionDataImport','typo3/sysext/seo/ext_tables_static+adt.sql','s:0:\"\";'),(56,'extensionDataImport','typo3/sysext/sys_note/ext_tables_static+adt.sql','s:0:\"\";'),(57,'extensionDataImport','typo3/sysext/t3editor/ext_tables_static+adt.sql','s:0:\"\";'),(58,'extensionDataImport','typo3/sysext/tstemplate/ext_tables_static+adt.sql','s:0:\"\";'),(59,'extensionDataImport','typo3/sysext/viewpage/ext_tables_static+adt.sql','s:0:\"\";');
 /*!40000 ALTER TABLE `sys_registry` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -1843,6 +1845,541 @@ CREATE TABLE `tt_content` (
 LOCK TABLES `tt_content` WRITE;
 /*!40000 ALTER TABLE `tt_content` DISABLE KEYS */;
 /*!40000 ALTER TABLE `tt_content` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `tx_dlf_actionlog`
+--
+
+DROP TABLE IF EXISTS `tx_dlf_actionlog`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `tx_dlf_actionlog` (
+  `uid` int(11) NOT NULL AUTO_INCREMENT,
+  `pid` int(11) NOT NULL DEFAULT 0,
+  `crdate` int(11) NOT NULL DEFAULT 0,
+  `deleted` smallint(6) NOT NULL DEFAULT 0,
+  `user_id` int(11) NOT NULL DEFAULT 0,
+  `file_name` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `count_pages` int(11) NOT NULL DEFAULT 0,
+  `name` varchar(100) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `label` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  PRIMARY KEY (`uid`),
+  KEY `parent` (`pid`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `tx_dlf_actionlog`
+--
+
+LOCK TABLES `tx_dlf_actionlog` WRITE;
+/*!40000 ALTER TABLE `tx_dlf_actionlog` DISABLE KEYS */;
+/*!40000 ALTER TABLE `tx_dlf_actionlog` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `tx_dlf_basket`
+--
+
+DROP TABLE IF EXISTS `tx_dlf_basket`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `tx_dlf_basket` (
+  `uid` int(11) NOT NULL AUTO_INCREMENT,
+  `pid` int(11) NOT NULL DEFAULT 0,
+  `tstamp` int(11) NOT NULL DEFAULT 0,
+  `deleted` smallint(6) NOT NULL DEFAULT 0,
+  `sys_language_uid` int(11) NOT NULL DEFAULT 0,
+  `l18n_parent` int(11) NOT NULL DEFAULT 0,
+  `l18n_diffsource` mediumblob NOT NULL,
+  `l10n_state` text COLLATE utf8_unicode_ci DEFAULT NULL,
+  `fe_user_id` int(11) NOT NULL DEFAULT 0,
+  `label` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `session_id` varchar(32) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `doc_ids` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  PRIMARY KEY (`uid`),
+  KEY `parent` (`pid`),
+  KEY `language` (`l18n_parent`,`sys_language_uid`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `tx_dlf_basket`
+--
+
+LOCK TABLES `tx_dlf_basket` WRITE;
+/*!40000 ALTER TABLE `tx_dlf_basket` DISABLE KEYS */;
+/*!40000 ALTER TABLE `tx_dlf_basket` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `tx_dlf_collections`
+--
+
+DROP TABLE IF EXISTS `tx_dlf_collections`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `tx_dlf_collections` (
+  `uid` int(11) NOT NULL AUTO_INCREMENT,
+  `pid` int(11) NOT NULL DEFAULT 0,
+  `tstamp` int(11) NOT NULL DEFAULT 0,
+  `crdate` int(11) NOT NULL DEFAULT 0,
+  `cruser_id` int(11) NOT NULL DEFAULT 0,
+  `deleted` smallint(6) NOT NULL DEFAULT 0,
+  `sys_language_uid` int(11) NOT NULL DEFAULT 0,
+  `l18n_parent` int(11) NOT NULL DEFAULT 0,
+  `l18n_diffsource` mediumblob NOT NULL,
+  `hidden` smallint(6) NOT NULL DEFAULT 0,
+  `fe_group` varchar(100) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `l10n_state` text COLLATE utf8_unicode_ci DEFAULT NULL,
+  `fe_cruser_id` int(11) NOT NULL DEFAULT 0,
+  `fe_admin_lock` smallint(6) NOT NULL DEFAULT 0,
+  `label` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `index_name` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `index_search` text COLLATE utf8_unicode_ci NOT NULL,
+  `oai_name` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `description` text COLLATE utf8_unicode_ci NOT NULL,
+  `thumbnail` text COLLATE utf8_unicode_ci NOT NULL,
+  `priority` smallint(6) NOT NULL DEFAULT 3,
+  `documents` int(11) NOT NULL DEFAULT 0,
+  `owner` int(11) NOT NULL DEFAULT 0,
+  `status` smallint(5) unsigned NOT NULL DEFAULT 0,
+  PRIMARY KEY (`uid`),
+  KEY `parent` (`pid`),
+  KEY `language` (`l18n_parent`,`sys_language_uid`),
+  KEY `index_name` (`index_name`),
+  KEY `oai_name` (`oai_name`),
+  KEY `pid_cruser` (`pid`,`fe_cruser_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `tx_dlf_collections`
+--
+
+LOCK TABLES `tx_dlf_collections` WRITE;
+/*!40000 ALTER TABLE `tx_dlf_collections` DISABLE KEYS */;
+/*!40000 ALTER TABLE `tx_dlf_collections` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `tx_dlf_documents`
+--
+
+DROP TABLE IF EXISTS `tx_dlf_documents`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `tx_dlf_documents` (
+  `uid` int(11) NOT NULL AUTO_INCREMENT,
+  `pid` int(11) NOT NULL DEFAULT 0,
+  `tstamp` int(11) NOT NULL DEFAULT 0,
+  `crdate` int(11) NOT NULL DEFAULT 0,
+  `cruser_id` int(11) NOT NULL DEFAULT 0,
+  `deleted` smallint(6) NOT NULL DEFAULT 0,
+  `hidden` smallint(6) NOT NULL DEFAULT 0,
+  `starttime` int(11) NOT NULL DEFAULT 0,
+  `endtime` int(11) NOT NULL DEFAULT 0,
+  `fe_group` varchar(100) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `prod_id` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `location` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `record_id` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `opac_id` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `union_id` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `urn` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `purl` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `title` text COLLATE utf8_unicode_ci NOT NULL,
+  `title_sorting` text COLLATE utf8_unicode_ci NOT NULL,
+  `author` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `year` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `place` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `thumbnail` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `metadata` text COLLATE utf8_unicode_ci NOT NULL,
+  `metadata_sorting` text COLLATE utf8_unicode_ci NOT NULL,
+  `structure` int(11) NOT NULL DEFAULT 0,
+  `partof` int(11) NOT NULL DEFAULT 0,
+  `volume` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `volume_sorting` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `license` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `terms` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `restrictions` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `out_of_print` text COLLATE utf8_unicode_ci NOT NULL,
+  `rights_info` text COLLATE utf8_unicode_ci NOT NULL,
+  `collections` int(11) NOT NULL DEFAULT 0,
+  `mets_label` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `mets_orderlabel` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `owner` int(11) NOT NULL DEFAULT 0,
+  `solrcore` int(11) NOT NULL DEFAULT 0,
+  `status` smallint(5) unsigned NOT NULL DEFAULT 0,
+  `document_format` varchar(100) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  PRIMARY KEY (`uid`),
+  KEY `parent` (`pid`),
+  KEY `location` (`location`),
+  KEY `record_id` (`record_id`),
+  KEY `partof` (`partof`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `tx_dlf_documents`
+--
+
+LOCK TABLES `tx_dlf_documents` WRITE;
+/*!40000 ALTER TABLE `tx_dlf_documents` DISABLE KEYS */;
+/*!40000 ALTER TABLE `tx_dlf_documents` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `tx_dlf_formats`
+--
+
+DROP TABLE IF EXISTS `tx_dlf_formats`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `tx_dlf_formats` (
+  `uid` int(11) NOT NULL AUTO_INCREMENT,
+  `pid` int(11) NOT NULL DEFAULT 0,
+  `tstamp` int(11) NOT NULL DEFAULT 0,
+  `crdate` int(11) NOT NULL DEFAULT 0,
+  `cruser_id` int(11) NOT NULL DEFAULT 0,
+  `deleted` smallint(6) NOT NULL DEFAULT 0,
+  `type` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `root` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `namespace` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `class` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  PRIMARY KEY (`uid`),
+  KEY `parent` (`pid`)
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `tx_dlf_formats`
+--
+
+LOCK TABLES `tx_dlf_formats` WRITE;
+/*!40000 ALTER TABLE `tx_dlf_formats` DISABLE KEYS */;
+INSERT INTO `tx_dlf_formats` VALUES (1,0,1630932497,1630932497,1,0,'MODS','mods','http://www.loc.gov/mods/v3','Kitodo\\Dlf\\Format\\Mods'),(2,0,1630932497,1630932497,1,0,'TEIHDR','teiHeader','http://www.tei-c.org/ns/1.0','Kitodo\\Dlf\\Format\\TeiHeader'),(3,0,1630932497,1630932497,1,0,'ALTO','alto','http://www.loc.gov/standards/alto/ns-v2#','Kitodo\\Dlf\\Format\\Alto'),(4,0,1630932497,1630932497,1,0,'IIIF1','IIIF1','http://www.shared-canvas.org/ns/context.json',''),(5,0,1630932497,1630932497,1,0,'IIIF2','IIIF2','http://iiif.io/api/presentation/2/context.json',''),(6,0,1630932497,1630932497,1,0,'IIIF3','IIIF3','http://iiif.io/api/presentation/3/context.json','');
+/*!40000 ALTER TABLE `tx_dlf_formats` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `tx_dlf_libraries`
+--
+
+DROP TABLE IF EXISTS `tx_dlf_libraries`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `tx_dlf_libraries` (
+  `uid` int(11) NOT NULL AUTO_INCREMENT,
+  `pid` int(11) NOT NULL DEFAULT 0,
+  `tstamp` int(11) NOT NULL DEFAULT 0,
+  `crdate` int(11) NOT NULL DEFAULT 0,
+  `cruser_id` int(11) NOT NULL DEFAULT 0,
+  `deleted` smallint(6) NOT NULL DEFAULT 0,
+  `sys_language_uid` int(11) NOT NULL DEFAULT 0,
+  `l18n_parent` int(11) NOT NULL DEFAULT 0,
+  `l18n_diffsource` mediumblob NOT NULL,
+  `l10n_state` text COLLATE utf8_unicode_ci DEFAULT NULL,
+  `label` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `index_name` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `website` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `contact` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `image` mediumblob NOT NULL,
+  `oai_label` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `oai_base` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `opac_label` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `opac_base` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `union_label` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `union_base` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  PRIMARY KEY (`uid`),
+  KEY `parent` (`pid`),
+  KEY `language` (`l18n_parent`,`sys_language_uid`),
+  KEY `index_name` (`index_name`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `tx_dlf_libraries`
+--
+
+LOCK TABLES `tx_dlf_libraries` WRITE;
+/*!40000 ALTER TABLE `tx_dlf_libraries` DISABLE KEYS */;
+/*!40000 ALTER TABLE `tx_dlf_libraries` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `tx_dlf_mail`
+--
+
+DROP TABLE IF EXISTS `tx_dlf_mail`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `tx_dlf_mail` (
+  `uid` int(11) NOT NULL AUTO_INCREMENT,
+  `pid` int(11) NOT NULL DEFAULT 0,
+  `deleted` smallint(6) NOT NULL DEFAULT 0,
+  `sorting` int(11) NOT NULL DEFAULT 0,
+  `mail` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `name` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `label` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  PRIMARY KEY (`uid`),
+  KEY `parent` (`pid`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `tx_dlf_mail`
+--
+
+LOCK TABLES `tx_dlf_mail` WRITE;
+/*!40000 ALTER TABLE `tx_dlf_mail` DISABLE KEYS */;
+/*!40000 ALTER TABLE `tx_dlf_mail` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `tx_dlf_metadata`
+--
+
+DROP TABLE IF EXISTS `tx_dlf_metadata`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `tx_dlf_metadata` (
+  `uid` int(11) NOT NULL AUTO_INCREMENT,
+  `pid` int(11) NOT NULL DEFAULT 0,
+  `tstamp` int(11) NOT NULL DEFAULT 0,
+  `crdate` int(11) NOT NULL DEFAULT 0,
+  `cruser_id` int(11) NOT NULL DEFAULT 0,
+  `deleted` smallint(6) NOT NULL DEFAULT 0,
+  `sys_language_uid` int(11) NOT NULL DEFAULT 0,
+  `l18n_parent` int(11) NOT NULL DEFAULT 0,
+  `l18n_diffsource` mediumblob NOT NULL,
+  `hidden` smallint(6) NOT NULL DEFAULT 0,
+  `sorting` int(11) NOT NULL DEFAULT 0,
+  `l10n_state` text COLLATE utf8_unicode_ci DEFAULT NULL,
+  `label` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `index_name` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `format` int(11) NOT NULL DEFAULT 0,
+  `default_value` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `wrap` text COLLATE utf8_unicode_ci NOT NULL,
+  `index_tokenized` smallint(6) NOT NULL DEFAULT 0,
+  `index_stored` smallint(6) NOT NULL DEFAULT 0,
+  `index_indexed` smallint(6) NOT NULL DEFAULT 0,
+  `index_boost` double NOT NULL DEFAULT 1,
+  `is_sortable` smallint(6) NOT NULL DEFAULT 0,
+  `is_facet` smallint(6) NOT NULL DEFAULT 0,
+  `is_listed` smallint(6) NOT NULL DEFAULT 0,
+  `index_autocomplete` smallint(6) NOT NULL DEFAULT 0,
+  `status` smallint(5) unsigned NOT NULL DEFAULT 0,
+  PRIMARY KEY (`uid`),
+  KEY `parent` (`pid`),
+  KEY `language` (`l18n_parent`,`sys_language_uid`),
+  KEY `index_name` (`index_name`),
+  KEY `index_autocomplete` (`index_autocomplete`),
+  KEY `is_sortable` (`is_sortable`),
+  KEY `is_facet` (`is_facet`),
+  KEY `is_listed` (`is_listed`)
+) ENGINE=InnoDB AUTO_INCREMENT=22 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `tx_dlf_metadata`
+--
+
+LOCK TABLES `tx_dlf_metadata` WRITE;
+/*!40000 ALTER TABLE `tx_dlf_metadata` DISABLE KEYS */;
+INSERT INTO `tx_dlf_metadata` VALUES (1,2,1630932484,1630932484,1,0,0,0,'a:14:{s:5:\"label\";N;s:10:\"index_name\";N;s:6:\"format\";N;s:13:\"default_value\";N;s:4:\"wrap\";N;s:15:\"index_tokenized\";N;s:12:\"index_stored\";N;s:13:\"index_indexed\";N;s:11:\"index_boost\";N;s:11:\"is_sortable\";N;s:8:\"is_facet\";N;s:9:\"is_listed\";N;s:18:\"index_autocomplete\";N;s:16:\"sys_language_uid\";N;}',0,1280,NULL,'Rights Information','rights_info',1,'','key.wrap = <dt>|</dt>\nvalue.required = 1\nvalue.wrap = <dd>|</dd>',0,0,0,0,0,0,0,0,0),(2,2,1630932484,1630932484,1,0,0,0,'a:14:{s:5:\"label\";N;s:10:\"index_name\";N;s:6:\"format\";N;s:13:\"default_value\";N;s:4:\"wrap\";N;s:15:\"index_tokenized\";N;s:12:\"index_stored\";N;s:13:\"index_indexed\";N;s:11:\"index_boost\";N;s:11:\"is_sortable\";N;s:8:\"is_facet\";N;s:9:\"is_listed\";N;s:18:\"index_autocomplete\";N;s:16:\"sys_language_uid\";N;}',0,1152,NULL,'Out Of Print Works','out_of_print',1,'','key.wrap = <dt>|</dt>\nvalue.required = 1\nvalue.wrap = <dd>|</dd>',0,0,1,1,0,1,0,0,0),(3,2,1630932484,1630932484,1,0,0,0,'a:14:{s:5:\"label\";N;s:10:\"index_name\";N;s:6:\"format\";N;s:13:\"default_value\";N;s:4:\"wrap\";N;s:15:\"index_tokenized\";N;s:12:\"index_stored\";N;s:13:\"index_indexed\";N;s:11:\"index_boost\";N;s:11:\"is_sortable\";N;s:8:\"is_facet\";N;s:9:\"is_listed\";N;s:18:\"index_autocomplete\";N;s:16:\"sys_language_uid\";N;}',0,1088,NULL,'Restrictions on Access','restrictions',1,'','key.wrap = <dt>|</dt>\nvalue.required = 1\nvalue.wrap = <dd>|</dd>',0,1,1,1,0,0,0,0,0),(4,2,1630932484,1630932484,1,0,0,0,'a:14:{s:5:\"label\";N;s:10:\"index_name\";N;s:6:\"format\";N;s:13:\"default_value\";N;s:4:\"wrap\";N;s:15:\"index_tokenized\";N;s:12:\"index_stored\";N;s:13:\"index_indexed\";N;s:11:\"index_boost\";N;s:11:\"is_sortable\";N;s:8:\"is_facet\";N;s:9:\"is_listed\";N;s:18:\"index_autocomplete\";N;s:16:\"sys_language_uid\";N;}',0,1056,NULL,'Terms of Use','terms',1,'','key.wrap = <dt>|</dt>\nvalue.required = 1\nvalue.wrap = <dd>|</dd>',0,1,1,1,0,1,0,0,0),(5,2,1630932484,1630932484,1,0,0,0,'a:14:{s:5:\"label\";N;s:10:\"index_name\";N;s:6:\"format\";N;s:13:\"default_value\";N;s:4:\"wrap\";N;s:15:\"index_tokenized\";N;s:12:\"index_stored\";N;s:13:\"index_indexed\";N;s:11:\"index_boost\";N;s:11:\"is_sortable\";N;s:8:\"is_facet\";N;s:9:\"is_listed\";N;s:18:\"index_autocomplete\";N;s:16:\"sys_language_uid\";N;}',0,1040,NULL,'License','license',1,'','key.wrap = <dt>|</dt>\nvalue.required = 1\nvalue.wrap = <dd>|</dd>',0,1,1,1,0,1,0,0,0),(6,2,1630932484,1630932484,1,0,0,0,'a:14:{s:5:\"label\";N;s:10:\"index_name\";N;s:6:\"format\";N;s:13:\"default_value\";N;s:4:\"wrap\";N;s:15:\"index_tokenized\";N;s:12:\"index_stored\";N;s:13:\"index_indexed\";N;s:11:\"index_boost\";N;s:11:\"is_sortable\";N;s:8:\"is_facet\";N;s:9:\"is_listed\";N;s:18:\"index_autocomplete\";N;s:16:\"sys_language_uid\";N;}',0,1032,NULL,'Coordinates','coordinates',1,'','key.wrap = <dt>|</dt>\nvalue.required = 1\nvalue.wrap = <dd>|</dd>',0,1,1,1,0,0,0,0,0),(7,2,1630932484,1630932484,1,0,0,0,'a:14:{s:5:\"label\";N;s:10:\"index_name\";N;s:6:\"format\";N;s:13:\"default_value\";N;s:4:\"wrap\";N;s:15:\"index_tokenized\";N;s:12:\"index_stored\";N;s:13:\"index_indexed\";N;s:11:\"index_boost\";N;s:11:\"is_sortable\";N;s:8:\"is_facet\";N;s:9:\"is_listed\";N;s:18:\"index_autocomplete\";N;s:16:\"sys_language_uid\";N;}',0,1028,NULL,'Kitodo Process Number','prod_id',3,'','key.wrap = <dt>|</dt>\nvalue.required = 1\nvalue.wrap = <dd>|</dd>',0,0,0,0,0,0,0,0,0),(8,2,1630932484,1630932484,1,0,0,0,'a:14:{s:5:\"label\";N;s:10:\"index_name\";N;s:6:\"format\";N;s:13:\"default_value\";N;s:4:\"wrap\";N;s:15:\"index_tokenized\";N;s:12:\"index_stored\";N;s:13:\"index_indexed\";N;s:11:\"index_boost\";N;s:11:\"is_sortable\";N;s:8:\"is_facet\";N;s:9:\"is_listed\";N;s:18:\"index_autocomplete\";N;s:16:\"sys_language_uid\";N;}',0,1026,NULL,'OAI Identifier','record_id',3,'','key.wrap = <dt>|</dt>\nvalue.required = 1\nvalue.wrap = <dd>|</dd>',0,0,1,1,0,0,0,0,0),(9,2,1630932484,1630932484,1,0,0,0,'a:14:{s:5:\"label\";N;s:10:\"index_name\";N;s:6:\"format\";N;s:13:\"default_value\";N;s:4:\"wrap\";N;s:15:\"index_tokenized\";N;s:12:\"index_stored\";N;s:13:\"index_indexed\";N;s:11:\"index_boost\";N;s:11:\"is_sortable\";N;s:8:\"is_facet\";N;s:9:\"is_listed\";N;s:18:\"index_autocomplete\";N;s:16:\"sys_language_uid\";N;}',0,1025,NULL,'Union Catalog ID','union_id',2,'','key.wrap = <dt>|</dt>\nvalue.required = 1\nvalue.wrap = <dd>|</dd>',0,0,1,1,0,0,0,0,0),(10,2,1630932484,1630932484,1,0,0,0,'a:14:{s:5:\"label\";N;s:10:\"index_name\";N;s:6:\"format\";N;s:13:\"default_value\";N;s:4:\"wrap\";N;s:15:\"index_tokenized\";N;s:12:\"index_stored\";N;s:13:\"index_indexed\";N;s:11:\"index_boost\";N;s:11:\"is_sortable\";N;s:8:\"is_facet\";N;s:9:\"is_listed\";N;s:18:\"index_autocomplete\";N;s:16:\"sys_language_uid\";N;}',0,1024,NULL,'OPAC Identifier','opac_id',2,'','key.wrap = <dt>|</dt>\nvalue.required = 1\nvalue.wrap = <dd>|</dd>',0,0,1,1,0,0,0,0,0),(11,2,1630932484,1630932484,1,0,0,0,'a:14:{s:5:\"label\";N;s:10:\"index_name\";N;s:6:\"format\";N;s:13:\"default_value\";N;s:4:\"wrap\";N;s:15:\"index_tokenized\";N;s:12:\"index_stored\";N;s:13:\"index_indexed\";N;s:11:\"index_boost\";N;s:11:\"is_sortable\";N;s:8:\"is_facet\";N;s:9:\"is_listed\";N;s:18:\"index_autocomplete\";N;s:16:\"sys_language_uid\";N;}',0,768,NULL,'URN','urn',3,'','key.wrap = <dt>|</dt>\nvalue.required = 1\nvalue.setContentToCurrent = 1\nvalue.typolink.parameter.current = 1\nvalue.typolink.parameter.prepend = TEXT\nvalue.typolink.parameter.prepend.value = http://nbn-resolving.de/\nvalue.wrap = <dd>|</dd>',0,0,1,1,0,0,0,0,0),(12,2,1630932484,1630932484,1,0,0,0,'a:14:{s:5:\"label\";N;s:10:\"index_name\";N;s:6:\"format\";N;s:13:\"default_value\";N;s:4:\"wrap\";N;s:15:\"index_tokenized\";N;s:12:\"index_stored\";N;s:13:\"index_indexed\";N;s:11:\"index_boost\";N;s:11:\"is_sortable\";N;s:8:\"is_facet\";N;s:9:\"is_listed\";N;s:18:\"index_autocomplete\";N;s:16:\"sys_language_uid\";N;}',0,640,NULL,'PURL','purl',2,'','key.wrap = <dt>|</dt>\nvalue.required = 1\nvalue.setContentToCurrent = 1\nvalue.typolink.parameter.current = 1\nvalue.wrap = <dd>|</dd>',0,0,0,0,0,0,0,0,0),(13,2,1630932484,1630932484,1,0,0,0,'a:14:{s:5:\"label\";N;s:10:\"index_name\";N;s:6:\"format\";N;s:13:\"default_value\";N;s:4:\"wrap\";N;s:15:\"index_tokenized\";N;s:12:\"index_stored\";N;s:13:\"index_indexed\";N;s:11:\"index_boost\";N;s:11:\"is_sortable\";N;s:8:\"is_facet\";N;s:9:\"is_listed\";N;s:18:\"index_autocomplete\";N;s:16:\"sys_language_uid\";N;}',0,576,NULL,'Owner','owner',3,'','key.wrap = <dt>|</dt>\nvalue.required = 1\nvalue.wrap = <dd>|</dd>',0,0,1,1,0,1,0,0,0),(14,2,1630932484,1630932484,1,0,0,0,'a:14:{s:5:\"label\";N;s:10:\"index_name\";N;s:6:\"format\";N;s:13:\"default_value\";N;s:4:\"wrap\";N;s:15:\"index_tokenized\";N;s:12:\"index_stored\";N;s:13:\"index_indexed\";N;s:11:\"index_boost\";N;s:11:\"is_sortable\";N;s:8:\"is_facet\";N;s:9:\"is_listed\";N;s:18:\"index_autocomplete\";N;s:16:\"sys_language_uid\";N;}',0,544,NULL,'Collection(s)','collection',3,'','key.wrap = <dt>|</dt>\nvalue.required = 1\nvalue.wrap = <dd>|</dd>',1,0,1,1,0,1,0,0,0),(15,2,1630932484,1630932484,1,0,0,0,'a:14:{s:5:\"label\";N;s:10:\"index_name\";N;s:6:\"format\";N;s:13:\"default_value\";N;s:4:\"wrap\";N;s:15:\"index_tokenized\";N;s:12:\"index_stored\";N;s:13:\"index_indexed\";N;s:11:\"index_boost\";N;s:11:\"is_sortable\";N;s:8:\"is_facet\";N;s:9:\"is_listed\";N;s:18:\"index_autocomplete\";N;s:16:\"sys_language_uid\";N;}',0,528,NULL,'Language','language',1,'','key.wrap = <dt>|</dt>\nvalue.required = 1\nvalue.wrap = <dd>|</dd>',0,0,1,1,0,1,0,0,0),(16,2,1630932484,1630932484,1,0,0,0,'a:14:{s:5:\"label\";N;s:10:\"index_name\";N;s:6:\"format\";N;s:13:\"default_value\";N;s:4:\"wrap\";N;s:15:\"index_tokenized\";N;s:12:\"index_stored\";N;s:13:\"index_indexed\";N;s:11:\"index_boost\";N;s:11:\"is_sortable\";N;s:8:\"is_facet\";N;s:9:\"is_listed\";N;s:18:\"index_autocomplete\";N;s:16:\"sys_language_uid\";N;}',0,520,NULL,'Year of Publication','year',2,'','key.wrap = <dt>|</dt>\nvalue.required = 1\nvalue.wrap = <dd>|</dd>',0,1,1,1,1,1,1,0,0),(17,2,1630932484,1630932484,1,0,0,0,'a:14:{s:5:\"label\";N;s:10:\"index_name\";N;s:6:\"format\";N;s:13:\"default_value\";N;s:4:\"wrap\";N;s:15:\"index_tokenized\";N;s:12:\"index_stored\";N;s:13:\"index_indexed\";N;s:11:\"index_boost\";N;s:11:\"is_sortable\";N;s:8:\"is_facet\";N;s:9:\"is_listed\";N;s:18:\"index_autocomplete\";N;s:16:\"sys_language_uid\";N;}',0,516,NULL,'Place of Publication','place',2,'','key.wrap = <dt>|</dt>\nvalue.required = 1\nvalue.wrap = <dd>|</dd>',1,1,1,1,1,1,1,0,0),(18,2,1630932484,1630932484,1,0,0,0,'a:14:{s:5:\"label\";N;s:10:\"index_name\";N;s:6:\"format\";N;s:13:\"default_value\";N;s:4:\"wrap\";N;s:15:\"index_tokenized\";N;s:12:\"index_stored\";N;s:13:\"index_indexed\";N;s:11:\"index_boost\";N;s:11:\"is_sortable\";N;s:8:\"is_facet\";N;s:9:\"is_listed\";N;s:18:\"index_autocomplete\";N;s:16:\"sys_language_uid\";N;}',0,514,NULL,'Author','author',2,'','key.wrap = <dt class=\"tx-dlf-metadata-author\">|</dt>\nvalue.required = 1\nvalue.split.token.char = 31\nvalue.split.cObjNum = 1\nvalue.split.1.1 = CASE\nvalue.split.1.1.key.data = register:SPLIT_COUNT\nvalue.split.1.1.0 = LOAD_REGISTER\nvalue.split.1.1.0.tx_dlf_metadata_author_name.current = 1\nvalue.split.1.1.1 = LOAD_REGISTER\nvalue.split.1.1.1.tx_dlf_metadata_author_uri.current = 1\nvalue.postCObject = TEXT\nvalue.postCObject.value = {register:tx_dlf_metadata_author_name}\nvalue.postCObject.value.insertData = 1\nvalue.postCObject.value.stdWrap.typolink.parameter = {register:tx_dlf_metadata_author_uri} _blank external\nvalue.postCObject.value.stdWrap.typolink.parameter.insertData = 1\nvalue.postCObject.value.stdWrap.typolink.title = {register:tx_dlf_metadata_author_name}\nvalue.postCObject.value.stdWrap.typolink.ifNotEmpty = 1\nvalue.wrap = <dd class=\"tx-dlf-metadata-author\">|</dd>',1,1,1,2,1,1,1,1,0),(19,2,1630932484,1630932484,1,0,0,0,'a:14:{s:5:\"label\";N;s:10:\"index_name\";N;s:6:\"format\";N;s:13:\"default_value\";N;s:4:\"wrap\";N;s:15:\"index_tokenized\";N;s:12:\"index_stored\";N;s:13:\"index_indexed\";N;s:11:\"index_boost\";N;s:11:\"is_sortable\";N;s:8:\"is_facet\";N;s:9:\"is_listed\";N;s:18:\"index_autocomplete\";N;s:16:\"sys_language_uid\";N;}',0,513,NULL,'Volume','volume',1,'','key.wrap = <dt>|</dt>\nvalue.required = 1\nvalue.wrap = <dd>|</dd>',0,1,0,1,1,0,1,0,0),(20,2,1630932484,1630932484,1,0,0,0,'a:14:{s:5:\"label\";N;s:10:\"index_name\";N;s:6:\"format\";N;s:13:\"default_value\";N;s:4:\"wrap\";N;s:15:\"index_tokenized\";N;s:12:\"index_stored\";N;s:13:\"index_indexed\";N;s:11:\"index_boost\";N;s:11:\"is_sortable\";N;s:8:\"is_facet\";N;s:9:\"is_listed\";N;s:18:\"index_autocomplete\";N;s:16:\"sys_language_uid\";N;}',0,512,NULL,'Title','title',3,'','key.wrap = <dt class=\"tx-dlf-metadata-title\">|</dt>\nvalue.required = 1\nvalue.wrap = <dd class=\"tx-dlf-metadata-title\">|</dd>',1,1,1,2,1,0,1,1,0),(21,2,1630932484,1630932484,1,0,0,0,'a:14:{s:5:\"label\";N;s:10:\"index_name\";N;s:6:\"format\";N;s:13:\"default_value\";N;s:4:\"wrap\";N;s:15:\"index_tokenized\";N;s:12:\"index_stored\";N;s:13:\"index_indexed\";N;s:11:\"index_boost\";N;s:11:\"is_sortable\";N;s:8:\"is_facet\";N;s:9:\"is_listed\";N;s:18:\"index_autocomplete\";N;s:16:\"sys_language_uid\";N;}',0,256,NULL,'Type','type',1,'','key.wrap = <dt>|</dt>\nvalue.required = 1\nvalue.wrap = <dd>|</dd>',0,1,0,1,1,1,1,0,0);
+/*!40000 ALTER TABLE `tx_dlf_metadata` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `tx_dlf_metadataformat`
+--
+
+DROP TABLE IF EXISTS `tx_dlf_metadataformat`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `tx_dlf_metadataformat` (
+  `uid` int(11) NOT NULL AUTO_INCREMENT,
+  `pid` int(11) NOT NULL DEFAULT 0,
+  `tstamp` int(11) NOT NULL DEFAULT 0,
+  `crdate` int(11) NOT NULL DEFAULT 0,
+  `cruser_id` int(11) NOT NULL DEFAULT 0,
+  `deleted` smallint(6) NOT NULL DEFAULT 0,
+  `parent_id` int(11) NOT NULL DEFAULT 0,
+  `encoded` int(11) NOT NULL DEFAULT 0,
+  `xpath` varchar(1024) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `xpath_sorting` varchar(1024) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `mandatory` smallint(6) NOT NULL DEFAULT 0,
+  PRIMARY KEY (`uid`),
+  KEY `parent` (`pid`),
+  KEY `parent_id` (`parent_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=40 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `tx_dlf_metadataformat`
+--
+
+LOCK TABLES `tx_dlf_metadataformat` WRITE;
+/*!40000 ALTER TABLE `tx_dlf_metadataformat` DISABLE KEYS */;
+INSERT INTO `tx_dlf_metadataformat` VALUES (1,2,1630932484,1630932484,1,0,1,1,'./mods:accessCondition[@type=\"info\"]','',0),(2,2,1630932484,1630932484,1,0,2,1,'./mods:accessCondition[@type=\"out of print work\"]','',0),(3,2,1630932484,1630932484,1,0,3,1,'./mods:accessCondition[@type=\"restriction on access\"]/@xlink:href','',0),(4,2,1630932484,1630932484,1,0,4,1,'./mods:accessCondition[@type=\"local terms of use\"]/@xlink:href','',0),(5,2,1630932484,1630932484,1,0,5,1,'./mods:accessCondition[@type=\"use and reproduction\"]/@xlink:href','',0),(6,2,1630932484,1630932484,1,0,6,1,'./mods:subject/mods:cartographics/mods:coordinates','',0),(7,2,1630932484,1630932484,1,0,7,5,'$.metadata.[?(@.label==\'Kitodo\')].value','',0),(8,2,1630932484,1630932484,1,0,7,2,'./teihdr:fileDesc/teihdr:publicationStmt/teihdr:idno[@type=\"kitodo\"]','',0),(9,2,1630932484,1630932484,1,0,7,1,'./mods:identifier[@type=\"kitodo\"]','',0),(10,2,1630932484,1630932484,1,0,8,5,'$[\'@id\']','',0),(11,2,1630932484,1630932484,1,0,8,2,'./teihdr:fileDesc/teihdr:publicationStmt/teihdr:idno[@type=\"recordIdentifier\"]','',0),(12,2,1630932484,1630932484,1,0,8,1,'./mods:recordInfo/mods:recordIdentifier','',0),(13,2,1630932484,1630932484,1,0,9,2,'./teihdr:fileDesc/teihdr:publicationStmt/teihdr:idno[@type=\"mmid\"]','',0),(14,2,1630932484,1630932484,1,0,9,1,'./mods:identifier[@type=\"ppn\"]','',0),(15,2,1630932484,1630932484,1,0,10,2,'./teihdr:fileDesc/teihdr:publicationStmt/teihdr:idno[@type=\"opac\"]','',0),(16,2,1630932484,1630932484,1,0,10,1,'./mods:identifier[@type=\"opac\"]','',0),(17,2,1630932484,1630932484,1,0,11,5,'$.metadata.[?(@.label==\'URN\')].value','',0),(18,2,1630932484,1630932484,1,0,11,2,'./teihdr:fileDesc/teihdr:publicationStmt/teihdr:idno[@type=\"urn\"]','',0),(19,2,1630932484,1630932484,1,0,11,1,'./mods:identifier[@type=\"urn\"]','',0),(20,2,1630932484,1630932484,1,0,12,2,'./teihdr:fileDesc/teihdr:publicationStmt/teihdr:idno[@type=\"purl\"]','',0),(21,2,1630932484,1630932484,1,0,12,1,'./mods:identifier[@type=\"purl\"]','',0),(22,2,1630932484,1630932484,1,0,13,5,'$.metadata.[?(@.label==\'Owner\')].value','',0),(23,2,1630932484,1630932484,1,0,13,2,'./teihdr:fileDesc/teihdr:publicationStmt/teihdr:publisher','',0),(24,2,1630932484,1630932484,1,0,13,1,'./mods:name[./mods:role/mods:roleTerm=\"own\"]/mods:displayForm','',0),(25,2,1630932484,1630932484,1,0,14,5,'$.metadata.[?(@.label==\'Collection\')].value','',0),(26,2,1630932484,1630932484,1,0,14,2,'./teihdr:fileDesc/teihdr:sourceDesc/teihdr:msDesc/teihdr:msIdentifier/teihdr:collection','',0),(27,2,1630932484,1630932484,1,0,14,1,'./mods:classification','',0),(28,2,1630932484,1630932484,1,0,15,1,'./mods:language/mods:languageTerm','',0),(29,2,1630932484,1630932484,1,0,16,5,'$.metadata.[?(@.label==\'Date of publication\')].value','',0),(30,2,1630932484,1630932484,1,0,16,2,'./teihdr:fileDesc/teihdr:sourceDesc/teihdr:msDesc/teihdr:head/teihdr:origDate','./teihdr:fileDesc/teihdr:sourceDesc/teihdr:msDesc/teihdr:head/teihdr:origDate/@when',0),(31,2,1630932484,1630932484,1,0,17,5,'$.metadata.[?(@.label==\'Place of publication\')].value','',0),(32,2,1630932484,1630932484,1,0,17,2,'./teihdr:fileDesc/teihdr:sourceDesc/teihdr:msDesc/teihdr:head/teihdr:origPlace','',0),(33,2,1630932484,1630932484,1,0,18,5,'$.metadata.[?(@.label==\'Author\')].value','',0),(34,2,1630932484,1630932484,1,0,18,2,'./teihdr:fileDesc/teihdr:sourceDesc/teihdr:msDesc/teihdr:head/teihdr:name','',0),(35,2,1630932484,1630932484,1,0,19,1,'./mods:part/mods:detail/mods:number','./mods:part[@type=\"host\"]/@order',0),(36,2,1630932484,1630932484,1,0,20,5,'$[label]','',0),(37,2,1630932484,1630932484,1,0,20,2,'./teihdr:fileDesc/teihdr:sourceDesc/teihdr:msDesc/teihdr:head/teihdr:note[@type=\"caption\"]','',0),(38,2,1630932484,1630932484,1,0,20,1,'concat(./mods:titleInfo/mods:nonSort,\" \",./mods:titleInfo/mods:title)','./mods:titleInfo/mods:title',0),(39,2,1630932484,1630932484,1,0,21,5,'$.metadata.[?(@.label==\'Manifest Type\')].value','',0);
+/*!40000 ALTER TABLE `tx_dlf_metadataformat` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `tx_dlf_printer`
+--
+
+DROP TABLE IF EXISTS `tx_dlf_printer`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `tx_dlf_printer` (
+  `uid` int(11) NOT NULL AUTO_INCREMENT,
+  `pid` int(11) NOT NULL DEFAULT 0,
+  `deleted` smallint(6) NOT NULL DEFAULT 0,
+  `print` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `label` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  PRIMARY KEY (`uid`),
+  KEY `parent` (`pid`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `tx_dlf_printer`
+--
+
+LOCK TABLES `tx_dlf_printer` WRITE;
+/*!40000 ALTER TABLE `tx_dlf_printer` DISABLE KEYS */;
+/*!40000 ALTER TABLE `tx_dlf_printer` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `tx_dlf_relations`
+--
+
+DROP TABLE IF EXISTS `tx_dlf_relations`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `tx_dlf_relations` (
+  `uid` int(11) NOT NULL AUTO_INCREMENT,
+  `uid_local` int(11) NOT NULL DEFAULT 0,
+  `uid_foreign` int(11) NOT NULL DEFAULT 0,
+  `tablenames` varchar(30) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `sorting` int(11) NOT NULL DEFAULT 0,
+  `sorting_foreign` int(11) NOT NULL DEFAULT 0,
+  `ident` varchar(30) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  PRIMARY KEY (`uid`),
+  KEY `local_foreign` (`uid_local`,`uid_foreign`,`ident`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `tx_dlf_relations`
+--
+
+LOCK TABLES `tx_dlf_relations` WRITE;
+/*!40000 ALTER TABLE `tx_dlf_relations` DISABLE KEYS */;
+/*!40000 ALTER TABLE `tx_dlf_relations` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `tx_dlf_solrcores`
+--
+
+DROP TABLE IF EXISTS `tx_dlf_solrcores`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `tx_dlf_solrcores` (
+  `uid` int(11) NOT NULL AUTO_INCREMENT,
+  `pid` int(11) NOT NULL DEFAULT 0,
+  `tstamp` int(11) NOT NULL DEFAULT 0,
+  `crdate` int(11) NOT NULL DEFAULT 0,
+  `cruser_id` int(11) NOT NULL DEFAULT 0,
+  `deleted` smallint(6) NOT NULL DEFAULT 0,
+  `label` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `index_name` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  PRIMARY KEY (`uid`),
+  KEY `parent` (`pid`),
+  KEY `index_name` (`index_name`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `tx_dlf_solrcores`
+--
+
+LOCK TABLES `tx_dlf_solrcores` WRITE;
+/*!40000 ALTER TABLE `tx_dlf_solrcores` DISABLE KEYS */;
+/*!40000 ALTER TABLE `tx_dlf_solrcores` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `tx_dlf_structures`
+--
+
+DROP TABLE IF EXISTS `tx_dlf_structures`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `tx_dlf_structures` (
+  `uid` int(11) NOT NULL AUTO_INCREMENT,
+  `pid` int(11) NOT NULL DEFAULT 0,
+  `tstamp` int(11) NOT NULL DEFAULT 0,
+  `crdate` int(11) NOT NULL DEFAULT 0,
+  `cruser_id` int(11) NOT NULL DEFAULT 0,
+  `deleted` smallint(6) NOT NULL DEFAULT 0,
+  `sys_language_uid` int(11) NOT NULL DEFAULT 0,
+  `l18n_parent` int(11) NOT NULL DEFAULT 0,
+  `l18n_diffsource` mediumblob NOT NULL,
+  `hidden` smallint(6) NOT NULL DEFAULT 0,
+  `l10n_state` text COLLATE utf8_unicode_ci DEFAULT NULL,
+  `toplevel` smallint(6) NOT NULL DEFAULT 0,
+  `label` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `index_name` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `oai_name` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `thumbnail` int(11) NOT NULL DEFAULT 0,
+  `status` smallint(5) unsigned NOT NULL DEFAULT 0,
+  PRIMARY KEY (`uid`),
+  KEY `parent` (`pid`),
+  KEY `language` (`l18n_parent`,`sys_language_uid`),
+  KEY `index_name` (`index_name`)
+) ENGINE=InnoDB AUTO_INCREMENT=92 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `tx_dlf_structures`
+--
+
+LOCK TABLES `tx_dlf_structures` WRITE;
+/*!40000 ALTER TABLE `tx_dlf_structures` DISABLE KEYS */;
+INSERT INTO `tx_dlf_structures` VALUES (1,2,1630932483,1630932483,1,0,0,0,'a:6:{s:8:\"toplevel\";N;s:5:\"label\";N;s:10:\"index_name\";N;s:8:\"oai_name\";N;s:9:\"thumbnail\";N;s:16:\"sys_language_uid\";N;}',0,NULL,1,'Year','year','',0,0),(2,2,1630932483,1630932483,1,0,0,0,'a:6:{s:8:\"toplevel\";N;s:5:\"label\";N;s:10:\"index_name\";N;s:8:\"oai_name\";N;s:9:\"thumbnail\";N;s:16:\"sys_language_uid\";N;}',0,NULL,1,'Volume','volume','',0,0),(3,2,1630932483,1630932483,1,0,0,0,'a:6:{s:8:\"toplevel\";N;s:5:\"label\";N;s:10:\"index_name\";N;s:8:\"oai_name\";N;s:9:\"thumbnail\";N;s:16:\"sys_language_uid\";N;}',0,NULL,0,'Verse','verse','',0,0),(4,2,1630932483,1630932483,1,0,0,0,'a:6:{s:8:\"toplevel\";N;s:5:\"label\";N;s:10:\"index_name\";N;s:8:\"oai_name\";N;s:9:\"thumbnail\";N;s:16:\"sys_language_uid\";N;}',0,NULL,0,'Titlepage','title_page','',0,0),(5,2,1630932483,1630932483,1,0,0,0,'a:6:{s:8:\"toplevel\";N;s:5:\"label\";N;s:10:\"index_name\";N;s:8:\"oai_name\";N;s:9:\"thumbnail\";N;s:16:\"sys_language_uid\";N;}',0,NULL,0,'Text','text','',0,0),(6,2,1630932483,1630932483,1,0,0,0,'a:6:{s:8:\"toplevel\";N;s:5:\"label\";N;s:10:\"index_name\";N;s:8:\"oai_name\";N;s:9:\"thumbnail\";N;s:16:\"sys_language_uid\";N;}',0,NULL,0,'Table','table','',0,0),(7,2,1630932483,1630932483,1,0,0,0,'a:6:{s:8:\"toplevel\";N;s:5:\"label\";N;s:10:\"index_name\";N;s:8:\"oai_name\";N;s:9:\"thumbnail\";N;s:16:\"sys_language_uid\";N;}',0,NULL,0,'Subinventory','subinventory','',0,0),(8,2,1630932483,1630932483,1,0,0,0,'a:6:{s:8:\"toplevel\";N;s:5:\"label\";N;s:10:\"index_name\";N;s:8:\"oai_name\";N;s:9:\"thumbnail\";N;s:16:\"sys_language_uid\";N;}',0,NULL,1,'Study','study','',0,0),(9,2,1630932483,1630932483,1,0,0,0,'a:6:{s:8:\"toplevel\";N;s:5:\"label\";N;s:10:\"index_name\";N;s:8:\"oai_name\";N;s:9:\"thumbnail\";N;s:16:\"sys_language_uid\";N;}',0,NULL,0,'Stamp','stamp','',0,0),(10,2,1630932483,1630932483,1,0,0,0,'a:6:{s:8:\"toplevel\";N;s:5:\"label\";N;s:10:\"index_name\";N;s:8:\"oai_name\";N;s:9:\"thumbnail\";N;s:16:\"sys_language_uid\";N;}',0,NULL,0,'Spine','spine','',0,0),(11,2,1630932483,1630932483,1,0,0,0,'a:6:{s:8:\"toplevel\";N;s:5:\"label\";N;s:10:\"index_name\";N;s:8:\"oai_name\";N;s:9:\"thumbnail\";N;s:16:\"sys_language_uid\";N;}',0,NULL,0,'Section','section','',0,0),(12,2,1630932483,1630932483,1,0,0,0,'a:6:{s:8:\"toplevel\";N;s:5:\"label\";N;s:10:\"index_name\";N;s:8:\"oai_name\";N;s:9:\"thumbnail\";N;s:16:\"sys_language_uid\";N;}',0,NULL,0,'Seal','seal','',0,0),(13,2,1630932483,1630932483,1,0,0,0,'a:6:{s:8:\"toplevel\";N;s:5:\"label\";N;s:10:\"index_name\";N;s:8:\"oai_name\";N;s:9:\"thumbnail\";N;s:16:\"sys_language_uid\";N;}',0,NULL,0,'Scheme','scheme','',0,0),(14,2,1630932483,1630932483,1,0,0,0,'a:6:{s:8:\"toplevel\";N;s:5:\"label\";N;s:10:\"index_name\";N;s:8:\"oai_name\";N;s:9:\"thumbnail\";N;s:16:\"sys_language_uid\";N;}',0,NULL,1,'Research Paper','research_paper','',0,0),(15,2,1630932483,1630932483,1,0,0,0,'a:6:{s:8:\"toplevel\";N;s:5:\"label\";N;s:10:\"index_name\";N;s:8:\"oai_name\";N;s:9:\"thumbnail\";N;s:16:\"sys_language_uid\";N;}',0,NULL,1,'Report','report','',0,0),(16,2,1630932483,1630932483,1,0,0,0,'a:6:{s:8:\"toplevel\";N;s:5:\"label\";N;s:10:\"index_name\";N;s:8:\"oai_name\";N;s:9:\"thumbnail\";N;s:16:\"sys_language_uid\";N;}',0,NULL,1,'Register','register','',0,0),(17,2,1630932483,1630932483,1,0,0,0,'a:6:{s:8:\"toplevel\";N;s:5:\"label\";N;s:10:\"index_name\";N;s:8:\"oai_name\";N;s:9:\"thumbnail\";N;s:16:\"sys_language_uid\";N;}',0,NULL,0,'Provenance','provenance','',0,0),(18,2,1630932483,1630932483,1,0,0,0,'a:6:{s:8:\"toplevel\";N;s:5:\"label\";N;s:10:\"index_name\";N;s:8:\"oai_name\";N;s:9:\"thumbnail\";N;s:16:\"sys_language_uid\";N;}',0,NULL,1,'Proceeding','proceeding','',0,0),(19,2,1630932483,1630932483,1,0,0,0,'a:6:{s:8:\"toplevel\";N;s:5:\"label\";N;s:10:\"index_name\";N;s:8:\"oai_name\";N;s:9:\"thumbnail\";N;s:16:\"sys_language_uid\";N;}',0,NULL,0,'Privileges','privileges','',0,0),(20,2,1630932483,1630932483,1,0,0,0,'a:6:{s:8:\"toplevel\";N;s:5:\"label\";N;s:10:\"index_name\";N;s:8:\"oai_name\";N;s:9:\"thumbnail\";N;s:16:\"sys_language_uid\";N;}',0,NULL,0,'Printers Mark','printers_mark','',0,0),(21,2,1630932483,1630932483,1,0,0,0,'a:6:{s:8:\"toplevel\";N;s:5:\"label\";N;s:10:\"index_name\";N;s:8:\"oai_name\";N;s:9:\"thumbnail\";N;s:16:\"sys_language_uid\";N;}',0,NULL,1,'Printed Archives','printed_archives','',0,0),(22,2,1630932483,1630932483,1,0,0,0,'a:6:{s:8:\"toplevel\";N;s:5:\"label\";N;s:10:\"index_name\";N;s:8:\"oai_name\";N;s:9:\"thumbnail\";N;s:16:\"sys_language_uid\";N;}',0,NULL,1,'Preprint','preprint','',0,0),(23,2,1630932483,1630932483,1,0,0,0,'a:6:{s:8:\"toplevel\";N;s:5:\"label\";N;s:10:\"index_name\";N;s:8:\"oai_name\";N;s:9:\"thumbnail\";N;s:16:\"sys_language_uid\";N;}',0,NULL,0,'Preface','preface','',0,0),(24,2,1630932483,1630932483,1,0,0,0,'a:6:{s:8:\"toplevel\";N;s:5:\"label\";N;s:10:\"index_name\";N;s:8:\"oai_name\";N;s:9:\"thumbnail\";N;s:16:\"sys_language_uid\";N;}',0,NULL,1,'Poster','poster','',0,0),(25,2,1630932483,1630932483,1,0,0,0,'a:6:{s:8:\"toplevel\";N;s:5:\"label\";N;s:10:\"index_name\";N;s:8:\"oai_name\";N;s:9:\"thumbnail\";N;s:16:\"sys_language_uid\";N;}',0,NULL,1,'Plan','plan','',0,0),(26,2,1630932483,1630932483,1,0,0,0,'a:6:{s:8:\"toplevel\";N;s:5:\"label\";N;s:10:\"index_name\";N;s:8:\"oai_name\";N;s:9:\"thumbnail\";N;s:16:\"sys_language_uid\";N;}',0,NULL,1,'Photograph','photograph','',0,0),(27,2,1630932483,1630932483,1,0,0,0,'a:6:{s:8:\"toplevel\";N;s:5:\"label\";N;s:10:\"index_name\";N;s:8:\"oai_name\";N;s:9:\"thumbnail\";N;s:16:\"sys_language_uid\";N;}',0,NULL,1,'Periodical','periodical','',0,0),(28,2,1630932483,1630932483,1,0,0,0,'a:6:{s:8:\"toplevel\";N;s:5:\"label\";N;s:10:\"index_name\";N;s:8:\"oai_name\";N;s:9:\"thumbnail\";N;s:16:\"sys_language_uid\";N;}',0,NULL,0,'Paste Down','paste_down','',0,0),(29,2,1630932483,1630932483,1,0,0,0,'a:6:{s:8:\"toplevel\";N;s:5:\"label\";N;s:10:\"index_name\";N;s:8:\"oai_name\";N;s:9:\"thumbnail\";N;s:16:\"sys_language_uid\";N;}',0,NULL,1,'Paper','paper','',0,0),(30,2,1630932483,1630932483,1,0,0,0,'a:6:{s:8:\"toplevel\";N;s:5:\"label\";N;s:10:\"index_name\";N;s:8:\"oai_name\";N;s:9:\"thumbnail\";N;s:16:\"sys_language_uid\";N;}',0,NULL,0,'Page','page','',0,0),(31,2,1630932483,1630932483,1,0,0,0,'a:6:{s:8:\"toplevel\";N;s:5:\"label\";N;s:10:\"index_name\";N;s:8:\"oai_name\";N;s:9:\"thumbnail\";N;s:16:\"sys_language_uid\";N;}',0,NULL,0,'Ornament','ornament','',0,0),(32,2,1630932483,1630932483,1,0,0,0,'a:6:{s:8:\"toplevel\";N;s:5:\"label\";N;s:10:\"index_name\";N;s:8:\"oai_name\";N;s:9:\"thumbnail\";N;s:16:\"sys_language_uid\";N;}',0,NULL,1,'Official Notification','official_notification','',0,0),(33,2,1630932483,1630932483,1,0,0,0,'a:6:{s:8:\"toplevel\";N;s:5:\"label\";N;s:10:\"index_name\";N;s:8:\"oai_name\";N;s:9:\"thumbnail\";N;s:16:\"sys_language_uid\";N;}',0,NULL,0,'Note','note','',0,0),(34,2,1630932483,1630932483,1,0,0,0,'a:6:{s:8:\"toplevel\";N;s:5:\"label\";N;s:10:\"index_name\";N;s:8:\"oai_name\";N;s:9:\"thumbnail\";N;s:16:\"sys_language_uid\";N;}',0,NULL,1,'Newspaper','newspaper','',0,0),(35,2,1630932483,1630932483,1,0,0,0,'a:6:{s:8:\"toplevel\";N;s:5:\"label\";N;s:10:\"index_name\";N;s:8:\"oai_name\";N;s:9:\"thumbnail\";N;s:16:\"sys_language_uid\";N;}',0,NULL,0,'Musical Notation','musical_notation','',0,0),(36,2,1630932483,1630932483,1,0,0,0,'a:6:{s:8:\"toplevel\";N;s:5:\"label\";N;s:10:\"index_name\";N;s:8:\"oai_name\";N;s:9:\"thumbnail\";N;s:16:\"sys_language_uid\";N;}',0,NULL,1,'Multivolume Work','multivolume_work','',0,0),(37,2,1630932483,1630932483,1,0,0,0,'a:6:{s:8:\"toplevel\";N;s:5:\"label\";N;s:10:\"index_name\";N;s:8:\"oai_name\";N;s:9:\"thumbnail\";N;s:16:\"sys_language_uid\";N;}',0,NULL,0,'Month','month','',0,0),(38,2,1630932483,1630932483,1,0,0,0,'a:6:{s:8:\"toplevel\";N;s:5:\"label\";N;s:10:\"index_name\";N;s:8:\"oai_name\";N;s:9:\"thumbnail\";N;s:16:\"sys_language_uid\";N;}',0,NULL,1,'Monograph','monograph','',0,0),(39,2,1630932483,1630932483,1,0,0,0,'a:6:{s:8:\"toplevel\";N;s:5:\"label\";N;s:10:\"index_name\";N;s:8:\"oai_name\";N;s:9:\"thumbnail\";N;s:16:\"sys_language_uid\";N;}',0,NULL,0,'Map','map','',0,0),(40,2,1630932483,1630932483,1,0,0,0,'a:6:{s:8:\"toplevel\";N;s:5:\"label\";N;s:10:\"index_name\";N;s:8:\"oai_name\";N;s:9:\"thumbnail\";N;s:16:\"sys_language_uid\";N;}',0,NULL,1,'Manuscript','manuscript','',0,0),(41,2,1630932483,1630932483,1,0,0,0,'a:6:{s:8:\"toplevel\";N;s:5:\"label\";N;s:10:\"index_name\";N;s:8:\"oai_name\";N;s:9:\"thumbnail\";N;s:16:\"sys_language_uid\";N;}',0,NULL,1,'Master Thesis','master_thesis','',0,0),(42,2,1630932483,1630932483,1,0,0,0,'a:6:{s:8:\"toplevel\";N;s:5:\"label\";N;s:10:\"index_name\";N;s:8:\"oai_name\";N;s:9:\"thumbnail\";N;s:16:\"sys_language_uid\";N;}',0,NULL,1,'Magister Thesis','magister_thesis','',0,0),(43,2,1630932483,1630932483,1,0,0,0,'a:6:{s:8:\"toplevel\";N;s:5:\"label\";N;s:10:\"index_name\";N;s:8:\"oai_name\";N;s:9:\"thumbnail\";N;s:16:\"sys_language_uid\";N;}',0,NULL,0,'Letter','letter','',0,0),(44,2,1630932483,1630932483,1,0,0,0,'a:6:{s:8:\"toplevel\";N;s:5:\"label\";N;s:10:\"index_name\";N;s:8:\"oai_name\";N;s:9:\"thumbnail\";N;s:16:\"sys_language_uid\";N;}',0,NULL,1,'Lecture','lecture','',0,0),(45,2,1630932483,1630932483,1,0,0,0,'a:6:{s:8:\"toplevel\";N;s:5:\"label\";N;s:10:\"index_name\";N;s:8:\"oai_name\";N;s:9:\"thumbnail\";N;s:16:\"sys_language_uid\";N;}',0,NULL,1,'Leaflet','leaflet','',0,0),(46,2,1630932483,1630932483,1,0,0,0,'a:6:{s:8:\"toplevel\";N;s:5:\"label\";N;s:10:\"index_name\";N;s:8:\"oai_name\";N;s:9:\"thumbnail\";N;s:16:\"sys_language_uid\";N;}',0,NULL,1,'Land Register','land_register','',0,0),(47,2,1630932483,1630932483,1,0,0,0,'a:6:{s:8:\"toplevel\";N;s:5:\"label\";N;s:10:\"index_name\";N;s:8:\"oai_name\";N;s:9:\"thumbnail\";N;s:16:\"sys_language_uid\";N;}',0,NULL,1,'Judgement','judgement','',0,0),(48,2,1630932483,1630932483,1,0,0,0,'a:6:{s:8:\"toplevel\";N;s:5:\"label\";N;s:10:\"index_name\";N;s:8:\"oai_name\";N;s:9:\"thumbnail\";N;s:16:\"sys_language_uid\";N;}',0,NULL,1,'Issue','issue','',0,0),(49,2,1630932483,1630932483,1,0,0,0,'a:6:{s:8:\"toplevel\";N;s:5:\"label\";N;s:10:\"index_name\";N;s:8:\"oai_name\";N;s:9:\"thumbnail\";N;s:16:\"sys_language_uid\";N;}',0,NULL,1,'Inventory','inventory','',0,0),(50,2,1630932483,1630932483,1,0,0,0,'a:6:{s:8:\"toplevel\";N;s:5:\"label\";N;s:10:\"index_name\";N;s:8:\"oai_name\";N;s:9:\"thumbnail\";N;s:16:\"sys_language_uid\";N;}',0,NULL,0,'Initial Decoration','initial_decoration','',0,0),(51,2,1630932483,1630932483,1,0,0,0,'a:6:{s:8:\"toplevel\";N;s:5:\"label\";N;s:10:\"index_name\";N;s:8:\"oai_name\";N;s:9:\"thumbnail\";N;s:16:\"sys_language_uid\";N;}',0,NULL,0,'Index','index','',0,0),(52,2,1630932483,1630932483,1,0,0,0,'a:6:{s:8:\"toplevel\";N;s:5:\"label\";N;s:10:\"index_name\";N;s:8:\"oai_name\";N;s:9:\"thumbnail\";N;s:16:\"sys_language_uid\";N;}',0,NULL,0,'Imprint','imprint','',0,0),(53,2,1630932483,1630932483,1,0,0,0,'a:6:{s:8:\"toplevel\";N;s:5:\"label\";N;s:10:\"index_name\";N;s:8:\"oai_name\";N;s:9:\"thumbnail\";N;s:16:\"sys_language_uid\";N;}',0,NULL,1,'Image','image','',0,0),(54,2,1630932483,1630932483,1,0,0,0,'a:6:{s:8:\"toplevel\";N;s:5:\"label\";N;s:10:\"index_name\";N;s:8:\"oai_name\";N;s:9:\"thumbnail\";N;s:16:\"sys_language_uid\";N;}',0,NULL,0,'Illustration','illustration','',0,0),(55,2,1630932483,1630932483,1,0,0,0,'a:6:{s:8:\"toplevel\";N;s:5:\"label\";N;s:10:\"index_name\";N;s:8:\"oai_name\";N;s:9:\"thumbnail\";N;s:16:\"sys_language_uid\";N;}',0,NULL,1,'Habilitation Thesis','habilitation_thesis','',0,0),(56,2,1630932483,1630932483,1,0,0,0,'a:6:{s:8:\"toplevel\";N;s:5:\"label\";N;s:10:\"index_name\";N;s:8:\"oai_name\";N;s:9:\"thumbnail\";N;s:16:\"sys_language_uid\";N;}',0,NULL,1,'Ground Plan','ground_plan','',0,0),(57,2,1630932483,1630932483,1,0,0,0,'a:6:{s:8:\"toplevel\";N;s:5:\"label\";N;s:10:\"index_name\";N;s:8:\"oai_name\";N;s:9:\"thumbnail\";N;s:16:\"sys_language_uid\";N;}',0,NULL,1,'Fragment','fragment','',0,0),(58,2,1630932483,1630932483,1,0,0,0,'a:6:{s:8:\"toplevel\";N;s:5:\"label\";N;s:10:\"index_name\";N;s:8:\"oai_name\";N;s:9:\"thumbnail\";N;s:16:\"sys_language_uid\";N;}',0,NULL,1,'Folder','folder','',0,0),(59,2,1630932483,1630932483,1,0,0,0,'a:6:{s:8:\"toplevel\";N;s:5:\"label\";N;s:10:\"index_name\";N;s:8:\"oai_name\";N;s:9:\"thumbnail\";N;s:16:\"sys_language_uid\";N;}',0,NULL,1,'File','file','',0,0),(60,2,1630932483,1630932483,1,0,0,0,'a:6:{s:8:\"toplevel\";N;s:5:\"label\";N;s:10:\"index_name\";N;s:8:\"oai_name\";N;s:9:\"thumbnail\";N;s:16:\"sys_language_uid\";N;}',0,NULL,0,'Fascicle','fascicle','',0,0),(61,2,1630932483,1630932483,1,0,0,0,'a:6:{s:8:\"toplevel\";N;s:5:\"label\";N;s:10:\"index_name\";N;s:8:\"oai_name\";N;s:9:\"thumbnail\";N;s:16:\"sys_language_uid\";N;}',0,NULL,1,'Ephemera','ephemera','',0,0),(62,2,1630932483,1630932483,1,0,0,0,'a:6:{s:8:\"toplevel\";N;s:5:\"label\";N;s:10:\"index_name\";N;s:8:\"oai_name\";N;s:9:\"thumbnail\";N;s:16:\"sys_language_uid\";N;}',0,NULL,0,'Entry','entry','',0,0),(63,2,1630932483,1630932483,1,0,0,0,'a:6:{s:8:\"toplevel\";N;s:5:\"label\";N;s:10:\"index_name\";N;s:8:\"oai_name\";N;s:9:\"thumbnail\";N;s:16:\"sys_language_uid\";N;}',0,NULL,0,'Engraved Titlepage','engraved_titlepage','',0,0),(64,2,1630932483,1630932483,1,0,0,0,'a:6:{s:8:\"toplevel\";N;s:5:\"label\";N;s:10:\"index_name\";N;s:8:\"oai_name\";N;s:9:\"thumbnail\";N;s:16:\"sys_language_uid\";N;}',0,NULL,0,'Endsheet','endsheet','',0,0),(65,2,1630932483,1630932483,1,0,0,0,'a:6:{s:8:\"toplevel\";N;s:5:\"label\";N;s:10:\"index_name\";N;s:8:\"oai_name\";N;s:9:\"thumbnail\";N;s:16:\"sys_language_uid\";N;}',0,NULL,0,'Edge','edge','',0,0),(66,2,1630932483,1630932483,1,0,0,0,'a:6:{s:8:\"toplevel\";N;s:5:\"label\";N;s:10:\"index_name\";N;s:8:\"oai_name\";N;s:9:\"thumbnail\";N;s:16:\"sys_language_uid\";N;}',0,NULL,1,'Dossier','dossier','',0,0),(67,2,1630932483,1630932483,1,0,0,0,'a:6:{s:8:\"toplevel\";N;s:5:\"label\";N;s:10:\"index_name\";N;s:8:\"oai_name\";N;s:9:\"thumbnail\";N;s:16:\"sys_language_uid\";N;}',0,NULL,1,'Document','document','',0,0),(68,2,1630932483,1630932483,1,0,0,0,'a:6:{s:8:\"toplevel\";N;s:5:\"label\";N;s:10:\"index_name\";N;s:8:\"oai_name\";N;s:9:\"thumbnail\";N;s:16:\"sys_language_uid\";N;}',0,NULL,1,'Doctoral Thesis','doctoral_thesis','',0,0),(69,2,1630932483,1630932483,1,0,0,0,'a:6:{s:8:\"toplevel\";N;s:5:\"label\";N;s:10:\"index_name\";N;s:8:\"oai_name\";N;s:9:\"thumbnail\";N;s:16:\"sys_language_uid\";N;}',0,NULL,1,'Diploma Thesis','diploma_thesis','',0,0),(70,2,1630932483,1630932483,1,0,0,0,'a:6:{s:8:\"toplevel\";N;s:5:\"label\";N;s:10:\"index_name\";N;s:8:\"oai_name\";N;s:9:\"thumbnail\";N;s:16:\"sys_language_uid\";N;}',0,NULL,0,'Dedication','dedication','',0,0),(71,2,1630932483,1630932483,1,0,0,0,'a:6:{s:8:\"toplevel\";N;s:5:\"label\";N;s:10:\"index_name\";N;s:8:\"oai_name\";N;s:9:\"thumbnail\";N;s:16:\"sys_language_uid\";N;}',0,NULL,0,'Day','day','',0,0),(72,2,1630932483,1630932483,1,0,0,0,'a:6:{s:8:\"toplevel\";N;s:5:\"label\";N;s:10:\"index_name\";N;s:8:\"oai_name\";N;s:9:\"thumbnail\";N;s:16:\"sys_language_uid\";N;}',0,NULL,0,'Back Cover','cover_back','',0,0),(73,2,1630932483,1630932483,1,0,0,0,'a:6:{s:8:\"toplevel\";N;s:5:\"label\";N;s:10:\"index_name\";N;s:8:\"oai_name\";N;s:9:\"thumbnail\";N;s:16:\"sys_language_uid\";N;}',0,NULL,0,'Front Cover','cover_front','',0,0),(74,2,1630932483,1630932483,1,0,0,0,'a:6:{s:8:\"toplevel\";N;s:5:\"label\";N;s:10:\"index_name\";N;s:8:\"oai_name\";N;s:9:\"thumbnail\";N;s:16:\"sys_language_uid\";N;}',0,NULL,0,'Cover','cover','',0,0),(75,2,1630932483,1630932483,1,0,0,0,'a:6:{s:8:\"toplevel\";N;s:5:\"label\";N;s:10:\"index_name\";N;s:8:\"oai_name\";N;s:9:\"thumbnail\";N;s:16:\"sys_language_uid\";N;}',0,NULL,0,'Corrigenda','corrigenda','',0,0),(76,2,1630932483,1630932483,1,0,0,0,'a:6:{s:8:\"toplevel\";N;s:5:\"label\";N;s:10:\"index_name\";N;s:8:\"oai_name\";N;s:9:\"thumbnail\";N;s:16:\"sys_language_uid\";N;}',0,NULL,0,'Table of Contents','contents','',0,0),(77,2,1630932483,1630932483,1,0,0,0,'a:6:{s:8:\"toplevel\";N;s:5:\"label\";N;s:10:\"index_name\";N;s:8:\"oai_name\";N;s:9:\"thumbnail\";N;s:16:\"sys_language_uid\";N;}',0,NULL,0,'Contained Work','contained_work','',0,0),(78,2,1630932483,1630932483,1,0,0,0,'a:6:{s:8:\"toplevel\";N;s:5:\"label\";N;s:10:\"index_name\";N;s:8:\"oai_name\";N;s:9:\"thumbnail\";N;s:16:\"sys_language_uid\";N;}',0,NULL,0,'Colophon','colophon','',0,0),(79,2,1630932483,1630932483,1,0,0,0,'a:6:{s:8:\"toplevel\";N;s:5:\"label\";N;s:10:\"index_name\";N;s:8:\"oai_name\";N;s:9:\"thumbnail\";N;s:16:\"sys_language_uid\";N;}',0,NULL,0,'Collation','collation','',0,0),(80,2,1630932483,1630932483,1,0,0,0,'a:6:{s:8:\"toplevel\";N;s:5:\"label\";N;s:10:\"index_name\";N;s:8:\"oai_name\";N;s:9:\"thumbnail\";N;s:16:\"sys_language_uid\";N;}',0,NULL,0,'Chapter','chapter','',0,0),(81,2,1630932483,1630932483,1,0,0,0,'a:6:{s:8:\"toplevel\";N;s:5:\"label\";N;s:10:\"index_name\";N;s:8:\"oai_name\";N;s:9:\"thumbnail\";N;s:16:\"sys_language_uid\";N;}',0,NULL,1,'Cartulary','cartulary','',0,0),(82,2,1630932483,1630932483,1,0,0,0,'a:6:{s:8:\"toplevel\";N;s:5:\"label\";N;s:10:\"index_name\";N;s:8:\"oai_name\";N;s:9:\"thumbnail\";N;s:16:\"sys_language_uid\";N;}',0,NULL,0,'Bookplate','bookplate','',0,0),(83,2,1630932483,1630932483,1,0,0,0,'a:6:{s:8:\"toplevel\";N;s:5:\"label\";N;s:10:\"index_name\";N;s:8:\"oai_name\";N;s:9:\"thumbnail\";N;s:16:\"sys_language_uid\";N;}',0,NULL,0,'Binding','binding','',0,0),(84,2,1630932483,1630932483,1,0,0,0,'a:6:{s:8:\"toplevel\";N;s:5:\"label\";N;s:10:\"index_name\";N;s:8:\"oai_name\";N;s:9:\"thumbnail\";N;s:16:\"sys_language_uid\";N;}',0,NULL,1,'Bachelor Thesis','bachelor_thesis','',0,0),(85,2,1630932483,1630932483,1,0,0,0,'a:6:{s:8:\"toplevel\";N;s:5:\"label\";N;s:10:\"index_name\";N;s:8:\"oai_name\";N;s:9:\"thumbnail\";N;s:16:\"sys_language_uid\";N;}',0,NULL,1,'Atlas','atlas','',0,0),(86,2,1630932483,1630932483,1,0,0,0,'a:6:{s:8:\"toplevel\";N;s:5:\"label\";N;s:10:\"index_name\";N;s:8:\"oai_name\";N;s:9:\"thumbnail\";N;s:16:\"sys_language_uid\";N;}',0,NULL,0,'Article','article','',0,0),(87,2,1630932483,1630932483,1,0,0,0,'a:6:{s:8:\"toplevel\";N;s:5:\"label\";N;s:10:\"index_name\";N;s:8:\"oai_name\";N;s:9:\"thumbnail\";N;s:16:\"sys_language_uid\";N;}',0,NULL,0,'Annotation','annotation','',0,0),(88,2,1630932483,1630932483,1,0,0,0,'a:6:{s:8:\"toplevel\";N;s:5:\"label\";N;s:10:\"index_name\";N;s:8:\"oai_name\";N;s:9:\"thumbnail\";N;s:16:\"sys_language_uid\";N;}',0,NULL,1,'Album','album','',0,0),(89,2,1630932483,1630932483,1,0,0,0,'a:6:{s:8:\"toplevel\";N;s:5:\"label\";N;s:10:\"index_name\";N;s:8:\"oai_name\";N;s:9:\"thumbnail\";N;s:16:\"sys_language_uid\";N;}',0,NULL,0,'Address','address','',0,0),(90,2,1630932483,1630932483,1,0,0,0,'a:6:{s:8:\"toplevel\";N;s:5:\"label\";N;s:10:\"index_name\";N;s:8:\"oai_name\";N;s:9:\"thumbnail\";N;s:16:\"sys_language_uid\";N;}',0,NULL,0,'Additional','additional','',0,0),(91,2,1630932483,1630932483,1,0,0,0,'a:6:{s:8:\"toplevel\";N;s:5:\"label\";N;s:10:\"index_name\";N;s:8:\"oai_name\";N;s:9:\"thumbnail\";N;s:16:\"sys_language_uid\";N;}',0,NULL,1,'Act','act','',0,0);
+/*!40000 ALTER TABLE `tx_dlf_structures` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `tx_dlf_tokens`
+--
+
+DROP TABLE IF EXISTS `tx_dlf_tokens`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `tx_dlf_tokens` (
+  `uid` int(11) NOT NULL AUTO_INCREMENT,
+  `tstamp` int(11) NOT NULL DEFAULT 0,
+  `token` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `options` mediumtext COLLATE utf8_unicode_ci NOT NULL,
+  `ident` varchar(30) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  PRIMARY KEY (`uid`),
+  KEY `token` (`token`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `tx_dlf_tokens`
+--
+
+LOCK TABLES `tx_dlf_tokens` WRITE;
+/*!40000 ALTER TABLE `tx_dlf_tokens` DISABLE KEYS */;
+/*!40000 ALTER TABLE `tx_dlf_tokens` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --

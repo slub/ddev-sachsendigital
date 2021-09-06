@@ -42,3 +42,25 @@ To allow TYPO3 to process requests to arbitrary subpaths (pretty URLs), URL rewr
 wget -O public/.htaccess https://raw.githubusercontent.com/TYPO3/typo3/v9.5.30/typo3/sysext/install/Resources/Private/FolderStructureTemplateFiles/root-htaccess
 echo '!/public/.htaccess' >> .gitignore
 ```
+
+## Extensions
+
+```bash
+./scripts/ext-clone.sh
+
+echo '/extensions' >> .gitignore
+
+ddev composer config repositories.kitodo-presentation vcs git@github.com:kitodo/kitodo-presentation.git
+ddev composer config repositories.slub-web-ldp vcs git@git.slub-dresden.de:slub-webseite/slub-web-ldp.git
+
+ddev composer require kitodo/presentation:dev-master
+ddev composer require slub/slub-web-ldp:dev-master
+
+ddev typo3cms database:updateschema
+```
+
+### In TYPO3 backend
+
+- Create folder `Kitodo.Presentation`
+- Let the `Kitodo.Presentation` extension create structures and metadata
+- Open configuration modal for `dlf` extension (this is just to amend `LocalConfiguration.php`)

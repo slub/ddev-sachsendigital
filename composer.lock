@@ -4,8 +4,72 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3c6c482015ff18426169c30449d7521a",
+    "content-hash": "2c8c985a855c21ae595885677f6dd506",
     "packages": [
+        {
+            "name": "caseyamcl/phpoaipmh",
+            "version": "v3.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/caseyamcl/phpoaipmh.git",
+                "reference": "d4ad63391eabd795341fd4dee66b8faa05a10e2a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/caseyamcl/phpoaipmh/zipball/d4ad63391eabd795341fd4dee66b8faa05a10e2a",
+                "reference": "d4ad63391eabd795341fd4dee66b8faa05a10e2a",
+                "shasum": ""
+            },
+            "require": {
+                "ext-simplexml": "*",
+                "php": ">=5.5.0"
+            },
+            "require-dev": {
+                "guzzlehttp/guzzle": "^6.0|^7.0",
+                "jaschilz/php-coverage-badger": "^2.0",
+                "mockery/mockery": "^0.9",
+                "phpunit/phpunit": "^4.0|^5.0",
+                "squizlabs/php_codesniffer": "^3.5",
+                "symfony/config": "^3.4|^4.3|^5.0",
+                "symfony/console": "^3.4|^4.3|^5.0",
+                "symfony/dependency-injection": "^3.4.26|^4.3|^5.0",
+                "symfony/yaml": "^3.4|^4.3|^5.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Phpoaipmh\\": [
+                        "src/",
+                        "tests"
+                    ],
+                    "Phpoaipmh\\Example\\": "example/src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Casey McLaughlin",
+                    "email": "caseyamcl@gmail.com",
+                    "homepage": "http://caseymclaughlin.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A PHP OAI-PMH 2.0 Harvester library",
+            "homepage": "https://github.com/caseyamcl/phpoaipmh",
+            "keywords": [
+                "Harvester",
+                "OAI",
+                "OAI-PMH"
+            ],
+            "support": {
+                "issues": "https://github.com/caseyamcl/phpoaipmh/issues",
+                "source": "https://github.com/caseyamcl/phpoaipmh/tree/v3.3"
+            },
+            "time": "2020-12-21T15:49:13+00:00"
+        },
         {
             "name": "cogpowered/finediff",
             "version": "0.3.1",
@@ -633,6 +697,52 @@
             "time": "2021-08-09T23:46:54+00:00"
         },
         {
+            "name": "flow/jsonpath",
+            "version": "0.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/FlowCommunications/JSONPath.git",
+                "reference": "b9738858c75d008c1211612b973e9510f8b7f8ea"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/FlowCommunications/JSONPath/zipball/b9738858c75d008c1211612b973e9510f8b7f8ea",
+                "reference": "b9738858c75d008c1211612b973e9510f8b7f8ea",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "peekmo/jsonpath": "dev-master",
+                "phpunit/phpunit": "^7.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Flow\\JSONPath": "src/",
+                    "Flow\\JSONPath\\Test": "tests/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Stephen Frank",
+                    "email": "stephen@flowsa.com"
+                }
+            ],
+            "description": "JSONPath implementation for parsing, searching and flattening arrays",
+            "support": {
+                "issues": "https://github.com/FlowCommunications/JSONPath/issues",
+                "source": "https://github.com/FlowCommunications/JSONPath/tree/0.5.0"
+            },
+            "abandoned": "softcreatr/jsonpath",
+            "time": "2019-07-15T17:23:22+00:00"
+        },
+        {
             "name": "guzzlehttp/guzzle",
             "version": "6.5.5",
             "source": {
@@ -1057,6 +1167,69 @@
             "time": "2020-05-28T13:44:02+00:00"
         },
         {
+            "name": "kitodo/presentation",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:kitodo/kitodo-presentation.git",
+                "reference": "5b7677b7d9be41edd018092d469ab81c39d9771f"
+            },
+            "require": {
+                "caseyamcl/phpoaipmh": "^3.0",
+                "ext-curl": "*",
+                "ext-dom": "*",
+                "ext-json": "*",
+                "ext-libxml": "*",
+                "ext-openssl": "*",
+                "ext-simplexml": "*",
+                "php": "^7.3|^7.4",
+                "solarium/solarium": "^4.2|^5.2",
+                "typo3/cms-core": "~9.5.26",
+                "typo3/cms-tstemplate": "~9.5.26",
+                "ubl/php-iiif-prezi-reader": "0.3.0"
+            },
+            "replace": {
+                "typo3-ter/dlf": "self.version"
+            },
+            "default-branch": true,
+            "type": "typo3-cms-extension",
+            "extra": {
+                "typo3/cms": {
+                    "extension-key": "dlf"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Kitodo\\Dlf\\": "Classes/"
+                }
+            },
+            "license": [
+                "GPL-3.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Kitodo. Key to digital objects e.V.",
+                    "email": "contact@kitodo.org",
+                    "homepage": "https://www.kitodo.org",
+                    "role": "provider"
+                },
+                {
+                    "name": "Sebastian Meyer",
+                    "email": "sebastian.meyer@slub-dresden.de",
+                    "homepage": "https://www.slub-dresden.de",
+                    "role": "maintainer"
+                }
+            ],
+            "description": "Base plugins, modules, services and API of the Digital Library Framework. It is part of the community-based Kitodo Digitization Suite.",
+            "homepage": "https://www.kitodo.org",
+            "support": {
+                "issues": "https://github.com/kitodo/kitodo-presentation/issues",
+                "source": "https://github.com/kitodo/kitodo-presentation",
+                "docs": "https://docs.typo3.org/p/kitodo/presentation/master/en-us/"
+            },
+            "time": "2021-08-19T13:04:10+00:00"
+        },
+        {
             "name": "masterminds/html5",
             "version": "2.7.5",
             "source": {
@@ -1277,6 +1450,113 @@
                 "source": "https://github.com/php-fig/container/tree/1.1.1"
             },
             "time": "2021-03-05T17:36:06+00:00"
+        },
+        {
+            "name": "psr/http-client",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/http-client.git",
+                "reference": "2dfb5f6c5eff0e91e20e913f8c5452ed95b86621"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/http-client/zipball/2dfb5f6c5eff0e91e20e913f8c5452ed95b86621",
+                "reference": "2dfb5f6c5eff0e91e20e913f8c5452ed95b86621",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.0 || ^8.0",
+                "psr/http-message": "^1.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Http\\Client\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "http://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interface for HTTP clients",
+            "homepage": "https://github.com/php-fig/http-client",
+            "keywords": [
+                "http",
+                "http-client",
+                "psr",
+                "psr-18"
+            ],
+            "support": {
+                "source": "https://github.com/php-fig/http-client/tree/master"
+            },
+            "time": "2020-06-29T06:28:15+00:00"
+        },
+        {
+            "name": "psr/http-factory",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/http-factory.git",
+                "reference": "12ac7fcd07e5b077433f5f2bee95b3a771bf61be"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/http-factory/zipball/12ac7fcd07e5b077433f5f2bee95b3a771bf61be",
+                "reference": "12ac7fcd07e5b077433f5f2bee95b3a771bf61be",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.0.0",
+                "psr/http-message": "^1.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Http\\Message\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "http://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interfaces for PSR-7 HTTP message factories",
+            "keywords": [
+                "factory",
+                "http",
+                "message",
+                "psr",
+                "psr-17",
+                "psr-7",
+                "request",
+                "response"
+            ],
+            "support": {
+                "source": "https://github.com/php-fig/http-factory/tree/master"
+            },
+            "time": "2019-04-30T12:38:16+00:00"
         },
         {
             "name": "psr/http-message",
@@ -1538,6 +1818,187 @@
                 "source": "https://github.com/ralouphie/getallheaders/tree/develop"
             },
             "time": "2019-03-08T08:55:37+00:00"
+        },
+        {
+            "name": "slub/slub-digitalcollections",
+            "version": "v2.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/slub/slub_digitalcollections.git",
+                "reference": "da196ac59c7f014754215b9e7d7f47d1c613891e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/slub/slub_digitalcollections/zipball/da196ac59c7f014754215b9e7d7f47d1c613891e",
+                "reference": "da196ac59c7f014754215b9e7d7f47d1c613891e",
+                "shasum": ""
+            },
+            "require": {
+                "kitodo/presentation": "^3.2|dev-master",
+                "typo3/cms-core": "~9.5.26"
+            },
+            "type": "typo3-cms-extension",
+            "extra": {
+                "typo3/cms": {
+                    "extension-key": "slub_digitalcollections"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Slub\\SlubDigitalcollections\\": "Classes/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Alexander Bigga",
+                    "email": "alexander.bigga@slub-dresden.de",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Norman Steger",
+                    "email": "norman.steger@slub-dresden.de",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Thomas Jung",
+                    "email": "slub@jung.digital",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Templates, Styles and Configuration for the Kitodo.Presentation based Digital Collections by SLUB Dresden",
+            "homepage": "https://github.com/slub/slub_digitalcollections",
+            "keywords": [
+                "extension",
+                "slub_digitalcollections",
+                "typo3"
+            ],
+            "support": {
+                "issues": "https://github.com/slub/slub_digitalcollections/issues",
+                "source": "https://github.com/slub/slub_digitalcollections/tree/v2.0.1"
+            },
+            "time": "2021-05-07T15:16:26+00:00"
+        },
+        {
+            "name": "slub/slub-web-ldp",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "git@git.slub-dresden.de:slub-webseite/slub-web-ldp.git",
+                "reference": "6a07542c30735c22fef6c2395cc85553cc721703"
+            },
+            "require": {
+                "kitodo/presentation": "~3.2|dev-master",
+                "slub/slub-digitalcollections": "^2|dev-master",
+                "typo3/cms-core": "~9.5.26"
+            },
+            "default-branch": true,
+            "type": "typo3-cms-extension",
+            "extra": {
+                "typo3/cms": {
+                    "extension-key": "slub_web_ldp"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Slub\\SlubWebLdp\\": "Classes/"
+                }
+            },
+            "license": [
+                "GPL-3.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Tino Riedel",
+                    "email": "tino.riedel@slub-dresden.de",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Thomas Jung",
+                    "email": "thomas.jung@slub-dresden.de",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Alexander Bigga",
+                    "email": "alexander.bigga@slub-dresden.de",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Templates, Styles and Configuration for Sachsen.Digital",
+            "homepage": "https://git.slub-dresden.de/slub-webseite/slub-web-ldp",
+            "keywords": [
+                "TYPO3",
+                "extension",
+                "slub_web_ldp"
+            ],
+            "time": "2021-05-07T15:31:28+00:00"
+        },
+        {
+            "name": "solarium/solarium",
+            "version": "5.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/solariumphp/solarium.git",
+                "reference": "9208b615cb2ed6f306be6e696431b6b71e4d42db"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/solariumphp/solarium/zipball/9208b615cb2ed6f306be6e696431b6b71e4d42db",
+                "reference": "9208b615cb2ed6f306be6e696431b6b71e4d42db",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "php": "^7.1.3",
+                "psr/http-client": "^1.0",
+                "psr/http-factory": "^1.0",
+                "symfony/event-dispatcher": "^4.3 || ^5.0"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^2.16",
+                "guzzlehttp/guzzle": "^3.8 || ^6.2",
+                "nyholm/psr7": "^1.2",
+                "php-coveralls/php-coveralls": "^2.1",
+                "php-http/guzzle6-adapter": "^2.0",
+                "phpunit/phpunit": "^8.0",
+                "squizlabs/php_codesniffer": "^3.4",
+                "symfony/phpunit-bridge": "^5.0",
+                "zendframework/zend-http": "^2.8"
+            },
+            "suggest": {
+                "minimalcode/search": "Query builder compatible with Solarium, allows simplified solr-query handling"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Solarium\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "See GitHub contributors",
+                    "homepage": "https://github.com/basdenooijer/solarium/contributors"
+                }
+            ],
+            "description": "PHP Solr client",
+            "homepage": "http://www.solarium-project.org",
+            "keywords": [
+                "php",
+                "search",
+                "solr"
+            ],
+            "support": {
+                "issues": "https://github.com/solariumphp/solarium/issues",
+                "source": "https://github.com/solariumphp/solarium/tree/5.x"
+            },
+            "time": "2020-04-03T22:16:30+00:00"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -1929,6 +2390,169 @@
                 }
             ],
             "time": "2021-03-23T23:28:01+00:00"
+        },
+        {
+            "name": "symfony/event-dispatcher",
+            "version": "v4.4.30",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/event-dispatcher.git",
+                "reference": "2fe81680070043c4c80e7cedceb797e34f377bac"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/event-dispatcher/zipball/2fe81680070043c4c80e7cedceb797e34f377bac",
+                "reference": "2fe81680070043c4c80e7cedceb797e34f377bac",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1.3",
+                "symfony/event-dispatcher-contracts": "^1.1",
+                "symfony/polyfill-php80": "^1.16"
+            },
+            "conflict": {
+                "symfony/dependency-injection": "<3.4"
+            },
+            "provide": {
+                "psr/event-dispatcher-implementation": "1.0",
+                "symfony/event-dispatcher-implementation": "1.1"
+            },
+            "require-dev": {
+                "psr/log": "^1|^2|^3",
+                "symfony/config": "^3.4|^4.0|^5.0",
+                "symfony/dependency-injection": "^3.4|^4.0|^5.0",
+                "symfony/error-handler": "~3.4|~4.4",
+                "symfony/expression-language": "^3.4|^4.0|^5.0",
+                "symfony/http-foundation": "^3.4|^4.0|^5.0",
+                "symfony/service-contracts": "^1.1|^2",
+                "symfony/stopwatch": "^3.4|^4.0|^5.0"
+            },
+            "suggest": {
+                "symfony/dependency-injection": "",
+                "symfony/http-kernel": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\EventDispatcher\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Provides tools that allow your application components to communicate with each other by dispatching events and listening to them",
+            "homepage": "https://symfony.com",
+            "support": {
+                "source": "https://github.com/symfony/event-dispatcher/tree/v4.4.30"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2021-08-04T20:31:23+00:00"
+        },
+        {
+            "name": "symfony/event-dispatcher-contracts",
+            "version": "v1.1.9",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/event-dispatcher-contracts.git",
+                "reference": "84e23fdcd2517bf37aecbd16967e83f0caee25a7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/event-dispatcher-contracts/zipball/84e23fdcd2517bf37aecbd16967e83f0caee25a7",
+                "reference": "84e23fdcd2517bf37aecbd16967e83f0caee25a7",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1.3"
+            },
+            "suggest": {
+                "psr/event-dispatcher": "",
+                "symfony/event-dispatcher-implementation": ""
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.1-dev"
+                },
+                "thanks": {
+                    "name": "symfony/contracts",
+                    "url": "https://github.com/symfony/contracts"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Contracts\\EventDispatcher\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nicolas Grekas",
+                    "email": "p@tchwork.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Generic abstractions related to dispatching event",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "abstractions",
+                "contracts",
+                "decoupling",
+                "interfaces",
+                "interoperability",
+                "standards"
+            ],
+            "support": {
+                "source": "https://github.com/symfony/event-dispatcher-contracts/tree/v1.1.9"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2020-07-06T13:19:58+00:00"
         },
         {
             "name": "symfony/expression-language",
@@ -5170,12 +5794,64 @@
                 "source": "https://github.com/TYPO3/Fluid/tree/2.7.0"
             },
             "time": "2021-05-31T06:39:11+00:00"
+        },
+        {
+            "name": "ubl/php-iiif-prezi-reader",
+            "version": "0.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ubleipzig/php-iiif-prezi-reader.git",
+                "reference": "401d246af3fc2857d1a925339fea256ac32824f6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ubleipzig/php-iiif-prezi-reader/zipball/401d246af3fc2857d1a925339fea256ac32824f6",
+                "reference": "401d246af3fc2857d1a925339fea256ac32824f6",
+                "shasum": ""
+            },
+            "require": {
+                "flow/jsonpath": ">=0.4.0",
+                "php": ">=5.6"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~7.5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Ubl\\Iiif\\": "src/Iiif/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Lutz Helm",
+                    "email": "helm@ub.uni-leipzig.de",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Read IIIF Presentation API resources into PHP objects that offer some convenient data extraction methods",
+            "keywords": [
+                "iiif",
+                "iiif-presentation"
+            ],
+            "support": {
+                "issues": "https://github.com/ubleipzig/php-iiif-prezi-reader/issues",
+                "source": "https://github.com/ubleipzig/php-iiif-prezi-reader/tree/0.3.0"
+            },
+            "time": "2019-09-13T13:54:17+00:00"
         }
     ],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "kitodo/presentation": 20,
+        "slub/slub-web-ldp": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
