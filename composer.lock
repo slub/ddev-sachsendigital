@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3440494e46284d6e9451a92cacd08a41",
+    "content-hash": "d1e817d08abffdbabcb36da17ebea6d8",
     "packages": [
         {
             "name": "caseyamcl/phpoaipmh",
@@ -1821,22 +1821,17 @@
         },
         {
             "name": "slub/slub-digitalcollections",
-            "version": "v2.0.1",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/slub/slub_digitalcollections.git",
-                "reference": "da196ac59c7f014754215b9e7d7f47d1c613891e"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/slub/slub_digitalcollections/zipball/da196ac59c7f014754215b9e7d7f47d1c613891e",
-                "reference": "da196ac59c7f014754215b9e7d7f47d1c613891e",
-                "shasum": ""
+                "reference": "e996aacfebac1bdcde87cc32511d55b4252cf4b6"
             },
             "require": {
                 "kitodo/presentation": "^3.2|dev-master",
                 "typo3/cms-core": "~9.5.26"
             },
+            "default-branch": true,
             "type": "typo3-cms-extension",
             "extra": {
                 "typo3/cms": {
@@ -1848,7 +1843,6 @@
                     "Slub\\SlubDigitalcollections\\": "Classes/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "GPL-3.0-or-later"
             ],
@@ -1872,15 +1866,11 @@
             "description": "Templates, Styles and Configuration for the Kitodo.Presentation based Digital Collections by SLUB Dresden",
             "homepage": "https://github.com/slub/slub_digitalcollections",
             "keywords": [
+                "TYPO3",
                 "extension",
-                "slub_digitalcollections",
-                "typo3"
+                "slub_digitalcollections"
             ],
-            "support": {
-                "issues": "https://github.com/slub/slub_digitalcollections/issues",
-                "source": "https://github.com/slub/slub_digitalcollections/tree/v2.0.1"
-            },
-            "time": "2021-05-07T15:16:26+00:00"
+            "time": "2021-07-27T09:17:00+00:00"
         },
         {
             "name": "slub/slub-web-ldp",
@@ -5850,6 +5840,7 @@
     "minimum-stability": "stable",
     "stability-flags": {
         "kitodo/presentation": 20,
+        "slub/slub-digitalcollections": 20,
         "slub/slub-web-ldp": 20
     },
     "prefer-stable": false,
