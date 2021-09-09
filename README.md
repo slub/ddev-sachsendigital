@@ -22,11 +22,12 @@ This repository provides a [DDEV](https://ddev.readthedocs.io/)-based developmen
    ddev launch
    ```
 
-## Backend Login
+## URLs
 
-- URL: [https://sachsendigital.ddev.site/typo3/](https://sachsendigital.ddev.site/typo3/)
-- User: `admin`
-- Password: `adminslub`
+- Backend Login: [https://sachsendigital.ddev.site/typo3/](https://sachsendigital.ddev.site/typo3/)
+   - User: `admin`
+   - Password: `adminslub`
+- Solr: [http://sachsendigital.ddev.site:8983/solr](http://sachsendigital.ddev.site:8983/solr)
 
 ## Database Dump
 

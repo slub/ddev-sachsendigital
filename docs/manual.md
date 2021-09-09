@@ -64,3 +64,27 @@ ddev typo3cms database:updateschema
 - Create folder `Kitodo.Presentation`
 - Let the `Kitodo.Presentation` extension create structures and metadata
 - Open configuration modal for `dlf` extension (this is just to amend `LocalConfiguration.php`)
+
+## Solr
+
+- Adopt the Solr recipe file from DDEV:
+  ```bash
+  wget -O .ddev/docker-compose.solr.yaml https://raw.githubusercontent.com/drud/ddev/v1.18.0-rc1/pkg/servicetest/testdata/TestServices/docker-compose.solr.yaml
+  sed -i 's@- ./solr:/solr-conf@- ./solr/configsets:/var/solr/data/configsets@g' .ddev/docker-compose.solr.yaml
+  sed -i 's@solr-precreate dev /solr-conf@solr-precreate dlfCore0 /var/solr/data/configsets/dlf@g' .ddev/docker-compose.solr.yaml
+  ```
+
+- Copy configset from `kitodo-presentation` repository to `.ddev/solr`:
+  ```bash
+  mkdir -p .ddev/solr
+  cp -a $KITODO_PRESENTATION/Configuration/ApacheSolr/configsets .ddev/solr
+  ```
+
+### In TYPO3 backend
+
+- Open `Kitodo.Presentation` folder in *New Tenant* tab and generate an entry for the Solr core.
+- In *Solr* tab of `dlf` extension configuration, change Solr Server Host from "localhost" to "solr".
+- In *Template* tab, set the following constants on the root page:
+  - `config.kitodo.solr.host = http://solr:8983/solr`
+  - `config.solrCore = 1`
+- In *List* tab, open the `Kitodo.Presenation` folder and switch to `Solr Core (PID 2)`. Enter "dlfCore0" as Solr Core.
