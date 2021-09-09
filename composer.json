@@ -17,9 +17,9 @@
             "url": "https://composer.typo3.org/"
         }
     },
-    "name": "typo3/cms-base-distribution",
-    "description": "TYPO3 CMS Base Distribution",
-    "license": "GPL-2.0-or-later",
+    "name": "slub/ddev-sachsendigital",
+    "description": "DDEV Development Repo for Sachsen.Digital",
+    "license": "GPL-3.0",
     "config": {
         "platform": {
             "php": "7.3"
