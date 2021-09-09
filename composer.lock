@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2c8c985a855c21ae595885677f6dd506",
+    "content-hash": "3440494e46284d6e9451a92cacd08a41",
     "packages": [
         {
             "name": "caseyamcl/phpoaipmh",
@@ -1171,7 +1171,7 @@
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "git@github.com:kitodo/kitodo-presentation.git",
+                "url": "https://github.com/kitodo/kitodo-presentation.git",
                 "reference": "5b7677b7d9be41edd018092d469ab81c39d9771f"
             },
             "require": {
@@ -1887,7 +1887,7 @@
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "git@git.slub-dresden.de:slub-webseite/slub-web-ldp.git",
+                "url": "https://git.slub-dresden.de/slub-webseite/slub-web-ldp.git",
                 "reference": "6a07542c30735c22fef6c2395cc85553cc721703"
             },
             "require": {
