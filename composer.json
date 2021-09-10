@@ -1,12 +1,12 @@
 {
     "repositories": {
         "kitodo-presentation": {
-            "type": "vcs",
-            "url": "git@github.com:kitodo/kitodo-presentation.git"
+            "type": "git",
+            "url": "https://github.com/kitodo/kitodo-presentation.git"
         },
         "slub-web-ldp": {
-            "type": "vcs",
-            "url": "git@git.slub-dresden.de:slub-webseite/slub-web-ldp.git"
+            "type": "git",
+            "url": "https://git.slub-dresden.de/slub-webseite/slub-web-ldp.git"
         },
         "0": {
             "type": "composer",
