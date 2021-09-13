@@ -41,6 +41,7 @@ You may use `scripts/db-export.sh` to dump the database into a plain text file. 
   - `be_sessions`
   - `sys_log`
   - `sys_history`
+  - `sys_refindex`
 - Remove timestamp at the end of the dump.
 
 Also, if you find anything in the published database dump that you feel should not be shared, feel free to open an issue or a pull request.
