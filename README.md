@@ -17,6 +17,11 @@ This repository provides a [DDEV](https://ddev.readthedocs.io/)-based developmen
    ./scripts/quickstart.sh
    ```
 
+1. (Optional) Populate your Solr index by indexing or re-indexing sample documents
+   ```bash
+   ./scripts/doc-reindex.sh
+   ```
+
 1. Open the web page in your browser
    ```bash
    ddev launch

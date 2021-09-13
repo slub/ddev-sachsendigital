@@ -98,3 +98,17 @@ ddev typo3cms database:updateschema
 - In TYPO3 backend, import into the `Kitodo.Presentation` folder:
   - `data/metadata.xml`
   - `data/structures.xml`
+
+## Add Sample Documents
+
+- Fetch URLs of sample documents from an existing Solr server:
+  ```bash
+  ./scripts/doc-list.sh <solr-base-url>
+  ```
+
+- Index sample documents:
+  ```bash
+   ./scripts/doc-index.sh data/ldp_bacharchiv
+   ./scripts/doc-index.sh data/ldp_stadtarchiv_dresden
+   ./scripts/doc-index.sh data/ldp_stuhlbaumuseum
+   ```
