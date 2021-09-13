@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-# This script clones our custom TYPO3 extenions that are used for
+# This script clones our custom TYPO3 extensions that are used for
 # Sachsen.Digital into extensions/ subfolder
 
 SCRIPTDIR=$(dirname "$0")
