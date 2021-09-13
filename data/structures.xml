@@ -1,0 +1,3067 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3RecordDocument>
+	<header type="array">
+		<XMLversion>1.0</XMLversion>
+		<meta type="array">
+			<title></title>
+			<description></description>
+			<notes></notes>
+			<packager_username>typo3@slub-dresden.de</packager_username>
+			<packager_name></packager_name>
+			<packager_email></packager_email>
+			<TYPO3_version>9.5.30</TYPO3_version>
+			<created>Monday 13. September 2021</created>
+		</meta>
+		<static_tables index="relStaticTables" type="array">
+			<tablename index="0">be_users</tablename>
+			<tablename index="1">pages</tablename>
+			<tablename index="2">sys_language</tablename>
+		</static_tables>
+		<excludeMap type="array"></excludeMap>
+		<softrefCfg type="array"></softrefCfg>
+		<extensionDependencies type="array"></extensionDependencies>
+		<charset>utf-8</charset>
+		<records type="array">
+			<table index="tx_dlf_structures" type="array">
+				<rec index="190" type="array">
+					<uid>190</uid>
+					<pid>4</pid>
+					<title>Abbildung</title>
+					<relations index="rels" type="array"></relations>
+					<softrefs type="array"></softrefs>
+				</rec>
+				<rec index="189" type="array">
+					<uid>189</uid>
+					<pid>4</pid>
+					<title>Abbildungskatalog</title>
+					<relations index="rels" type="array"></relations>
+					<softrefs type="array"></softrefs>
+				</rec>
+				<rec index="188" type="array">
+					<uid>188</uid>
+					<pid>4</pid>
+					<title>Abkürzungsverzeichnis</title>
+					<relations index="rels" type="array"></relations>
+					<softrefs type="array"></softrefs>
+				</rec>
+				<rec index="187" type="array">
+					<uid>187</uid>
+					<pid>4</pid>
+					<title>An den Leser</title>
+					<relations index="rels" type="array"></relations>
+					<softrefs type="array"></softrefs>
+				</rec>
+				<rec index="186" type="array">
+					<uid>186</uid>
+					<pid>4</pid>
+					<title>Anhang</title>
+					<relations index="rels" type="array"></relations>
+					<softrefs type="array"></softrefs>
+				</rec>
+				<rec index="185" type="array">
+					<uid>185</uid>
+					<pid>4</pid>
+					<title>Anmerkungen</title>
+					<relations index="rels" type="array"></relations>
+					<softrefs type="array"></softrefs>
+				</rec>
+				<rec index="184" type="array">
+					<uid>184</uid>
+					<pid>4</pid>
+					<title>Artikel</title>
+					<relations index="rels" type="array"></relations>
+					<softrefs type="array"></softrefs>
+				</rec>
+				<rec index="183" type="array">
+					<uid>183</uid>
+					<pid>4</pid>
+					<title>Ausgabe</title>
+					<relations index="rels" type="array">
+						<element index="tx_dlf_structures:109" type="array">
+							<id>109</id>
+							<table>tx_dlf_structures</table>
+						</element>
+					</relations>
+					<softrefs type="array"></softrefs>
+				</rec>
+				<rec index="182" type="array">
+					<uid>182</uid>
+					<pid>4</pid>
+					<title>Ausgestellte Werke</title>
+					<relations index="rels" type="array"></relations>
+					<softrefs type="array"></softrefs>
+				</rec>
+				<rec index="181" type="array">
+					<uid>181</uid>
+					<pid>4</pid>
+					<title>Autorenregister</title>
+					<relations index="rels" type="array"></relations>
+					<softrefs type="array"></softrefs>
+				</rec>
+				<rec index="179" type="array">
+					<uid>179</uid>
+					<pid>4</pid>
+					<title>Band</title>
+					<relations index="rels" type="array">
+						<element index="tx_dlf_structures:109" type="array">
+							<id>109</id>
+							<table>tx_dlf_structures</table>
+						</element>
+					</relations>
+					<softrefs type="array"></softrefs>
+				</rec>
+				<rec index="180" type="array">
+					<uid>180</uid>
+					<pid>4</pid>
+					<title>Band</title>
+					<relations index="rels" type="array">
+						<element index="tx_dlf_structures:109" type="array">
+							<id>109</id>
+							<table>tx_dlf_structures</table>
+						</element>
+					</relations>
+					<softrefs type="array"></softrefs>
+				</rec>
+				<rec index="178" type="array">
+					<uid>178</uid>
+					<pid>4</pid>
+					<title>Bandregister</title>
+					<relations index="rels" type="array"></relations>
+					<softrefs type="array"></softrefs>
+				</rec>
+				<rec index="177" type="array">
+					<uid>177</uid>
+					<pid>4</pid>
+					<title>Beigefügtes Werk</title>
+					<relations index="rels" type="array"></relations>
+					<softrefs type="array"></softrefs>
+				</rec>
+				<rec index="176" type="array">
+					<uid>176</uid>
+					<pid>4</pid>
+					<title>Beilage</title>
+					<relations index="rels" type="array"></relations>
+					<softrefs type="array"></softrefs>
+				</rec>
+				<rec index="175" type="array">
+					<uid>175</uid>
+					<pid>4</pid>
+					<title>Bestand</title>
+					<relations index="rels" type="array">
+						<element index="tx_dlf_structures:109" type="array">
+							<id>109</id>
+							<table>tx_dlf_structures</table>
+						</element>
+					</relations>
+					<softrefs type="array"></softrefs>
+				</rec>
+				<rec index="174" type="array">
+					<uid>174</uid>
+					<pid>4</pid>
+					<title>Bildbeschreibung</title>
+					<relations index="rels" type="array"></relations>
+					<softrefs type="array"></softrefs>
+				</rec>
+				<rec index="173" type="array">
+					<uid>173</uid>
+					<pid>4</pid>
+					<title>Brief</title>
+					<relations index="rels" type="array"></relations>
+					<softrefs type="array"></softrefs>
+				</rec>
+				<rec index="172" type="array">
+					<uid>172</uid>
+					<pid>4</pid>
+					<title>Chronogramm</title>
+					<relations index="rels" type="array"></relations>
+					<softrefs type="array"></softrefs>
+				</rec>
+				<rec index="171" type="array">
+					<uid>171</uid>
+					<pid>4</pid>
+					<title>Chronologie</title>
+					<relations index="rels" type="array"></relations>
+					<softrefs type="array"></softrefs>
+				</rec>
+				<rec index="170" type="array">
+					<uid>170</uid>
+					<pid>4</pid>
+					<title>Danksagung</title>
+					<relations index="rels" type="array"></relations>
+					<softrefs type="array"></softrefs>
+				</rec>
+				<rec index="167" type="array">
+					<uid>167</uid>
+					<pid>4</pid>
+					<title>Deckel</title>
+					<relations index="rels" type="array"></relations>
+					<softrefs type="array"></softrefs>
+				</rec>
+				<rec index="168" type="array">
+					<uid>168</uid>
+					<pid>4</pid>
+					<title>Deckel</title>
+					<relations index="rels" type="array"></relations>
+					<softrefs type="array"></softrefs>
+				</rec>
+				<rec index="169" type="array">
+					<uid>169</uid>
+					<pid>4</pid>
+					<title>Deckel</title>
+					<relations index="rels" type="array"></relations>
+					<softrefs type="array"></softrefs>
+				</rec>
+				<rec index="166" type="array">
+					<uid>166</uid>
+					<pid>4</pid>
+					<title>Einband</title>
+					<relations index="rels" type="array"></relations>
+					<softrefs type="array"></softrefs>
+				</rec>
+				<rec index="165" type="array">
+					<uid>165</uid>
+					<pid>4</pid>
+					<title>Einband Sammelband</title>
+					<relations index="rels" type="array"></relations>
+					<softrefs type="array"></softrefs>
+				</rec>
+				<rec index="164" type="array">
+					<uid>164</uid>
+					<pid>4</pid>
+					<title>Einleitung</title>
+					<relations index="rels" type="array"></relations>
+					<softrefs type="array"></softrefs>
+				</rec>
+				<rec index="163" type="array">
+					<uid>163</uid>
+					<pid>4</pid>
+					<title>Eintrag</title>
+					<relations index="rels" type="array"></relations>
+					<softrefs type="array"></softrefs>
+				</rec>
+				<rec index="162" type="array">
+					<uid>162</uid>
+					<pid>4</pid>
+					<title>Enthaltenes Werk</title>
+					<relations index="rels" type="array"></relations>
+					<softrefs type="array"></softrefs>
+				</rec>
+				<rec index="161" type="array">
+					<uid>161</uid>
+					<pid>4</pid>
+					<title>Ephemera</title>
+					<relations index="rels" type="array">
+						<element index="tx_dlf_structures:109" type="array">
+							<id>109</id>
+							<table>tx_dlf_structures</table>
+						</element>
+					</relations>
+					<softrefs type="array"></softrefs>
+				</rec>
+				<rec index="160" type="array">
+					<uid>160</uid>
+					<pid>4</pid>
+					<title>Epilog</title>
+					<relations index="rels" type="array"></relations>
+					<softrefs type="array"></softrefs>
+				</rec>
+				<rec index="159" type="array">
+					<uid>159</uid>
+					<pid>4</pid>
+					<title>Errata</title>
+					<relations index="rels" type="array"></relations>
+					<softrefs type="array"></softrefs>
+				</rec>
+				<rec index="158" type="array">
+					<uid>158</uid>
+					<pid>4</pid>
+					<title>Faszikel</title>
+					<relations index="rels" type="array"></relations>
+					<softrefs type="array"></softrefs>
+				</rec>
+				<rec index="157" type="array">
+					<uid>157</uid>
+					<pid>4</pid>
+					<title>Gesamtregister</title>
+					<relations index="rels" type="array"></relations>
+					<softrefs type="array"></softrefs>
+				</rec>
+				<rec index="156" type="array">
+					<uid>156</uid>
+					<pid>4</pid>
+					<title>Grundriss</title>
+					<relations index="rels" type="array"></relations>
+					<softrefs type="array"></softrefs>
+				</rec>
+				<rec index="155" type="array">
+					<uid>155</uid>
+					<pid>4</pid>
+					<title>Handschrift</title>
+					<relations index="rels" type="array">
+						<element index="tx_dlf_structures:109" type="array">
+							<id>109</id>
+							<table>tx_dlf_structures</table>
+						</element>
+					</relations>
+					<softrefs type="array"></softrefs>
+				</rec>
+				<rec index="154" type="array">
+					<uid>154</uid>
+					<pid>4</pid>
+					<title>Heft</title>
+					<relations index="rels" type="array"></relations>
+					<softrefs type="array"></softrefs>
+				</rec>
+				<rec index="153" type="array">
+					<uid>153</uid>
+					<pid>4</pid>
+					<title>Illustrationsliste</title>
+					<relations index="rels" type="array"></relations>
+					<softrefs type="array"></softrefs>
+				</rec>
+				<rec index="152" type="array">
+					<uid>152</uid>
+					<pid>4</pid>
+					<title>Impressum</title>
+					<relations index="rels" type="array"></relations>
+					<softrefs type="array"></softrefs>
+				</rec>
+				<rec index="151" type="array">
+					<uid>151</uid>
+					<pid>4</pid>
+					<title>Inhaltsverzeichnis</title>
+					<relations index="rels" type="array"></relations>
+					<softrefs type="array"></softrefs>
+				</rec>
+				<rec index="150" type="array">
+					<uid>150</uid>
+					<pid>4</pid>
+					<title>Jahr</title>
+					<relations index="rels" type="array">
+						<element index="tx_dlf_structures:109" type="array">
+							<id>109</id>
+							<table>tx_dlf_structures</table>
+						</element>
+					</relations>
+					<softrefs type="array"></softrefs>
+				</rec>
+				<rec index="149" type="array">
+					<uid>149</uid>
+					<pid>4</pid>
+					<title>Kapitel</title>
+					<relations index="rels" type="array"></relations>
+					<softrefs type="array"></softrefs>
+				</rec>
+				<rec index="148" type="array">
+					<uid>148</uid>
+					<pid>4</pid>
+					<title>Karte</title>
+					<relations index="rels" type="array"></relations>
+					<softrefs type="array"></softrefs>
+				</rec>
+				<rec index="147" type="array">
+					<uid>147</uid>
+					<pid>4</pid>
+					<title>Kartenliste</title>
+					<relations index="rels" type="array"></relations>
+					<softrefs type="array"></softrefs>
+				</rec>
+				<rec index="146" type="array">
+					<uid>146</uid>
+					<pid>4</pid>
+					<title>Kolophon</title>
+					<relations index="rels" type="array"></relations>
+					<softrefs type="array"></softrefs>
+				</rec>
+				<rec index="145" type="array">
+					<uid>145</uid>
+					<pid>4</pid>
+					<title>Konvolut</title>
+					<relations index="rels" type="array">
+						<element index="tx_dlf_structures:109" type="array">
+							<id>109</id>
+							<table>tx_dlf_structures</table>
+						</element>
+					</relations>
+					<softrefs type="array"></softrefs>
+				</rec>
+				<rec index="144" type="array">
+					<uid>144</uid>
+					<pid>4</pid>
+					<title>Kupfertitel</title>
+					<relations index="rels" type="array"></relations>
+					<softrefs type="array"></softrefs>
+				</rec>
+				<rec index="143" type="array">
+					<uid>143</uid>
+					<pid>4</pid>
+					<title>Lebenslauf</title>
+					<relations index="rels" type="array"></relations>
+					<softrefs type="array"></softrefs>
+				</rec>
+				<rec index="142" type="array">
+					<uid>142</uid>
+					<pid>4</pid>
+					<title>Literaturverzeichnis</title>
+					<relations index="rels" type="array"></relations>
+					<softrefs type="array"></softrefs>
+				</rec>
+				<rec index="141" type="array">
+					<uid>141</uid>
+					<pid>4</pid>
+					<title>Mappe</title>
+					<relations index="rels" type="array"></relations>
+					<softrefs type="array"></softrefs>
+				</rec>
+				<rec index="140" type="array">
+					<uid>140</uid>
+					<pid>4</pid>
+					<title>Marginalie</title>
+					<relations index="rels" type="array"></relations>
+					<softrefs type="array"></softrefs>
+				</rec>
+				<rec index="139" type="array">
+					<uid>139</uid>
+					<pid>4</pid>
+					<title>Mehrbändiges Werk</title>
+					<relations index="rels" type="array">
+						<element index="tx_dlf_structures:109" type="array">
+							<id>109</id>
+							<table>tx_dlf_structures</table>
+						</element>
+					</relations>
+					<softrefs type="array"></softrefs>
+				</rec>
+				<rec index="138" type="array">
+					<uid>138</uid>
+					<pid>4</pid>
+					<title>Mehrteilige Handschrift</title>
+					<relations index="rels" type="array">
+						<element index="tx_dlf_structures:109" type="array">
+							<id>109</id>
+							<table>tx_dlf_structures</table>
+						</element>
+					</relations>
+					<softrefs type="array"></softrefs>
+				</rec>
+				<rec index="137" type="array">
+					<uid>137</uid>
+					<pid>4</pid>
+					<title>Monat</title>
+					<relations index="rels" type="array"></relations>
+					<softrefs type="array"></softrefs>
+				</rec>
+				<rec index="136" type="array">
+					<uid>136</uid>
+					<pid>4</pid>
+					<title>Monographie</title>
+					<relations index="rels" type="array">
+						<element index="tx_dlf_structures:109" type="array">
+							<id>109</id>
+							<table>tx_dlf_structures</table>
+						</element>
+					</relations>
+					<softrefs type="array"></softrefs>
+				</rec>
+				<rec index="135" type="array">
+					<uid>135</uid>
+					<pid>4</pid>
+					<title>Musiknotation</title>
+					<relations index="rels" type="array"></relations>
+					<softrefs type="array"></softrefs>
+				</rec>
+				<rec index="134" type="array">
+					<uid>134</uid>
+					<pid>4</pid>
+					<title>Nachruf</title>
+					<relations index="rels" type="array"></relations>
+					<softrefs type="array"></softrefs>
+				</rec>
+				<rec index="133" type="array">
+					<uid>133</uid>
+					<pid>4</pid>
+					<title>Nachtrag</title>
+					<relations index="rels" type="array"></relations>
+					<softrefs type="array"></softrefs>
+				</rec>
+				<rec index="132" type="array">
+					<uid>132</uid>
+					<pid>4</pid>
+					<title>Ortsregister</title>
+					<relations index="rels" type="array"></relations>
+					<softrefs type="array"></softrefs>
+				</rec>
+				<rec index="131" type="array">
+					<uid>131</uid>
+					<pid>4</pid>
+					<title>Partitur</title>
+					<relations index="rels" type="array"></relations>
+					<softrefs type="array"></softrefs>
+				</rec>
+				<rec index="130" type="array">
+					<uid>130</uid>
+					<pid>4</pid>
+					<title>Personenregister</title>
+					<relations index="rels" type="array"></relations>
+					<softrefs type="array"></softrefs>
+				</rec>
+				<rec index="129" type="array">
+					<uid>129</uid>
+					<pid>4</pid>
+					<title>Protokoll</title>
+					<relations index="rels" type="array"></relations>
+					<softrefs type="array"></softrefs>
+				</rec>
+				<rec index="128" type="array">
+					<uid>128</uid>
+					<pid>4</pid>
+					<title>Redebeitrag</title>
+					<relations index="rels" type="array"></relations>
+					<softrefs type="array"></softrefs>
+				</rec>
+				<rec index="127" type="array">
+					<uid>127</uid>
+					<pid>4</pid>
+					<title>Register</title>
+					<relations index="rels" type="array"></relations>
+					<softrefs type="array"></softrefs>
+				</rec>
+				<rec index="126" type="array">
+					<uid>126</uid>
+					<pid>4</pid>
+					<title>Rücken</title>
+					<relations index="rels" type="array"></relations>
+					<softrefs type="array"></softrefs>
+				</rec>
+				<rec index="125" type="array">
+					<uid>125</uid>
+					<pid>4</pid>
+					<title>Sachregister</title>
+					<relations index="rels" type="array"></relations>
+					<softrefs type="array"></softrefs>
+				</rec>
+				<rec index="124" type="array">
+					<uid>124</uid>
+					<pid>4</pid>
+					<title>Seite</title>
+					<relations index="rels" type="array"></relations>
+					<softrefs type="array"></softrefs>
+				</rec>
+				<rec index="123" type="array">
+					<uid>123</uid>
+					<pid>4</pid>
+					<title>Sonstiges</title>
+					<relations index="rels" type="array"></relations>
+					<softrefs type="array"></softrefs>
+				</rec>
+				<rec index="122" type="array">
+					<uid>122</uid>
+					<pid>4</pid>
+					<title>Spezialregister</title>
+					<relations index="rels" type="array"></relations>
+					<softrefs type="array"></softrefs>
+				</rec>
+				<rec index="121" type="array">
+					<uid>121</uid>
+					<pid>4</pid>
+					<title>Spiegel</title>
+					<relations index="rels" type="array"></relations>
+					<softrefs type="array"></softrefs>
+				</rec>
+				<rec index="120" type="array">
+					<uid>120</uid>
+					<pid>4</pid>
+					<title>Sprungmarke</title>
+					<relations index="rels" type="array"></relations>
+					<softrefs type="array"></softrefs>
+				</rec>
+				<rec index="119" type="array">
+					<uid>119</uid>
+					<pid>4</pid>
+					<title>Stimme</title>
+					<relations index="rels" type="array"></relations>
+					<softrefs type="array"></softrefs>
+				</rec>
+				<rec index="118" type="array">
+					<uid>118</uid>
+					<pid>4</pid>
+					<title>Straße</title>
+					<relations index="rels" type="array"></relations>
+					<softrefs type="array"></softrefs>
+				</rec>
+				<rec index="117" type="array">
+					<uid>117</uid>
+					<pid>4</pid>
+					<title>Tabelle</title>
+					<relations index="rels" type="array"></relations>
+					<softrefs type="array"></softrefs>
+				</rec>
+				<rec index="116" type="array">
+					<uid>116</uid>
+					<pid>4</pid>
+					<title>Tabellenbeschreibung</title>
+					<relations index="rels" type="array"></relations>
+					<softrefs type="array"></softrefs>
+				</rec>
+				<rec index="115" type="array">
+					<uid>115</uid>
+					<pid>4</pid>
+					<title>Tabellenliste</title>
+					<relations index="rels" type="array"></relations>
+					<softrefs type="array"></softrefs>
+				</rec>
+				<rec index="114" type="array">
+					<uid>114</uid>
+					<pid>4</pid>
+					<title>Tag</title>
+					<relations index="rels" type="array"></relations>
+					<softrefs type="array"></softrefs>
+				</rec>
+				<rec index="113" type="array">
+					<uid>113</uid>
+					<pid>4</pid>
+					<title>Teil einer Handschrift</title>
+					<relations index="rels" type="array">
+						<element index="tx_dlf_structures:109" type="array">
+							<id>109</id>
+							<table>tx_dlf_structures</table>
+						</element>
+					</relations>
+					<softrefs type="array"></softrefs>
+				</rec>
+				<rec index="112" type="array">
+					<uid>112</uid>
+					<pid>4</pid>
+					<title>Teilwerk</title>
+					<relations index="rels" type="array"></relations>
+					<softrefs type="array"></softrefs>
+				</rec>
+				<rec index="111" type="array">
+					<uid>111</uid>
+					<pid>4</pid>
+					<title>Text</title>
+					<relations index="rels" type="array"></relations>
+					<softrefs type="array"></softrefs>
+				</rec>
+				<rec index="110" type="array">
+					<uid>110</uid>
+					<pid>4</pid>
+					<title>Thesen</title>
+					<relations index="rels" type="array"></relations>
+					<softrefs type="array"></softrefs>
+				</rec>
+				<rec index="109" type="array">
+					<uid>109</uid>
+					<pid>4</pid>
+					<title>Titelblatt</title>
+					<relations index="rels" type="array"></relations>
+					<softrefs type="array"></softrefs>
+				</rec>
+				<rec index="108" type="array">
+					<uid>108</uid>
+					<pid>4</pid>
+					<title>Umschlag</title>
+					<relations index="rels" type="array"></relations>
+					<softrefs type="array"></softrefs>
+				</rec>
+				<rec index="107" type="array">
+					<uid>107</uid>
+					<pid>4</pid>
+					<title>Unterbestand</title>
+					<relations index="rels" type="array"></relations>
+					<softrefs type="array"></softrefs>
+				</rec>
+				<rec index="106" type="array">
+					<uid>106</uid>
+					<pid>4</pid>
+					<title>Vermerk</title>
+					<relations index="rels" type="array"></relations>
+					<softrefs type="array"></softrefs>
+				</rec>
+				<rec index="105" type="array">
+					<uid>105</uid>
+					<pid>4</pid>
+					<title>Vorsatz</title>
+					<relations index="rels" type="array"></relations>
+					<softrefs type="array"></softrefs>
+				</rec>
+				<rec index="104" type="array">
+					<uid>104</uid>
+					<pid>4</pid>
+					<title>Vorwort</title>
+					<relations index="rels" type="array"></relations>
+					<softrefs type="array"></softrefs>
+				</rec>
+				<rec index="103" type="array">
+					<uid>103</uid>
+					<pid>4</pid>
+					<title>Wasserzeichen</title>
+					<relations index="rels" type="array"></relations>
+					<softrefs type="array"></softrefs>
+				</rec>
+				<rec index="102" type="array">
+					<uid>102</uid>
+					<pid>4</pid>
+					<title>Werbung</title>
+					<relations index="rels" type="array"></relations>
+					<softrefs type="array"></softrefs>
+				</rec>
+				<rec index="101" type="array">
+					<uid>101</uid>
+					<pid>4</pid>
+					<title>Widmung</title>
+					<relations index="rels" type="array"></relations>
+					<softrefs type="array"></softrefs>
+				</rec>
+				<rec index="100" type="array">
+					<uid>100</uid>
+					<pid>4</pid>
+					<title>Zeitschrift</title>
+					<relations index="rels" type="array">
+						<element index="tx_dlf_structures:109" type="array">
+							<id>109</id>
+							<table>tx_dlf_structures</table>
+						</element>
+					</relations>
+					<softrefs type="array"></softrefs>
+				</rec>
+				<rec index="99" type="array">
+					<uid>99</uid>
+					<pid>4</pid>
+					<title>Zeitschriftenteil</title>
+					<relations index="rels" type="array"></relations>
+					<softrefs type="array"></softrefs>
+				</rec>
+				<rec index="98" type="array">
+					<uid>98</uid>
+					<pid>4</pid>
+					<title>Zeitung</title>
+					<relations index="rels" type="array">
+						<element index="tx_dlf_structures:109" type="array">
+							<id>109</id>
+							<table>tx_dlf_structures</table>
+						</element>
+					</relations>
+					<softrefs type="array"></softrefs>
+				</rec>
+				<rec index="97" type="array">
+					<uid>97</uid>
+					<pid>4</pid>
+					<title>Zensur</title>
+					<relations index="rels" type="array"></relations>
+					<softrefs type="array"></softrefs>
+				</rec>
+			</table>
+		</records>
+		<pid_lookup type="array">
+			<page_contents index="4" type="array">
+				<table index="tx_dlf_structures" type="array">
+					<item index="190">1</item>
+					<item index="189">1</item>
+					<item index="188">1</item>
+					<item index="187">1</item>
+					<item index="186">1</item>
+					<item index="185">1</item>
+					<item index="184">1</item>
+					<item index="183">1</item>
+					<item index="182">1</item>
+					<item index="181">1</item>
+					<item index="179">1</item>
+					<item index="180">1</item>
+					<item index="178">1</item>
+					<item index="177">1</item>
+					<item index="176">1</item>
+					<item index="175">1</item>
+					<item index="174">1</item>
+					<item index="173">1</item>
+					<item index="172">1</item>
+					<item index="171">1</item>
+					<item index="170">1</item>
+					<item index="167">1</item>
+					<item index="168">1</item>
+					<item index="169">1</item>
+					<item index="166">1</item>
+					<item index="165">1</item>
+					<item index="164">1</item>
+					<item index="163">1</item>
+					<item index="162">1</item>
+					<item index="161">1</item>
+					<item index="160">1</item>
+					<item index="159">1</item>
+					<item index="158">1</item>
+					<item index="157">1</item>
+					<item index="156">1</item>
+					<item index="155">1</item>
+					<item index="154">1</item>
+					<item index="153">1</item>
+					<item index="152">1</item>
+					<item index="151">1</item>
+					<item index="150">1</item>
+					<item index="149">1</item>
+					<item index="148">1</item>
+					<item index="147">1</item>
+					<item index="146">1</item>
+					<item index="145">1</item>
+					<item index="144">1</item>
+					<item index="143">1</item>
+					<item index="142">1</item>
+					<item index="141">1</item>
+					<item index="140">1</item>
+					<item index="139">1</item>
+					<item index="138">1</item>
+					<item index="137">1</item>
+					<item index="136">1</item>
+					<item index="135">1</item>
+					<item index="134">1</item>
+					<item index="133">1</item>
+					<item index="132">1</item>
+					<item index="131">1</item>
+					<item index="130">1</item>
+					<item index="129">1</item>
+					<item index="128">1</item>
+					<item index="127">1</item>
+					<item index="126">1</item>
+					<item index="125">1</item>
+					<item index="124">1</item>
+					<item index="123">1</item>
+					<item index="122">1</item>
+					<item index="121">1</item>
+					<item index="120">1</item>
+					<item index="119">1</item>
+					<item index="118">1</item>
+					<item index="117">1</item>
+					<item index="116">1</item>
+					<item index="115">1</item>
+					<item index="114">1</item>
+					<item index="113">1</item>
+					<item index="112">1</item>
+					<item index="111">1</item>
+					<item index="110">1</item>
+					<item index="109">1</item>
+					<item index="108">1</item>
+					<item index="107">1</item>
+					<item index="106">1</item>
+					<item index="105">1</item>
+					<item index="104">1</item>
+					<item index="103">1</item>
+					<item index="102">1</item>
+					<item index="101">1</item>
+					<item index="100">1</item>
+					<item index="99">1</item>
+					<item index="98">1</item>
+					<item index="97">1</item>
+				</table>
+			</page_contents>
+		</pid_lookup>
+	</header>
+	<records type="array">
+		<tablerow index="tx_dlf_structures:190" type="array">
+			<fieldlist index="data" type="array">
+				<field index="uid" type="integer">190</field>
+				<field index="pid" type="integer">4</field>
+				<field index="tstamp" type="integer">1606489910</field>
+				<field index="crdate" type="integer">1606489910</field>
+				<field index="cruser_id" type="integer">1</field>
+				<field index="deleted" type="integer">0</field>
+				<field index="sys_language_uid" type="integer">0</field>
+				<field index="l18n_parent" type="integer">0</field>
+				<field index="l18n_diffsource">a:7:{s:8:&quot;toplevel&quot;;N;s:5:&quot;label&quot;;N;s:10:&quot;index_name&quot;;N;s:8:&quot;oai_name&quot;;N;s:16:&quot;sys_language_uid&quot;;N;s:6:&quot;hidden&quot;;N;s:6:&quot;status&quot;;N;}</field>
+				<field index="hidden" type="integer">0</field>
+				<field index="l10n_state" type="NULL"></field>
+				<field index="toplevel" type="integer">0</field>
+				<field index="label">Abbildung</field>
+				<field index="index_name">figure</field>
+				<field index="oai_name">illustration</field>
+				<field index="thumbnail" type="integer">0</field>
+				<field index="status" type="integer">0</field>
+			</fieldlist>
+			<related index="rels" type="array"></related>
+		</tablerow>
+		<tablerow index="tx_dlf_structures:189" type="array">
+			<fieldlist index="data" type="array">
+				<field index="uid" type="integer">189</field>
+				<field index="pid" type="integer">4</field>
+				<field index="tstamp" type="integer">1606489910</field>
+				<field index="crdate" type="integer">1606489910</field>
+				<field index="cruser_id" type="integer">1</field>
+				<field index="deleted" type="integer">0</field>
+				<field index="sys_language_uid" type="integer">0</field>
+				<field index="l18n_parent" type="integer">0</field>
+				<field index="l18n_diffsource">a:5:{s:8:&quot;toplevel&quot;;N;s:5:&quot;label&quot;;N;s:10:&quot;index_name&quot;;N;s:16:&quot;sys_language_uid&quot;;N;s:6:&quot;hidden&quot;;N;}</field>
+				<field index="hidden" type="integer">0</field>
+				<field index="l10n_state" type="NULL"></field>
+				<field index="toplevel" type="integer">0</field>
+				<field index="label">Abbildungskatalog</field>
+				<field index="index_name">illustration_catalogue</field>
+				<field index="oai_name"></field>
+				<field index="thumbnail" type="integer">0</field>
+				<field index="status" type="integer">0</field>
+			</fieldlist>
+			<related index="rels" type="array"></related>
+		</tablerow>
+		<tablerow index="tx_dlf_structures:188" type="array">
+			<fieldlist index="data" type="array">
+				<field index="uid" type="integer">188</field>
+				<field index="pid" type="integer">4</field>
+				<field index="tstamp" type="integer">1606489910</field>
+				<field index="crdate" type="integer">1606489910</field>
+				<field index="cruser_id" type="integer">1</field>
+				<field index="deleted" type="integer">0</field>
+				<field index="sys_language_uid" type="integer">0</field>
+				<field index="l18n_parent" type="integer">0</field>
+				<field index="l18n_diffsource">a:7:{s:8:&quot;toplevel&quot;;N;s:5:&quot;label&quot;;N;s:10:&quot;index_name&quot;;N;s:8:&quot;oai_name&quot;;N;s:16:&quot;sys_language_uid&quot;;N;s:6:&quot;hidden&quot;;N;s:6:&quot;status&quot;;N;}</field>
+				<field index="hidden" type="integer">0</field>
+				<field index="l10n_state" type="NULL"></field>
+				<field index="toplevel" type="integer">0</field>
+				<field index="label">Abkürzungsverzeichnis</field>
+				<field index="index_name">table_abbreviations</field>
+				<field index="oai_name">table</field>
+				<field index="thumbnail" type="integer">0</field>
+				<field index="status" type="integer">0</field>
+			</fieldlist>
+			<related index="rels" type="array"></related>
+		</tablerow>
+		<tablerow index="tx_dlf_structures:187" type="array">
+			<fieldlist index="data" type="array">
+				<field index="uid" type="integer">187</field>
+				<field index="pid" type="integer">4</field>
+				<field index="tstamp" type="integer">1606489910</field>
+				<field index="crdate" type="integer">1606489910</field>
+				<field index="cruser_id" type="integer">1</field>
+				<field index="deleted" type="integer">0</field>
+				<field index="sys_language_uid" type="integer">0</field>
+				<field index="l18n_parent" type="integer">0</field>
+				<field index="l18n_diffsource">a:7:{s:8:&quot;toplevel&quot;;N;s:5:&quot;label&quot;;N;s:10:&quot;index_name&quot;;N;s:8:&quot;oai_name&quot;;N;s:16:&quot;sys_language_uid&quot;;N;s:6:&quot;hidden&quot;;N;s:6:&quot;status&quot;;N;}</field>
+				<field index="hidden" type="integer">0</field>
+				<field index="l10n_state" type="NULL"></field>
+				<field index="toplevel" type="integer">0</field>
+				<field index="label">An den Leser</field>
+				<field index="index_name">ad_lectorem</field>
+				<field index="oai_name">section</field>
+				<field index="thumbnail" type="integer">0</field>
+				<field index="status" type="integer">0</field>
+			</fieldlist>
+			<related index="rels" type="array"></related>
+		</tablerow>
+		<tablerow index="tx_dlf_structures:186" type="array">
+			<fieldlist index="data" type="array">
+				<field index="uid" type="integer">186</field>
+				<field index="pid" type="integer">4</field>
+				<field index="tstamp" type="integer">1606489910</field>
+				<field index="crdate" type="integer">1606489910</field>
+				<field index="cruser_id" type="integer">1</field>
+				<field index="deleted" type="integer">0</field>
+				<field index="sys_language_uid" type="integer">0</field>
+				<field index="l18n_parent" type="integer">0</field>
+				<field index="l18n_diffsource">a:7:{s:8:&quot;toplevel&quot;;N;s:5:&quot;label&quot;;N;s:10:&quot;index_name&quot;;N;s:8:&quot;oai_name&quot;;N;s:16:&quot;sys_language_uid&quot;;N;s:6:&quot;hidden&quot;;N;s:6:&quot;status&quot;;N;}</field>
+				<field index="hidden" type="integer">0</field>
+				<field index="l10n_state" type="NULL"></field>
+				<field index="toplevel" type="integer">0</field>
+				<field index="label">Anhang</field>
+				<field index="index_name">appendix</field>
+				<field index="oai_name">section</field>
+				<field index="thumbnail" type="integer">0</field>
+				<field index="status" type="integer">0</field>
+			</fieldlist>
+			<related index="rels" type="array"></related>
+		</tablerow>
+		<tablerow index="tx_dlf_structures:185" type="array">
+			<fieldlist index="data" type="array">
+				<field index="uid" type="integer">185</field>
+				<field index="pid" type="integer">4</field>
+				<field index="tstamp" type="integer">1606489910</field>
+				<field index="crdate" type="integer">1606489910</field>
+				<field index="cruser_id" type="integer">1</field>
+				<field index="deleted" type="integer">0</field>
+				<field index="sys_language_uid" type="integer">0</field>
+				<field index="l18n_parent" type="integer">0</field>
+				<field index="l18n_diffsource">a:7:{s:8:&quot;toplevel&quot;;N;s:5:&quot;label&quot;;N;s:10:&quot;index_name&quot;;N;s:8:&quot;oai_name&quot;;N;s:16:&quot;sys_language_uid&quot;;N;s:6:&quot;hidden&quot;;N;s:6:&quot;status&quot;;N;}</field>
+				<field index="hidden" type="integer">0</field>
+				<field index="l10n_state" type="NULL"></field>
+				<field index="toplevel" type="integer">0</field>
+				<field index="label">Anmerkungen</field>
+				<field index="index_name">remarks</field>
+				<field index="oai_name">annotation</field>
+				<field index="thumbnail" type="integer">0</field>
+				<field index="status" type="integer">0</field>
+			</fieldlist>
+			<related index="rels" type="array"></related>
+		</tablerow>
+		<tablerow index="tx_dlf_structures:184" type="array">
+			<fieldlist index="data" type="array">
+				<field index="uid" type="integer">184</field>
+				<field index="pid" type="integer">4</field>
+				<field index="tstamp" type="integer">1606489910</field>
+				<field index="crdate" type="integer">1606489910</field>
+				<field index="cruser_id" type="integer">1</field>
+				<field index="deleted" type="integer">0</field>
+				<field index="sys_language_uid" type="integer">0</field>
+				<field index="l18n_parent" type="integer">0</field>
+				<field index="l18n_diffsource">a:7:{s:8:&quot;toplevel&quot;;N;s:5:&quot;label&quot;;N;s:10:&quot;index_name&quot;;N;s:8:&quot;oai_name&quot;;N;s:16:&quot;sys_language_uid&quot;;N;s:6:&quot;hidden&quot;;N;s:6:&quot;status&quot;;N;}</field>
+				<field index="hidden" type="integer">0</field>
+				<field index="l10n_state" type="NULL"></field>
+				<field index="toplevel" type="integer">0</field>
+				<field index="label">Artikel</field>
+				<field index="index_name">article</field>
+				<field index="oai_name"></field>
+				<field index="thumbnail" type="integer">0</field>
+				<field index="status" type="integer">0</field>
+			</fieldlist>
+			<related index="rels" type="array"></related>
+		</tablerow>
+		<tablerow index="tx_dlf_structures:183" type="array">
+			<fieldlist index="data" type="array">
+				<field index="uid" type="integer">183</field>
+				<field index="pid" type="integer">4</field>
+				<field index="tstamp" type="integer">1606489910</field>
+				<field index="crdate" type="integer">1606489910</field>
+				<field index="cruser_id" type="integer">1</field>
+				<field index="deleted" type="integer">0</field>
+				<field index="sys_language_uid" type="integer">0</field>
+				<field index="l18n_parent" type="integer">0</field>
+				<field index="l18n_diffsource">a:1:{s:9:&quot;thumbnail&quot;;N;}</field>
+				<field index="hidden" type="integer">0</field>
+				<field index="l10n_state" type="NULL"></field>
+				<field index="toplevel" type="integer">1</field>
+				<field index="label">Ausgabe</field>
+				<field index="index_name">issue</field>
+				<field index="oai_name">issue</field>
+				<field index="thumbnail" type="integer">109</field>
+				<field index="status" type="integer">0</field>
+			</fieldlist>
+			<related index="rels" type="array">
+				<field index="thumbnail" type="array">
+					<type>db</type>
+					<relations index="itemArray" type="array">
+						<element index="0" type="array">
+							<id>109</id>
+							<table>tx_dlf_structures</table>
+						</element>
+					</relations>
+				</field>
+			</related>
+		</tablerow>
+		<tablerow index="tx_dlf_structures:182" type="array">
+			<fieldlist index="data" type="array">
+				<field index="uid" type="integer">182</field>
+				<field index="pid" type="integer">4</field>
+				<field index="tstamp" type="integer">1606489910</field>
+				<field index="crdate" type="integer">1606489910</field>
+				<field index="cruser_id" type="integer">1</field>
+				<field index="deleted" type="integer">0</field>
+				<field index="sys_language_uid" type="integer">0</field>
+				<field index="l18n_parent" type="integer">0</field>
+				<field index="l18n_diffsource">a:5:{s:8:&quot;toplevel&quot;;N;s:5:&quot;label&quot;;N;s:10:&quot;index_name&quot;;N;s:16:&quot;sys_language_uid&quot;;N;s:6:&quot;hidden&quot;;N;}</field>
+				<field index="hidden" type="integer">0</field>
+				<field index="l10n_state" type="NULL"></field>
+				<field index="toplevel" type="integer">0</field>
+				<field index="label">Ausgestellte Werke</field>
+				<field index="index_name">exhibition_list</field>
+				<field index="oai_name"></field>
+				<field index="thumbnail" type="integer">0</field>
+				<field index="status" type="integer">0</field>
+			</fieldlist>
+			<related index="rels" type="array"></related>
+		</tablerow>
+		<tablerow index="tx_dlf_structures:181" type="array">
+			<fieldlist index="data" type="array">
+				<field index="uid" type="integer">181</field>
+				<field index="pid" type="integer">4</field>
+				<field index="tstamp" type="integer">1606489910</field>
+				<field index="crdate" type="integer">1606489910</field>
+				<field index="cruser_id" type="integer">1</field>
+				<field index="deleted" type="integer">0</field>
+				<field index="sys_language_uid" type="integer">0</field>
+				<field index="l18n_parent" type="integer">0</field>
+				<field index="l18n_diffsource">a:7:{s:8:&quot;toplevel&quot;;N;s:5:&quot;label&quot;;N;s:10:&quot;index_name&quot;;N;s:8:&quot;oai_name&quot;;N;s:16:&quot;sys_language_uid&quot;;N;s:6:&quot;hidden&quot;;N;s:6:&quot;status&quot;;N;}</field>
+				<field index="hidden" type="integer">0</field>
+				<field index="l10n_state" type="NULL"></field>
+				<field index="toplevel" type="integer">0</field>
+				<field index="label">Autorenregister</field>
+				<field index="index_name">index_author</field>
+				<field index="oai_name">index</field>
+				<field index="thumbnail" type="integer">0</field>
+				<field index="status" type="integer">0</field>
+			</fieldlist>
+			<related index="rels" type="array"></related>
+		</tablerow>
+		<tablerow index="tx_dlf_structures:179" type="array">
+			<fieldlist index="data" type="array">
+				<field index="uid" type="integer">179</field>
+				<field index="pid" type="integer">4</field>
+				<field index="tstamp" type="integer">1606489910</field>
+				<field index="crdate" type="integer">1606489910</field>
+				<field index="cruser_id" type="integer">1</field>
+				<field index="deleted" type="integer">0</field>
+				<field index="sys_language_uid" type="integer">0</field>
+				<field index="l18n_parent" type="integer">0</field>
+				<field index="l18n_diffsource">a:1:{s:9:&quot;thumbnail&quot;;N;}</field>
+				<field index="hidden" type="integer">0</field>
+				<field index="l10n_state" type="NULL"></field>
+				<field index="toplevel" type="integer">1</field>
+				<field index="label">Band</field>
+				<field index="index_name">periodical_volume</field>
+				<field index="oai_name">volume</field>
+				<field index="thumbnail" type="integer">109</field>
+				<field index="status" type="integer">0</field>
+			</fieldlist>
+			<related index="rels" type="array">
+				<field index="thumbnail" type="array">
+					<type>db</type>
+					<relations index="itemArray" type="array">
+						<element index="0" type="array">
+							<id>109</id>
+							<table>tx_dlf_structures</table>
+						</element>
+					</relations>
+				</field>
+			</related>
+		</tablerow>
+		<tablerow index="tx_dlf_structures:180" type="array">
+			<fieldlist index="data" type="array">
+				<field index="uid" type="integer">180</field>
+				<field index="pid" type="integer">4</field>
+				<field index="tstamp" type="integer">1606489910</field>
+				<field index="crdate" type="integer">1606489910</field>
+				<field index="cruser_id" type="integer">1</field>
+				<field index="deleted" type="integer">0</field>
+				<field index="sys_language_uid" type="integer">0</field>
+				<field index="l18n_parent" type="integer">0</field>
+				<field index="l18n_diffsource">a:1:{s:9:&quot;thumbnail&quot;;N;}</field>
+				<field index="hidden" type="integer">0</field>
+				<field index="l10n_state" type="NULL"></field>
+				<field index="toplevel" type="integer">1</field>
+				<field index="label">Band</field>
+				<field index="index_name">volume</field>
+				<field index="oai_name"></field>
+				<field index="thumbnail" type="integer">109</field>
+				<field index="status" type="integer">0</field>
+			</fieldlist>
+			<related index="rels" type="array">
+				<field index="thumbnail" type="array">
+					<type>db</type>
+					<relations index="itemArray" type="array">
+						<element index="0" type="array">
+							<id>109</id>
+							<table>tx_dlf_structures</table>
+						</element>
+					</relations>
+				</field>
+			</related>
+		</tablerow>
+		<tablerow index="tx_dlf_structures:178" type="array">
+			<fieldlist index="data" type="array">
+				<field index="uid" type="integer">178</field>
+				<field index="pid" type="integer">4</field>
+				<field index="tstamp" type="integer">1606489910</field>
+				<field index="crdate" type="integer">1606489910</field>
+				<field index="cruser_id" type="integer">1</field>
+				<field index="deleted" type="integer">0</field>
+				<field index="sys_language_uid" type="integer">0</field>
+				<field index="l18n_parent" type="integer">0</field>
+				<field index="l18n_diffsource">a:7:{s:8:&quot;toplevel&quot;;N;s:5:&quot;label&quot;;N;s:10:&quot;index_name&quot;;N;s:8:&quot;oai_name&quot;;N;s:16:&quot;sys_language_uid&quot;;N;s:6:&quot;hidden&quot;;N;s:6:&quot;status&quot;;N;}</field>
+				<field index="hidden" type="integer">0</field>
+				<field index="l10n_state" type="NULL"></field>
+				<field index="toplevel" type="integer">0</field>
+				<field index="label">Bandregister</field>
+				<field index="index_name">index_volume</field>
+				<field index="oai_name">index</field>
+				<field index="thumbnail" type="integer">0</field>
+				<field index="status" type="integer">0</field>
+			</fieldlist>
+			<related index="rels" type="array"></related>
+		</tablerow>
+		<tablerow index="tx_dlf_structures:177" type="array">
+			<fieldlist index="data" type="array">
+				<field index="uid" type="integer">177</field>
+				<field index="pid" type="integer">4</field>
+				<field index="tstamp" type="integer">1606489910</field>
+				<field index="crdate" type="integer">1606489910</field>
+				<field index="cruser_id" type="integer">1</field>
+				<field index="deleted" type="integer">0</field>
+				<field index="sys_language_uid" type="integer">0</field>
+				<field index="l18n_parent" type="integer">0</field>
+				<field index="l18n_diffsource">a:7:{s:8:&quot;toplevel&quot;;N;s:5:&quot;label&quot;;N;s:10:&quot;index_name&quot;;N;s:8:&quot;oai_name&quot;;N;s:16:&quot;sys_language_uid&quot;;N;s:6:&quot;hidden&quot;;N;s:6:&quot;status&quot;;N;}</field>
+				<field index="hidden" type="integer">0</field>
+				<field index="l10n_state" type="NULL"></field>
+				<field index="toplevel" type="integer">0</field>
+				<field index="label">Beigefügtes Werk</field>
+				<field index="index_name">attached_work</field>
+				<field index="oai_name">contained_work</field>
+				<field index="thumbnail" type="integer">0</field>
+				<field index="status" type="integer">0</field>
+			</fieldlist>
+			<related index="rels" type="array"></related>
+		</tablerow>
+		<tablerow index="tx_dlf_structures:176" type="array">
+			<fieldlist index="data" type="array">
+				<field index="uid" type="integer">176</field>
+				<field index="pid" type="integer">4</field>
+				<field index="tstamp" type="integer">1606489910</field>
+				<field index="crdate" type="integer">1606489910</field>
+				<field index="cruser_id" type="integer">1</field>
+				<field index="deleted" type="integer">0</field>
+				<field index="sys_language_uid" type="integer">0</field>
+				<field index="l18n_parent" type="integer">0</field>
+				<field index="l18n_diffsource">a:7:{s:8:&quot;toplevel&quot;;N;s:5:&quot;label&quot;;N;s:10:&quot;index_name&quot;;N;s:8:&quot;oai_name&quot;;N;s:16:&quot;sys_language_uid&quot;;N;s:6:&quot;hidden&quot;;N;s:6:&quot;status&quot;;N;}</field>
+				<field index="hidden" type="integer">0</field>
+				<field index="l10n_state" type="NULL"></field>
+				<field index="toplevel" type="integer">0</field>
+				<field index="label">Beilage</field>
+				<field index="index_name">additional</field>
+				<field index="oai_name"></field>
+				<field index="thumbnail" type="integer">0</field>
+				<field index="status" type="integer">0</field>
+			</fieldlist>
+			<related index="rels" type="array"></related>
+		</tablerow>
+		<tablerow index="tx_dlf_structures:175" type="array">
+			<fieldlist index="data" type="array">
+				<field index="uid" type="integer">175</field>
+				<field index="pid" type="integer">4</field>
+				<field index="tstamp" type="integer">1606489910</field>
+				<field index="crdate" type="integer">1606489910</field>
+				<field index="cruser_id" type="integer">1</field>
+				<field index="deleted" type="integer">0</field>
+				<field index="sys_language_uid" type="integer">0</field>
+				<field index="l18n_parent" type="integer">0</field>
+				<field index="l18n_diffsource">a:1:{s:9:&quot;thumbnail&quot;;N;}</field>
+				<field index="hidden" type="integer">0</field>
+				<field index="l10n_state" type="NULL"></field>
+				<field index="toplevel" type="integer">1</field>
+				<field index="label">Bestand</field>
+				<field index="index_name">inventory</field>
+				<field index="oai_name"></field>
+				<field index="thumbnail" type="integer">109</field>
+				<field index="status" type="integer">0</field>
+			</fieldlist>
+			<related index="rels" type="array">
+				<field index="thumbnail" type="array">
+					<type>db</type>
+					<relations index="itemArray" type="array">
+						<element index="0" type="array">
+							<id>109</id>
+							<table>tx_dlf_structures</table>
+						</element>
+					</relations>
+				</field>
+			</related>
+		</tablerow>
+		<tablerow index="tx_dlf_structures:174" type="array">
+			<fieldlist index="data" type="array">
+				<field index="uid" type="integer">174</field>
+				<field index="pid" type="integer">4</field>
+				<field index="tstamp" type="integer">1606489910</field>
+				<field index="crdate" type="integer">1606489910</field>
+				<field index="cruser_id" type="integer">1</field>
+				<field index="deleted" type="integer">0</field>
+				<field index="sys_language_uid" type="integer">0</field>
+				<field index="l18n_parent" type="integer">0</field>
+				<field index="l18n_diffsource">a:7:{s:8:&quot;toplevel&quot;;N;s:5:&quot;label&quot;;N;s:10:&quot;index_name&quot;;N;s:8:&quot;oai_name&quot;;N;s:16:&quot;sys_language_uid&quot;;N;s:6:&quot;hidden&quot;;N;s:6:&quot;status&quot;;N;}</field>
+				<field index="hidden" type="integer">0</field>
+				<field index="l10n_state" type="NULL"></field>
+				<field index="toplevel" type="integer">0</field>
+				<field index="label">Bildbeschreibung</field>
+				<field index="index_name">illustration_decription</field>
+				<field index="oai_name">section</field>
+				<field index="thumbnail" type="integer">0</field>
+				<field index="status" type="integer">0</field>
+			</fieldlist>
+			<related index="rels" type="array"></related>
+		</tablerow>
+		<tablerow index="tx_dlf_structures:173" type="array">
+			<fieldlist index="data" type="array">
+				<field index="uid" type="integer">173</field>
+				<field index="pid" type="integer">4</field>
+				<field index="tstamp" type="integer">1606489910</field>
+				<field index="crdate" type="integer">1606489910</field>
+				<field index="cruser_id" type="integer">1</field>
+				<field index="deleted" type="integer">0</field>
+				<field index="sys_language_uid" type="integer">0</field>
+				<field index="l18n_parent" type="integer">0</field>
+				<field index="l18n_diffsource">a:7:{s:8:&quot;toplevel&quot;;N;s:5:&quot;label&quot;;N;s:10:&quot;index_name&quot;;N;s:8:&quot;oai_name&quot;;N;s:16:&quot;sys_language_uid&quot;;N;s:6:&quot;hidden&quot;;N;s:6:&quot;status&quot;;N;}</field>
+				<field index="hidden" type="integer">0</field>
+				<field index="l10n_state" type="NULL"></field>
+				<field index="toplevel" type="integer">0</field>
+				<field index="label">Brief</field>
+				<field index="index_name">letter</field>
+				<field index="oai_name">section</field>
+				<field index="thumbnail" type="integer">0</field>
+				<field index="status" type="integer">0</field>
+			</fieldlist>
+			<related index="rels" type="array"></related>
+		</tablerow>
+		<tablerow index="tx_dlf_structures:172" type="array">
+			<fieldlist index="data" type="array">
+				<field index="uid" type="integer">172</field>
+				<field index="pid" type="integer">4</field>
+				<field index="tstamp" type="integer">1606489910</field>
+				<field index="crdate" type="integer">1606489910</field>
+				<field index="cruser_id" type="integer">1</field>
+				<field index="deleted" type="integer">0</field>
+				<field index="sys_language_uid" type="integer">0</field>
+				<field index="l18n_parent" type="integer">0</field>
+				<field index="l18n_diffsource">a:7:{s:8:&quot;toplevel&quot;;N;s:5:&quot;label&quot;;N;s:10:&quot;index_name&quot;;N;s:8:&quot;oai_name&quot;;N;s:16:&quot;sys_language_uid&quot;;N;s:6:&quot;hidden&quot;;N;s:6:&quot;status&quot;;N;}</field>
+				<field index="hidden" type="integer">0</field>
+				<field index="l10n_state" type="NULL"></field>
+				<field index="toplevel" type="integer">0</field>
+				<field index="label">Chronogramm</field>
+				<field index="index_name">chronogramm</field>
+				<field index="oai_name">section</field>
+				<field index="thumbnail" type="integer">0</field>
+				<field index="status" type="integer">0</field>
+			</fieldlist>
+			<related index="rels" type="array"></related>
+		</tablerow>
+		<tablerow index="tx_dlf_structures:171" type="array">
+			<fieldlist index="data" type="array">
+				<field index="uid" type="integer">171</field>
+				<field index="pid" type="integer">4</field>
+				<field index="tstamp" type="integer">1606489910</field>
+				<field index="crdate" type="integer">1606489910</field>
+				<field index="cruser_id" type="integer">1</field>
+				<field index="deleted" type="integer">0</field>
+				<field index="sys_language_uid" type="integer">0</field>
+				<field index="l18n_parent" type="integer">0</field>
+				<field index="l18n_diffsource">a:7:{s:8:&quot;toplevel&quot;;N;s:5:&quot;label&quot;;N;s:10:&quot;index_name&quot;;N;s:8:&quot;oai_name&quot;;N;s:16:&quot;sys_language_uid&quot;;N;s:6:&quot;hidden&quot;;N;s:6:&quot;status&quot;;N;}</field>
+				<field index="hidden" type="integer">0</field>
+				<field index="l10n_state" type="NULL"></field>
+				<field index="toplevel" type="integer">0</field>
+				<field index="label">Chronologie</field>
+				<field index="index_name">index_chronology</field>
+				<field index="oai_name">index</field>
+				<field index="thumbnail" type="integer">0</field>
+				<field index="status" type="integer">0</field>
+			</fieldlist>
+			<related index="rels" type="array"></related>
+		</tablerow>
+		<tablerow index="tx_dlf_structures:170" type="array">
+			<fieldlist index="data" type="array">
+				<field index="uid" type="integer">170</field>
+				<field index="pid" type="integer">4</field>
+				<field index="tstamp" type="integer">1606489910</field>
+				<field index="crdate" type="integer">1606489910</field>
+				<field index="cruser_id" type="integer">1</field>
+				<field index="deleted" type="integer">0</field>
+				<field index="sys_language_uid" type="integer">0</field>
+				<field index="l18n_parent" type="integer">0</field>
+				<field index="l18n_diffsource">a:7:{s:8:&quot;toplevel&quot;;N;s:5:&quot;label&quot;;N;s:10:&quot;index_name&quot;;N;s:8:&quot;oai_name&quot;;N;s:16:&quot;sys_language_uid&quot;;N;s:6:&quot;hidden&quot;;N;s:6:&quot;status&quot;;N;}</field>
+				<field index="hidden" type="integer">0</field>
+				<field index="l10n_state" type="NULL"></field>
+				<field index="toplevel" type="integer">0</field>
+				<field index="label">Danksagung</field>
+				<field index="index_name">acknowledgement</field>
+				<field index="oai_name">section</field>
+				<field index="thumbnail" type="integer">0</field>
+				<field index="status" type="integer">0</field>
+			</fieldlist>
+			<related index="rels" type="array"></related>
+		</tablerow>
+		<tablerow index="tx_dlf_structures:167" type="array">
+			<fieldlist index="data" type="array">
+				<field index="uid" type="integer">167</field>
+				<field index="pid" type="integer">4</field>
+				<field index="tstamp" type="integer">1606489910</field>
+				<field index="crdate" type="integer">1606489910</field>
+				<field index="cruser_id" type="integer">1</field>
+				<field index="deleted" type="integer">0</field>
+				<field index="sys_language_uid" type="integer">0</field>
+				<field index="l18n_parent" type="integer">0</field>
+				<field index="l18n_diffsource">a:7:{s:8:&quot;toplevel&quot;;N;s:5:&quot;label&quot;;N;s:10:&quot;index_name&quot;;N;s:8:&quot;oai_name&quot;;N;s:16:&quot;sys_language_uid&quot;;N;s:6:&quot;hidden&quot;;N;s:6:&quot;status&quot;;N;}</field>
+				<field index="hidden" type="integer">0</field>
+				<field index="l10n_state" type="NULL"></field>
+				<field index="toplevel" type="integer">0</field>
+				<field index="label">Deckel</field>
+				<field index="index_name">cover</field>
+				<field index="oai_name"></field>
+				<field index="thumbnail" type="integer">0</field>
+				<field index="status" type="integer">0</field>
+			</fieldlist>
+			<related index="rels" type="array"></related>
+		</tablerow>
+		<tablerow index="tx_dlf_structures:168" type="array">
+			<fieldlist index="data" type="array">
+				<field index="uid" type="integer">168</field>
+				<field index="pid" type="integer">4</field>
+				<field index="tstamp" type="integer">1606489910</field>
+				<field index="crdate" type="integer">1606489910</field>
+				<field index="cruser_id" type="integer">1</field>
+				<field index="deleted" type="integer">0</field>
+				<field index="sys_language_uid" type="integer">0</field>
+				<field index="l18n_parent" type="integer">0</field>
+				<field index="l18n_diffsource">a:7:{s:8:&quot;toplevel&quot;;N;s:5:&quot;label&quot;;N;s:10:&quot;index_name&quot;;N;s:8:&quot;oai_name&quot;;N;s:16:&quot;sys_language_uid&quot;;N;s:6:&quot;hidden&quot;;N;s:6:&quot;status&quot;;N;}</field>
+				<field index="hidden" type="integer">0</field>
+				<field index="l10n_state" type="NULL"></field>
+				<field index="toplevel" type="integer">0</field>
+				<field index="label">Deckel</field>
+				<field index="index_name">cover_front</field>
+				<field index="oai_name">cover</field>
+				<field index="thumbnail" type="integer">0</field>
+				<field index="status" type="integer">0</field>
+			</fieldlist>
+			<related index="rels" type="array"></related>
+		</tablerow>
+		<tablerow index="tx_dlf_structures:169" type="array">
+			<fieldlist index="data" type="array">
+				<field index="uid" type="integer">169</field>
+				<field index="pid" type="integer">4</field>
+				<field index="tstamp" type="integer">1606489910</field>
+				<field index="crdate" type="integer">1606489910</field>
+				<field index="cruser_id" type="integer">1</field>
+				<field index="deleted" type="integer">0</field>
+				<field index="sys_language_uid" type="integer">0</field>
+				<field index="l18n_parent" type="integer">0</field>
+				<field index="l18n_diffsource">a:7:{s:8:&quot;toplevel&quot;;N;s:5:&quot;label&quot;;N;s:10:&quot;index_name&quot;;N;s:8:&quot;oai_name&quot;;N;s:16:&quot;sys_language_uid&quot;;N;s:6:&quot;hidden&quot;;N;s:6:&quot;status&quot;;N;}</field>
+				<field index="hidden" type="integer">0</field>
+				<field index="l10n_state" type="NULL"></field>
+				<field index="toplevel" type="integer">0</field>
+				<field index="label">Deckel</field>
+				<field index="index_name">cover_back</field>
+				<field index="oai_name">cover</field>
+				<field index="thumbnail" type="integer">0</field>
+				<field index="status" type="integer">0</field>
+			</fieldlist>
+			<related index="rels" type="array"></related>
+		</tablerow>
+		<tablerow index="tx_dlf_structures:166" type="array">
+			<fieldlist index="data" type="array">
+				<field index="uid" type="integer">166</field>
+				<field index="pid" type="integer">4</field>
+				<field index="tstamp" type="integer">1606489910</field>
+				<field index="crdate" type="integer">1606489910</field>
+				<field index="cruser_id" type="integer">1</field>
+				<field index="deleted" type="integer">0</field>
+				<field index="sys_language_uid" type="integer">0</field>
+				<field index="l18n_parent" type="integer">0</field>
+				<field index="l18n_diffsource">a:7:{s:8:&quot;toplevel&quot;;N;s:5:&quot;label&quot;;N;s:10:&quot;index_name&quot;;N;s:8:&quot;oai_name&quot;;N;s:16:&quot;sys_language_uid&quot;;N;s:6:&quot;hidden&quot;;N;s:6:&quot;status&quot;;N;}</field>
+				<field index="hidden" type="integer">0</field>
+				<field index="l10n_state" type="NULL"></field>
+				<field index="toplevel" type="integer">0</field>
+				<field index="label">Einband</field>
+				<field index="index_name">binding</field>
+				<field index="oai_name"></field>
+				<field index="thumbnail" type="integer">0</field>
+				<field index="status" type="integer">0</field>
+			</fieldlist>
+			<related index="rels" type="array"></related>
+		</tablerow>
+		<tablerow index="tx_dlf_structures:165" type="array">
+			<fieldlist index="data" type="array">
+				<field index="uid" type="integer">165</field>
+				<field index="pid" type="integer">4</field>
+				<field index="tstamp" type="integer">1606489910</field>
+				<field index="crdate" type="integer">1606489910</field>
+				<field index="cruser_id" type="integer">1</field>
+				<field index="deleted" type="integer">0</field>
+				<field index="sys_language_uid" type="integer">0</field>
+				<field index="l18n_parent" type="integer">0</field>
+				<field index="l18n_diffsource">a:7:{s:8:&quot;toplevel&quot;;N;s:5:&quot;label&quot;;N;s:10:&quot;index_name&quot;;N;s:8:&quot;oai_name&quot;;N;s:16:&quot;sys_language_uid&quot;;N;s:6:&quot;hidden&quot;;N;s:6:&quot;status&quot;;N;}</field>
+				<field index="hidden" type="integer">0</field>
+				<field index="l10n_state" type="NULL"></field>
+				<field index="toplevel" type="integer">0</field>
+				<field index="label">Einband Sammelband</field>
+				<field index="index_name">binding_collections</field>
+				<field index="oai_name">binding</field>
+				<field index="thumbnail" type="integer">0</field>
+				<field index="status" type="integer">0</field>
+			</fieldlist>
+			<related index="rels" type="array"></related>
+		</tablerow>
+		<tablerow index="tx_dlf_structures:164" type="array">
+			<fieldlist index="data" type="array">
+				<field index="uid" type="integer">164</field>
+				<field index="pid" type="integer">4</field>
+				<field index="tstamp" type="integer">1606489910</field>
+				<field index="crdate" type="integer">1606489910</field>
+				<field index="cruser_id" type="integer">1</field>
+				<field index="deleted" type="integer">0</field>
+				<field index="sys_language_uid" type="integer">0</field>
+				<field index="l18n_parent" type="integer">0</field>
+				<field index="l18n_diffsource">a:7:{s:8:&quot;toplevel&quot;;N;s:5:&quot;label&quot;;N;s:10:&quot;index_name&quot;;N;s:8:&quot;oai_name&quot;;N;s:16:&quot;sys_language_uid&quot;;N;s:6:&quot;hidden&quot;;N;s:6:&quot;status&quot;;N;}</field>
+				<field index="hidden" type="integer">0</field>
+				<field index="l10n_state" type="NULL"></field>
+				<field index="toplevel" type="integer">0</field>
+				<field index="label">Einleitung</field>
+				<field index="index_name">introduction</field>
+				<field index="oai_name">section</field>
+				<field index="thumbnail" type="integer">0</field>
+				<field index="status" type="integer">0</field>
+			</fieldlist>
+			<related index="rels" type="array"></related>
+		</tablerow>
+		<tablerow index="tx_dlf_structures:163" type="array">
+			<fieldlist index="data" type="array">
+				<field index="uid" type="integer">163</field>
+				<field index="pid" type="integer">4</field>
+				<field index="tstamp" type="integer">1606489910</field>
+				<field index="crdate" type="integer">1606489910</field>
+				<field index="cruser_id" type="integer">1</field>
+				<field index="deleted" type="integer">0</field>
+				<field index="sys_language_uid" type="integer">0</field>
+				<field index="l18n_parent" type="integer">0</field>
+				<field index="l18n_diffsource">a:7:{s:8:&quot;toplevel&quot;;N;s:5:&quot;label&quot;;N;s:10:&quot;index_name&quot;;N;s:8:&quot;oai_name&quot;;N;s:16:&quot;sys_language_uid&quot;;N;s:6:&quot;hidden&quot;;N;s:6:&quot;status&quot;;N;}</field>
+				<field index="hidden" type="integer">0</field>
+				<field index="l10n_state" type="NULL"></field>
+				<field index="toplevel" type="integer">0</field>
+				<field index="label">Eintrag</field>
+				<field index="index_name">entry</field>
+				<field index="oai_name"></field>
+				<field index="thumbnail" type="integer">0</field>
+				<field index="status" type="integer">0</field>
+			</fieldlist>
+			<related index="rels" type="array"></related>
+		</tablerow>
+		<tablerow index="tx_dlf_structures:162" type="array">
+			<fieldlist index="data" type="array">
+				<field index="uid" type="integer">162</field>
+				<field index="pid" type="integer">4</field>
+				<field index="tstamp" type="integer">1606489910</field>
+				<field index="crdate" type="integer">1606489910</field>
+				<field index="cruser_id" type="integer">1</field>
+				<field index="deleted" type="integer">0</field>
+				<field index="sys_language_uid" type="integer">0</field>
+				<field index="l18n_parent" type="integer">0</field>
+				<field index="l18n_diffsource">a:7:{s:8:&quot;toplevel&quot;;N;s:5:&quot;label&quot;;N;s:10:&quot;index_name&quot;;N;s:8:&quot;oai_name&quot;;N;s:16:&quot;sys_language_uid&quot;;N;s:6:&quot;hidden&quot;;N;s:6:&quot;status&quot;;N;}</field>
+				<field index="hidden" type="integer">0</field>
+				<field index="l10n_state" type="NULL"></field>
+				<field index="toplevel" type="integer">0</field>
+				<field index="label">Enthaltenes Werk</field>
+				<field index="index_name">contained_work</field>
+				<field index="oai_name"></field>
+				<field index="thumbnail" type="integer">0</field>
+				<field index="status" type="integer">0</field>
+			</fieldlist>
+			<related index="rels" type="array"></related>
+		</tablerow>
+		<tablerow index="tx_dlf_structures:161" type="array">
+			<fieldlist index="data" type="array">
+				<field index="uid" type="integer">161</field>
+				<field index="pid" type="integer">4</field>
+				<field index="tstamp" type="integer">1606489910</field>
+				<field index="crdate" type="integer">1606489910</field>
+				<field index="cruser_id" type="integer">1</field>
+				<field index="deleted" type="integer">0</field>
+				<field index="sys_language_uid" type="integer">0</field>
+				<field index="l18n_parent" type="integer">0</field>
+				<field index="l18n_diffsource">a:1:{s:9:&quot;thumbnail&quot;;N;}</field>
+				<field index="hidden" type="integer">0</field>
+				<field index="l10n_state" type="NULL"></field>
+				<field index="toplevel" type="integer">1</field>
+				<field index="label">Ephemera</field>
+				<field index="index_name">ephemera</field>
+				<field index="oai_name"></field>
+				<field index="thumbnail" type="integer">109</field>
+				<field index="status" type="integer">0</field>
+			</fieldlist>
+			<related index="rels" type="array">
+				<field index="thumbnail" type="array">
+					<type>db</type>
+					<relations index="itemArray" type="array">
+						<element index="0" type="array">
+							<id>109</id>
+							<table>tx_dlf_structures</table>
+						</element>
+					</relations>
+				</field>
+			</related>
+		</tablerow>
+		<tablerow index="tx_dlf_structures:160" type="array">
+			<fieldlist index="data" type="array">
+				<field index="uid" type="integer">160</field>
+				<field index="pid" type="integer">4</field>
+				<field index="tstamp" type="integer">1606489910</field>
+				<field index="crdate" type="integer">1606489910</field>
+				<field index="cruser_id" type="integer">1</field>
+				<field index="deleted" type="integer">0</field>
+				<field index="sys_language_uid" type="integer">0</field>
+				<field index="l18n_parent" type="integer">0</field>
+				<field index="l18n_diffsource">a:7:{s:8:&quot;toplevel&quot;;N;s:5:&quot;label&quot;;N;s:10:&quot;index_name&quot;;N;s:8:&quot;oai_name&quot;;N;s:16:&quot;sys_language_uid&quot;;N;s:6:&quot;hidden&quot;;N;s:6:&quot;status&quot;;N;}</field>
+				<field index="hidden" type="integer">0</field>
+				<field index="l10n_state" type="NULL"></field>
+				<field index="toplevel" type="integer">0</field>
+				<field index="label">Epilog</field>
+				<field index="index_name">epilogue</field>
+				<field index="oai_name">section</field>
+				<field index="thumbnail" type="integer">0</field>
+				<field index="status" type="integer">0</field>
+			</fieldlist>
+			<related index="rels" type="array"></related>
+		</tablerow>
+		<tablerow index="tx_dlf_structures:159" type="array">
+			<fieldlist index="data" type="array">
+				<field index="uid" type="integer">159</field>
+				<field index="pid" type="integer">4</field>
+				<field index="tstamp" type="integer">1606489910</field>
+				<field index="crdate" type="integer">1606489910</field>
+				<field index="cruser_id" type="integer">1</field>
+				<field index="deleted" type="integer">0</field>
+				<field index="sys_language_uid" type="integer">0</field>
+				<field index="l18n_parent" type="integer">0</field>
+				<field index="l18n_diffsource">a:7:{s:8:&quot;toplevel&quot;;N;s:5:&quot;label&quot;;N;s:10:&quot;index_name&quot;;N;s:8:&quot;oai_name&quot;;N;s:16:&quot;sys_language_uid&quot;;N;s:6:&quot;hidden&quot;;N;s:6:&quot;status&quot;;N;}</field>
+				<field index="hidden" type="integer">0</field>
+				<field index="l10n_state" type="NULL"></field>
+				<field index="toplevel" type="integer">0</field>
+				<field index="label">Errata</field>
+				<field index="index_name">corrigenda</field>
+				<field index="oai_name"></field>
+				<field index="thumbnail" type="integer">0</field>
+				<field index="status" type="integer">0</field>
+			</fieldlist>
+			<related index="rels" type="array"></related>
+		</tablerow>
+		<tablerow index="tx_dlf_structures:158" type="array">
+			<fieldlist index="data" type="array">
+				<field index="uid" type="integer">158</field>
+				<field index="pid" type="integer">4</field>
+				<field index="tstamp" type="integer">1606489910</field>
+				<field index="crdate" type="integer">1606489910</field>
+				<field index="cruser_id" type="integer">1</field>
+				<field index="deleted" type="integer">0</field>
+				<field index="sys_language_uid" type="integer">0</field>
+				<field index="l18n_parent" type="integer">0</field>
+				<field index="l18n_diffsource">a:7:{s:8:&quot;toplevel&quot;;N;s:5:&quot;label&quot;;N;s:10:&quot;index_name&quot;;N;s:8:&quot;oai_name&quot;;N;s:16:&quot;sys_language_uid&quot;;N;s:6:&quot;hidden&quot;;N;s:6:&quot;status&quot;;N;}</field>
+				<field index="hidden" type="integer">0</field>
+				<field index="l10n_state" type="NULL"></field>
+				<field index="toplevel" type="integer">0</field>
+				<field index="label">Faszikel</field>
+				<field index="index_name">fascicle</field>
+				<field index="oai_name"></field>
+				<field index="thumbnail" type="integer">0</field>
+				<field index="status" type="integer">0</field>
+			</fieldlist>
+			<related index="rels" type="array"></related>
+		</tablerow>
+		<tablerow index="tx_dlf_structures:157" type="array">
+			<fieldlist index="data" type="array">
+				<field index="uid" type="integer">157</field>
+				<field index="pid" type="integer">4</field>
+				<field index="tstamp" type="integer">1606489910</field>
+				<field index="crdate" type="integer">1606489910</field>
+				<field index="cruser_id" type="integer">1</field>
+				<field index="deleted" type="integer">0</field>
+				<field index="sys_language_uid" type="integer">0</field>
+				<field index="l18n_parent" type="integer">0</field>
+				<field index="l18n_diffsource">a:7:{s:8:&quot;toplevel&quot;;N;s:5:&quot;label&quot;;N;s:10:&quot;index_name&quot;;N;s:8:&quot;oai_name&quot;;N;s:16:&quot;sys_language_uid&quot;;N;s:6:&quot;hidden&quot;;N;s:6:&quot;status&quot;;N;}</field>
+				<field index="hidden" type="integer">0</field>
+				<field index="l10n_state" type="NULL"></field>
+				<field index="toplevel" type="integer">0</field>
+				<field index="label">Gesamtregister</field>
+				<field index="index_name">index_overall</field>
+				<field index="oai_name">index</field>
+				<field index="thumbnail" type="integer">0</field>
+				<field index="status" type="integer">0</field>
+			</fieldlist>
+			<related index="rels" type="array"></related>
+		</tablerow>
+		<tablerow index="tx_dlf_structures:156" type="array">
+			<fieldlist index="data" type="array">
+				<field index="uid" type="integer">156</field>
+				<field index="pid" type="integer">4</field>
+				<field index="tstamp" type="integer">1606489910</field>
+				<field index="crdate" type="integer">1606489910</field>
+				<field index="cruser_id" type="integer">1</field>
+				<field index="deleted" type="integer">0</field>
+				<field index="sys_language_uid" type="integer">0</field>
+				<field index="l18n_parent" type="integer">0</field>
+				<field index="l18n_diffsource">a:5:{s:8:&quot;toplevel&quot;;N;s:5:&quot;label&quot;;N;s:10:&quot;index_name&quot;;N;s:16:&quot;sys_language_uid&quot;;N;s:6:&quot;hidden&quot;;N;}</field>
+				<field index="hidden" type="integer">0</field>
+				<field index="l10n_state" type="NULL"></field>
+				<field index="toplevel" type="integer">0</field>
+				<field index="label">Grundriss</field>
+				<field index="index_name">ground_plan</field>
+				<field index="oai_name"></field>
+				<field index="thumbnail" type="integer">0</field>
+				<field index="status" type="integer">0</field>
+			</fieldlist>
+			<related index="rels" type="array"></related>
+		</tablerow>
+		<tablerow index="tx_dlf_structures:155" type="array">
+			<fieldlist index="data" type="array">
+				<field index="uid" type="integer">155</field>
+				<field index="pid" type="integer">4</field>
+				<field index="tstamp" type="integer">1606489910</field>
+				<field index="crdate" type="integer">1606489910</field>
+				<field index="cruser_id" type="integer">1</field>
+				<field index="deleted" type="integer">0</field>
+				<field index="sys_language_uid" type="integer">0</field>
+				<field index="l18n_parent" type="integer">0</field>
+				<field index="l18n_diffsource">a:1:{s:9:&quot;thumbnail&quot;;N;}</field>
+				<field index="hidden" type="integer">0</field>
+				<field index="l10n_state" type="NULL"></field>
+				<field index="toplevel" type="integer">1</field>
+				<field index="label">Handschrift</field>
+				<field index="index_name">manuscript</field>
+				<field index="oai_name"></field>
+				<field index="thumbnail" type="integer">109</field>
+				<field index="status" type="integer">0</field>
+			</fieldlist>
+			<related index="rels" type="array">
+				<field index="thumbnail" type="array">
+					<type>db</type>
+					<relations index="itemArray" type="array">
+						<element index="0" type="array">
+							<id>109</id>
+							<table>tx_dlf_structures</table>
+						</element>
+					</relations>
+				</field>
+			</related>
+		</tablerow>
+		<tablerow index="tx_dlf_structures:154" type="array">
+			<fieldlist index="data" type="array">
+				<field index="uid" type="integer">154</field>
+				<field index="pid" type="integer">4</field>
+				<field index="tstamp" type="integer">1606489910</field>
+				<field index="crdate" type="integer">1606489910</field>
+				<field index="cruser_id" type="integer">1</field>
+				<field index="deleted" type="integer">0</field>
+				<field index="sys_language_uid" type="integer">0</field>
+				<field index="l18n_parent" type="integer">0</field>
+				<field index="l18n_diffsource">a:7:{s:8:&quot;toplevel&quot;;N;s:5:&quot;label&quot;;N;s:10:&quot;index_name&quot;;N;s:8:&quot;oai_name&quot;;N;s:16:&quot;sys_language_uid&quot;;N;s:6:&quot;hidden&quot;;N;s:6:&quot;status&quot;;N;}</field>
+				<field index="hidden" type="integer">0</field>
+				<field index="l10n_state" type="NULL"></field>
+				<field index="toplevel" type="integer">0</field>
+				<field index="label">Heft</field>
+				<field index="index_name">periodical_issue</field>
+				<field index="oai_name">issue</field>
+				<field index="thumbnail" type="integer">0</field>
+				<field index="status" type="integer">0</field>
+			</fieldlist>
+			<related index="rels" type="array"></related>
+		</tablerow>
+		<tablerow index="tx_dlf_structures:153" type="array">
+			<fieldlist index="data" type="array">
+				<field index="uid" type="integer">153</field>
+				<field index="pid" type="integer">4</field>
+				<field index="tstamp" type="integer">1606489910</field>
+				<field index="crdate" type="integer">1606489910</field>
+				<field index="cruser_id" type="integer">1</field>
+				<field index="deleted" type="integer">0</field>
+				<field index="sys_language_uid" type="integer">0</field>
+				<field index="l18n_parent" type="integer">0</field>
+				<field index="l18n_diffsource">a:7:{s:8:&quot;toplevel&quot;;N;s:5:&quot;label&quot;;N;s:10:&quot;index_name&quot;;N;s:8:&quot;oai_name&quot;;N;s:16:&quot;sys_language_uid&quot;;N;s:6:&quot;hidden&quot;;N;s:6:&quot;status&quot;;N;}</field>
+				<field index="hidden" type="integer">0</field>
+				<field index="l10n_state" type="NULL"></field>
+				<field index="toplevel" type="integer">0</field>
+				<field index="label">Illustrationsliste</field>
+				<field index="index_name">list_illustrations</field>
+				<field index="oai_name">index</field>
+				<field index="thumbnail" type="integer">0</field>
+				<field index="status" type="integer">0</field>
+			</fieldlist>
+			<related index="rels" type="array"></related>
+		</tablerow>
+		<tablerow index="tx_dlf_structures:152" type="array">
+			<fieldlist index="data" type="array">
+				<field index="uid" type="integer">152</field>
+				<field index="pid" type="integer">4</field>
+				<field index="tstamp" type="integer">1606489910</field>
+				<field index="crdate" type="integer">1606489910</field>
+				<field index="cruser_id" type="integer">1</field>
+				<field index="deleted" type="integer">0</field>
+				<field index="sys_language_uid" type="integer">0</field>
+				<field index="l18n_parent" type="integer">0</field>
+				<field index="l18n_diffsource">a:7:{s:8:&quot;toplevel&quot;;N;s:5:&quot;label&quot;;N;s:10:&quot;index_name&quot;;N;s:8:&quot;oai_name&quot;;N;s:16:&quot;sys_language_uid&quot;;N;s:6:&quot;hidden&quot;;N;s:6:&quot;status&quot;;N;}</field>
+				<field index="hidden" type="integer">0</field>
+				<field index="l10n_state" type="NULL"></field>
+				<field index="toplevel" type="integer">0</field>
+				<field index="label">Impressum</field>
+				<field index="index_name">imprint</field>
+				<field index="oai_name"></field>
+				<field index="thumbnail" type="integer">0</field>
+				<field index="status" type="integer">0</field>
+			</fieldlist>
+			<related index="rels" type="array"></related>
+		</tablerow>
+		<tablerow index="tx_dlf_structures:151" type="array">
+			<fieldlist index="data" type="array">
+				<field index="uid" type="integer">151</field>
+				<field index="pid" type="integer">4</field>
+				<field index="tstamp" type="integer">1606489910</field>
+				<field index="crdate" type="integer">1606489910</field>
+				<field index="cruser_id" type="integer">1</field>
+				<field index="deleted" type="integer">0</field>
+				<field index="sys_language_uid" type="integer">0</field>
+				<field index="l18n_parent" type="integer">0</field>
+				<field index="l18n_diffsource">a:7:{s:8:&quot;toplevel&quot;;N;s:5:&quot;label&quot;;N;s:10:&quot;index_name&quot;;N;s:8:&quot;oai_name&quot;;N;s:16:&quot;sys_language_uid&quot;;N;s:6:&quot;hidden&quot;;N;s:6:&quot;status&quot;;N;}</field>
+				<field index="hidden" type="integer">0</field>
+				<field index="l10n_state" type="NULL"></field>
+				<field index="toplevel" type="integer">0</field>
+				<field index="label">Inhaltsverzeichnis</field>
+				<field index="index_name">contents</field>
+				<field index="oai_name"></field>
+				<field index="thumbnail" type="integer">0</field>
+				<field index="status" type="integer">0</field>
+			</fieldlist>
+			<related index="rels" type="array"></related>
+		</tablerow>
+		<tablerow index="tx_dlf_structures:150" type="array">
+			<fieldlist index="data" type="array">
+				<field index="uid" type="integer">150</field>
+				<field index="pid" type="integer">4</field>
+				<field index="tstamp" type="integer">1606489910</field>
+				<field index="crdate" type="integer">1606489910</field>
+				<field index="cruser_id" type="integer">1</field>
+				<field index="deleted" type="integer">0</field>
+				<field index="sys_language_uid" type="integer">0</field>
+				<field index="l18n_parent" type="integer">0</field>
+				<field index="l18n_diffsource">a:1:{s:9:&quot;thumbnail&quot;;N;}</field>
+				<field index="hidden" type="integer">0</field>
+				<field index="l10n_state" type="NULL"></field>
+				<field index="toplevel" type="integer">1</field>
+				<field index="label">Jahr</field>
+				<field index="index_name">year</field>
+				<field index="oai_name">year</field>
+				<field index="thumbnail" type="integer">109</field>
+				<field index="status" type="integer">0</field>
+			</fieldlist>
+			<related index="rels" type="array">
+				<field index="thumbnail" type="array">
+					<type>db</type>
+					<relations index="itemArray" type="array">
+						<element index="0" type="array">
+							<id>109</id>
+							<table>tx_dlf_structures</table>
+						</element>
+					</relations>
+				</field>
+			</related>
+		</tablerow>
+		<tablerow index="tx_dlf_structures:149" type="array">
+			<fieldlist index="data" type="array">
+				<field index="uid" type="integer">149</field>
+				<field index="pid" type="integer">4</field>
+				<field index="tstamp" type="integer">1606489910</field>
+				<field index="crdate" type="integer">1606489910</field>
+				<field index="cruser_id" type="integer">1</field>
+				<field index="deleted" type="integer">0</field>
+				<field index="sys_language_uid" type="integer">0</field>
+				<field index="l18n_parent" type="integer">0</field>
+				<field index="l18n_diffsource">a:7:{s:8:&quot;toplevel&quot;;N;s:5:&quot;label&quot;;N;s:10:&quot;index_name&quot;;N;s:8:&quot;oai_name&quot;;N;s:16:&quot;sys_language_uid&quot;;N;s:6:&quot;hidden&quot;;N;s:6:&quot;status&quot;;N;}</field>
+				<field index="hidden" type="integer">0</field>
+				<field index="l10n_state" type="NULL"></field>
+				<field index="toplevel" type="integer">0</field>
+				<field index="label">Kapitel</field>
+				<field index="index_name">chapter</field>
+				<field index="oai_name"></field>
+				<field index="thumbnail" type="integer">0</field>
+				<field index="status" type="integer">0</field>
+			</fieldlist>
+			<related index="rels" type="array"></related>
+		</tablerow>
+		<tablerow index="tx_dlf_structures:148" type="array">
+			<fieldlist index="data" type="array">
+				<field index="uid" type="integer">148</field>
+				<field index="pid" type="integer">4</field>
+				<field index="tstamp" type="integer">1606489910</field>
+				<field index="crdate" type="integer">1606489910</field>
+				<field index="cruser_id" type="integer">1</field>
+				<field index="deleted" type="integer">0</field>
+				<field index="sys_language_uid" type="integer">0</field>
+				<field index="l18n_parent" type="integer">0</field>
+				<field index="l18n_diffsource">a:7:{s:8:&quot;toplevel&quot;;N;s:5:&quot;label&quot;;N;s:10:&quot;index_name&quot;;N;s:8:&quot;oai_name&quot;;N;s:16:&quot;sys_language_uid&quot;;N;s:6:&quot;hidden&quot;;N;s:6:&quot;status&quot;;N;}</field>
+				<field index="hidden" type="integer">0</field>
+				<field index="l10n_state" type="NULL"></field>
+				<field index="toplevel" type="integer">0</field>
+				<field index="label">Karte</field>
+				<field index="index_name">map</field>
+				<field index="oai_name"></field>
+				<field index="thumbnail" type="integer">0</field>
+				<field index="status" type="integer">0</field>
+			</fieldlist>
+			<related index="rels" type="array"></related>
+		</tablerow>
+		<tablerow index="tx_dlf_structures:147" type="array">
+			<fieldlist index="data" type="array">
+				<field index="uid" type="integer">147</field>
+				<field index="pid" type="integer">4</field>
+				<field index="tstamp" type="integer">1606489910</field>
+				<field index="crdate" type="integer">1606489910</field>
+				<field index="cruser_id" type="integer">1</field>
+				<field index="deleted" type="integer">0</field>
+				<field index="sys_language_uid" type="integer">0</field>
+				<field index="l18n_parent" type="integer">0</field>
+				<field index="l18n_diffsource">a:7:{s:8:&quot;toplevel&quot;;N;s:5:&quot;label&quot;;N;s:10:&quot;index_name&quot;;N;s:8:&quot;oai_name&quot;;N;s:16:&quot;sys_language_uid&quot;;N;s:6:&quot;hidden&quot;;N;s:6:&quot;status&quot;;N;}</field>
+				<field index="hidden" type="integer">0</field>
+				<field index="l10n_state" type="NULL"></field>
+				<field index="toplevel" type="integer">0</field>
+				<field index="label">Kartenliste</field>
+				<field index="index_name">list_maps</field>
+				<field index="oai_name">index</field>
+				<field index="thumbnail" type="integer">0</field>
+				<field index="status" type="integer">0</field>
+			</fieldlist>
+			<related index="rels" type="array"></related>
+		</tablerow>
+		<tablerow index="tx_dlf_structures:146" type="array">
+			<fieldlist index="data" type="array">
+				<field index="uid" type="integer">146</field>
+				<field index="pid" type="integer">4</field>
+				<field index="tstamp" type="integer">1606489910</field>
+				<field index="crdate" type="integer">1606489910</field>
+				<field index="cruser_id" type="integer">1</field>
+				<field index="deleted" type="integer">0</field>
+				<field index="sys_language_uid" type="integer">0</field>
+				<field index="l18n_parent" type="integer">0</field>
+				<field index="l18n_diffsource">a:7:{s:8:&quot;toplevel&quot;;N;s:5:&quot;label&quot;;N;s:10:&quot;index_name&quot;;N;s:8:&quot;oai_name&quot;;N;s:16:&quot;sys_language_uid&quot;;N;s:6:&quot;hidden&quot;;N;s:6:&quot;status&quot;;N;}</field>
+				<field index="hidden" type="integer">0</field>
+				<field index="l10n_state" type="NULL"></field>
+				<field index="toplevel" type="integer">0</field>
+				<field index="label">Kolophon</field>
+				<field index="index_name">colophon</field>
+				<field index="oai_name"></field>
+				<field index="thumbnail" type="integer">0</field>
+				<field index="status" type="integer">0</field>
+			</fieldlist>
+			<related index="rels" type="array"></related>
+		</tablerow>
+		<tablerow index="tx_dlf_structures:145" type="array">
+			<fieldlist index="data" type="array">
+				<field index="uid" type="integer">145</field>
+				<field index="pid" type="integer">4</field>
+				<field index="tstamp" type="integer">1606489910</field>
+				<field index="crdate" type="integer">1606489910</field>
+				<field index="cruser_id" type="integer">1</field>
+				<field index="deleted" type="integer">0</field>
+				<field index="sys_language_uid" type="integer">0</field>
+				<field index="l18n_parent" type="integer">0</field>
+				<field index="l18n_diffsource">a:1:{s:9:&quot;thumbnail&quot;;N;}</field>
+				<field index="hidden" type="integer">0</field>
+				<field index="l10n_state" type="NULL"></field>
+				<field index="toplevel" type="integer">1</field>
+				<field index="label">Konvolut</field>
+				<field index="index_name">bundle</field>
+				<field index="oai_name">bundle</field>
+				<field index="thumbnail" type="integer">109</field>
+				<field index="status" type="integer">0</field>
+			</fieldlist>
+			<related index="rels" type="array">
+				<field index="thumbnail" type="array">
+					<type>db</type>
+					<relations index="itemArray" type="array">
+						<element index="0" type="array">
+							<id>109</id>
+							<table>tx_dlf_structures</table>
+						</element>
+					</relations>
+				</field>
+			</related>
+		</tablerow>
+		<tablerow index="tx_dlf_structures:144" type="array">
+			<fieldlist index="data" type="array">
+				<field index="uid" type="integer">144</field>
+				<field index="pid" type="integer">4</field>
+				<field index="tstamp" type="integer">1606489910</field>
+				<field index="crdate" type="integer">1606489910</field>
+				<field index="cruser_id" type="integer">1</field>
+				<field index="deleted" type="integer">0</field>
+				<field index="sys_language_uid" type="integer">0</field>
+				<field index="l18n_parent" type="integer">0</field>
+				<field index="l18n_diffsource">a:7:{s:8:&quot;toplevel&quot;;N;s:5:&quot;label&quot;;N;s:10:&quot;index_name&quot;;N;s:8:&quot;oai_name&quot;;N;s:16:&quot;sys_language_uid&quot;;N;s:6:&quot;hidden&quot;;N;s:6:&quot;status&quot;;N;}</field>
+				<field index="hidden" type="integer">0</field>
+				<field index="l10n_state" type="NULL"></field>
+				<field index="toplevel" type="integer">0</field>
+				<field index="label">Kupfertitel</field>
+				<field index="index_name">engraved_titlepage</field>
+				<field index="oai_name"></field>
+				<field index="thumbnail" type="integer">0</field>
+				<field index="status" type="integer">0</field>
+			</fieldlist>
+			<related index="rels" type="array"></related>
+		</tablerow>
+		<tablerow index="tx_dlf_structures:143" type="array">
+			<fieldlist index="data" type="array">
+				<field index="uid" type="integer">143</field>
+				<field index="pid" type="integer">4</field>
+				<field index="tstamp" type="integer">1606489910</field>
+				<field index="crdate" type="integer">1606489910</field>
+				<field index="cruser_id" type="integer">1</field>
+				<field index="deleted" type="integer">0</field>
+				<field index="sys_language_uid" type="integer">0</field>
+				<field index="l18n_parent" type="integer">0</field>
+				<field index="l18n_diffsource">a:7:{s:8:&quot;toplevel&quot;;N;s:5:&quot;label&quot;;N;s:10:&quot;index_name&quot;;N;s:8:&quot;oai_name&quot;;N;s:16:&quot;sys_language_uid&quot;;N;s:6:&quot;hidden&quot;;N;s:6:&quot;status&quot;;N;}</field>
+				<field index="hidden" type="integer">0</field>
+				<field index="l10n_state" type="NULL"></field>
+				<field index="toplevel" type="integer">0</field>
+				<field index="label">Lebenslauf</field>
+				<field index="index_name">curriculum_vitae</field>
+				<field index="oai_name">section</field>
+				<field index="thumbnail" type="integer">0</field>
+				<field index="status" type="integer">0</field>
+			</fieldlist>
+			<related index="rels" type="array"></related>
+		</tablerow>
+		<tablerow index="tx_dlf_structures:142" type="array">
+			<fieldlist index="data" type="array">
+				<field index="uid" type="integer">142</field>
+				<field index="pid" type="integer">4</field>
+				<field index="tstamp" type="integer">1606489910</field>
+				<field index="crdate" type="integer">1606489910</field>
+				<field index="cruser_id" type="integer">1</field>
+				<field index="deleted" type="integer">0</field>
+				<field index="sys_language_uid" type="integer">0</field>
+				<field index="l18n_parent" type="integer">0</field>
+				<field index="l18n_diffsource">a:7:{s:8:&quot;toplevel&quot;;N;s:5:&quot;label&quot;;N;s:10:&quot;index_name&quot;;N;s:8:&quot;oai_name&quot;;N;s:16:&quot;sys_language_uid&quot;;N;s:6:&quot;hidden&quot;;N;s:6:&quot;status&quot;;N;}</field>
+				<field index="hidden" type="integer">0</field>
+				<field index="l10n_state" type="NULL"></field>
+				<field index="toplevel" type="integer">0</field>
+				<field index="label">Literaturverzeichnis</field>
+				<field index="index_name">table_references</field>
+				<field index="oai_name">table</field>
+				<field index="thumbnail" type="integer">0</field>
+				<field index="status" type="integer">0</field>
+			</fieldlist>
+			<related index="rels" type="array"></related>
+		</tablerow>
+		<tablerow index="tx_dlf_structures:141" type="array">
+			<fieldlist index="data" type="array">
+				<field index="uid" type="integer">141</field>
+				<field index="pid" type="integer">4</field>
+				<field index="tstamp" type="integer">1606489910</field>
+				<field index="crdate" type="integer">1606489910</field>
+				<field index="cruser_id" type="integer">1</field>
+				<field index="deleted" type="integer">0</field>
+				<field index="sys_language_uid" type="integer">0</field>
+				<field index="l18n_parent" type="integer">0</field>
+				<field index="l18n_diffsource">a:1:{s:9:&quot;thumbnail&quot;;N;}</field>
+				<field index="hidden" type="integer">0</field>
+				<field index="l10n_state" type="NULL"></field>
+				<field index="toplevel" type="integer">1</field>
+				<field index="label">Mappe</field>
+				<field index="index_name">folder</field>
+				<field index="oai_name">folder</field>
+				<field index="thumbnail" type="integer">0</field>
+				<field index="status" type="integer">0</field>
+			</fieldlist>
+			<related index="rels" type="array"></related>
+		</tablerow>
+		<tablerow index="tx_dlf_structures:140" type="array">
+			<fieldlist index="data" type="array">
+				<field index="uid" type="integer">140</field>
+				<field index="pid" type="integer">4</field>
+				<field index="tstamp" type="integer">1606489910</field>
+				<field index="crdate" type="integer">1606489910</field>
+				<field index="cruser_id" type="integer">1</field>
+				<field index="deleted" type="integer">0</field>
+				<field index="sys_language_uid" type="integer">0</field>
+				<field index="l18n_parent" type="integer">0</field>
+				<field index="l18n_diffsource">a:7:{s:8:&quot;toplevel&quot;;N;s:5:&quot;label&quot;;N;s:10:&quot;index_name&quot;;N;s:8:&quot;oai_name&quot;;N;s:16:&quot;sys_language_uid&quot;;N;s:6:&quot;hidden&quot;;N;s:6:&quot;status&quot;;N;}</field>
+				<field index="hidden" type="integer">0</field>
+				<field index="l10n_state" type="NULL"></field>
+				<field index="toplevel" type="integer">0</field>
+				<field index="label">Marginalie</field>
+				<field index="index_name">annotation</field>
+				<field index="oai_name"></field>
+				<field index="thumbnail" type="integer">0</field>
+				<field index="status" type="integer">0</field>
+			</fieldlist>
+			<related index="rels" type="array"></related>
+		</tablerow>
+		<tablerow index="tx_dlf_structures:139" type="array">
+			<fieldlist index="data" type="array">
+				<field index="uid" type="integer">139</field>
+				<field index="pid" type="integer">4</field>
+				<field index="tstamp" type="integer">1606489910</field>
+				<field index="crdate" type="integer">1606489910</field>
+				<field index="cruser_id" type="integer">1</field>
+				<field index="deleted" type="integer">0</field>
+				<field index="sys_language_uid" type="integer">0</field>
+				<field index="l18n_parent" type="integer">0</field>
+				<field index="l18n_diffsource">a:1:{s:9:&quot;thumbnail&quot;;N;}</field>
+				<field index="hidden" type="integer">0</field>
+				<field index="l10n_state" type="NULL"></field>
+				<field index="toplevel" type="integer">1</field>
+				<field index="label">Mehrbändiges Werk</field>
+				<field index="index_name">multivolume_work</field>
+				<field index="oai_name"></field>
+				<field index="thumbnail" type="integer">109</field>
+				<field index="status" type="integer">0</field>
+			</fieldlist>
+			<related index="rels" type="array">
+				<field index="thumbnail" type="array">
+					<type>db</type>
+					<relations index="itemArray" type="array">
+						<element index="0" type="array">
+							<id>109</id>
+							<table>tx_dlf_structures</table>
+						</element>
+					</relations>
+				</field>
+			</related>
+		</tablerow>
+		<tablerow index="tx_dlf_structures:138" type="array">
+			<fieldlist index="data" type="array">
+				<field index="uid" type="integer">138</field>
+				<field index="pid" type="integer">4</field>
+				<field index="tstamp" type="integer">1606489910</field>
+				<field index="crdate" type="integer">1606489910</field>
+				<field index="cruser_id" type="integer">1</field>
+				<field index="deleted" type="integer">0</field>
+				<field index="sys_language_uid" type="integer">0</field>
+				<field index="l18n_parent" type="integer">0</field>
+				<field index="l18n_diffsource">a:1:{s:9:&quot;thumbnail&quot;;N;}</field>
+				<field index="hidden" type="integer">0</field>
+				<field index="l10n_state" type="NULL"></field>
+				<field index="toplevel" type="integer">1</field>
+				<field index="label">Mehrteilige Handschrift</field>
+				<field index="index_name">multipart_manuscript</field>
+				<field index="oai_name">multivolume_work</field>
+				<field index="thumbnail" type="integer">109</field>
+				<field index="status" type="integer">0</field>
+			</fieldlist>
+			<related index="rels" type="array">
+				<field index="thumbnail" type="array">
+					<type>db</type>
+					<relations index="itemArray" type="array">
+						<element index="0" type="array">
+							<id>109</id>
+							<table>tx_dlf_structures</table>
+						</element>
+					</relations>
+				</field>
+			</related>
+		</tablerow>
+		<tablerow index="tx_dlf_structures:137" type="array">
+			<fieldlist index="data" type="array">
+				<field index="uid" type="integer">137</field>
+				<field index="pid" type="integer">4</field>
+				<field index="tstamp" type="integer">1606489910</field>
+				<field index="crdate" type="integer">1606489910</field>
+				<field index="cruser_id" type="integer">1</field>
+				<field index="deleted" type="integer">0</field>
+				<field index="sys_language_uid" type="integer">0</field>
+				<field index="l18n_parent" type="integer">0</field>
+				<field index="l18n_diffsource">a:7:{s:8:&quot;toplevel&quot;;N;s:5:&quot;label&quot;;N;s:10:&quot;index_name&quot;;N;s:8:&quot;oai_name&quot;;N;s:16:&quot;sys_language_uid&quot;;N;s:6:&quot;hidden&quot;;N;s:6:&quot;status&quot;;N;}</field>
+				<field index="hidden" type="integer">0</field>
+				<field index="l10n_state" type="NULL"></field>
+				<field index="toplevel" type="integer">0</field>
+				<field index="label">Monat</field>
+				<field index="index_name">month</field>
+				<field index="oai_name">month</field>
+				<field index="thumbnail" type="integer">0</field>
+				<field index="status" type="integer">0</field>
+			</fieldlist>
+			<related index="rels" type="array"></related>
+		</tablerow>
+		<tablerow index="tx_dlf_structures:136" type="array">
+			<fieldlist index="data" type="array">
+				<field index="uid" type="integer">136</field>
+				<field index="pid" type="integer">4</field>
+				<field index="tstamp" type="integer">1606489910</field>
+				<field index="crdate" type="integer">1606489910</field>
+				<field index="cruser_id" type="integer">1</field>
+				<field index="deleted" type="integer">0</field>
+				<field index="sys_language_uid" type="integer">0</field>
+				<field index="l18n_parent" type="integer">0</field>
+				<field index="l18n_diffsource">a:1:{s:9:&quot;thumbnail&quot;;N;}</field>
+				<field index="hidden" type="integer">0</field>
+				<field index="l10n_state" type="NULL"></field>
+				<field index="toplevel" type="integer">1</field>
+				<field index="label">Monographie</field>
+				<field index="index_name">monograph</field>
+				<field index="oai_name"></field>
+				<field index="thumbnail" type="integer">109</field>
+				<field index="status" type="integer">0</field>
+			</fieldlist>
+			<related index="rels" type="array">
+				<field index="thumbnail" type="array">
+					<type>db</type>
+					<relations index="itemArray" type="array">
+						<element index="0" type="array">
+							<id>109</id>
+							<table>tx_dlf_structures</table>
+						</element>
+					</relations>
+				</field>
+			</related>
+		</tablerow>
+		<tablerow index="tx_dlf_structures:135" type="array">
+			<fieldlist index="data" type="array">
+				<field index="uid" type="integer">135</field>
+				<field index="pid" type="integer">4</field>
+				<field index="tstamp" type="integer">1606489910</field>
+				<field index="crdate" type="integer">1606489910</field>
+				<field index="cruser_id" type="integer">1</field>
+				<field index="deleted" type="integer">0</field>
+				<field index="sys_language_uid" type="integer">0</field>
+				<field index="l18n_parent" type="integer">0</field>
+				<field index="l18n_diffsource">a:7:{s:8:&quot;toplevel&quot;;N;s:5:&quot;label&quot;;N;s:10:&quot;index_name&quot;;N;s:8:&quot;oai_name&quot;;N;s:16:&quot;sys_language_uid&quot;;N;s:6:&quot;hidden&quot;;N;s:6:&quot;status&quot;;N;}</field>
+				<field index="hidden" type="integer">0</field>
+				<field index="l10n_state" type="NULL"></field>
+				<field index="toplevel" type="integer">0</field>
+				<field index="label">Musiknotation</field>
+				<field index="index_name">musical_notation</field>
+				<field index="oai_name"></field>
+				<field index="thumbnail" type="integer">0</field>
+				<field index="status" type="integer">0</field>
+			</fieldlist>
+			<related index="rels" type="array"></related>
+		</tablerow>
+		<tablerow index="tx_dlf_structures:134" type="array">
+			<fieldlist index="data" type="array">
+				<field index="uid" type="integer">134</field>
+				<field index="pid" type="integer">4</field>
+				<field index="tstamp" type="integer">1606489910</field>
+				<field index="crdate" type="integer">1606489910</field>
+				<field index="cruser_id" type="integer">1</field>
+				<field index="deleted" type="integer">0</field>
+				<field index="sys_language_uid" type="integer">0</field>
+				<field index="l18n_parent" type="integer">0</field>
+				<field index="l18n_diffsource">a:7:{s:8:&quot;toplevel&quot;;N;s:5:&quot;label&quot;;N;s:10:&quot;index_name&quot;;N;s:8:&quot;oai_name&quot;;N;s:16:&quot;sys_language_uid&quot;;N;s:6:&quot;hidden&quot;;N;s:6:&quot;status&quot;;N;}</field>
+				<field index="hidden" type="integer">0</field>
+				<field index="l10n_state" type="NULL"></field>
+				<field index="toplevel" type="integer">0</field>
+				<field index="label">Nachruf</field>
+				<field index="index_name">obituary</field>
+				<field index="oai_name">section</field>
+				<field index="thumbnail" type="integer">0</field>
+				<field index="status" type="integer">0</field>
+			</fieldlist>
+			<related index="rels" type="array"></related>
+		</tablerow>
+		<tablerow index="tx_dlf_structures:133" type="array">
+			<fieldlist index="data" type="array">
+				<field index="uid" type="integer">133</field>
+				<field index="pid" type="integer">4</field>
+				<field index="tstamp" type="integer">1606489910</field>
+				<field index="crdate" type="integer">1606489910</field>
+				<field index="cruser_id" type="integer">1</field>
+				<field index="deleted" type="integer">0</field>
+				<field index="sys_language_uid" type="integer">0</field>
+				<field index="l18n_parent" type="integer">0</field>
+				<field index="l18n_diffsource">a:7:{s:8:&quot;toplevel&quot;;N;s:5:&quot;label&quot;;N;s:10:&quot;index_name&quot;;N;s:8:&quot;oai_name&quot;;N;s:16:&quot;sys_language_uid&quot;;N;s:6:&quot;hidden&quot;;N;s:6:&quot;status&quot;;N;}</field>
+				<field index="hidden" type="integer">0</field>
+				<field index="l10n_state" type="NULL"></field>
+				<field index="toplevel" type="integer">0</field>
+				<field index="label">Nachtrag</field>
+				<field index="index_name">addendum</field>
+				<field index="oai_name">section</field>
+				<field index="thumbnail" type="integer">0</field>
+				<field index="status" type="integer">0</field>
+			</fieldlist>
+			<related index="rels" type="array"></related>
+		</tablerow>
+		<tablerow index="tx_dlf_structures:132" type="array">
+			<fieldlist index="data" type="array">
+				<field index="uid" type="integer">132</field>
+				<field index="pid" type="integer">4</field>
+				<field index="tstamp" type="integer">1606489910</field>
+				<field index="crdate" type="integer">1606489910</field>
+				<field index="cruser_id" type="integer">1</field>
+				<field index="deleted" type="integer">0</field>
+				<field index="sys_language_uid" type="integer">0</field>
+				<field index="l18n_parent" type="integer">0</field>
+				<field index="l18n_diffsource">a:7:{s:8:&quot;toplevel&quot;;N;s:5:&quot;label&quot;;N;s:10:&quot;index_name&quot;;N;s:8:&quot;oai_name&quot;;N;s:16:&quot;sys_language_uid&quot;;N;s:6:&quot;hidden&quot;;N;s:6:&quot;status&quot;;N;}</field>
+				<field index="hidden" type="integer">0</field>
+				<field index="l10n_state" type="NULL"></field>
+				<field index="toplevel" type="integer">0</field>
+				<field index="label">Ortsregister</field>
+				<field index="index_name">index_location</field>
+				<field index="oai_name">index</field>
+				<field index="thumbnail" type="integer">0</field>
+				<field index="status" type="integer">0</field>
+			</fieldlist>
+			<related index="rels" type="array"></related>
+		</tablerow>
+		<tablerow index="tx_dlf_structures:131" type="array">
+			<fieldlist index="data" type="array">
+				<field index="uid" type="integer">131</field>
+				<field index="pid" type="integer">4</field>
+				<field index="tstamp" type="integer">1606489910</field>
+				<field index="crdate" type="integer">1606489910</field>
+				<field index="cruser_id" type="integer">1</field>
+				<field index="deleted" type="integer">0</field>
+				<field index="sys_language_uid" type="integer">0</field>
+				<field index="l18n_parent" type="integer">0</field>
+				<field index="l18n_diffsource">a:7:{s:8:&quot;toplevel&quot;;N;s:5:&quot;label&quot;;N;s:10:&quot;index_name&quot;;N;s:8:&quot;oai_name&quot;;N;s:16:&quot;sys_language_uid&quot;;N;s:6:&quot;hidden&quot;;N;s:6:&quot;status&quot;;N;}</field>
+				<field index="hidden" type="integer">0</field>
+				<field index="l10n_state" type="NULL"></field>
+				<field index="toplevel" type="integer">0</field>
+				<field index="label">Partitur</field>
+				<field index="index_name">score</field>
+				<field index="oai_name">musical_notation</field>
+				<field index="thumbnail" type="integer">0</field>
+				<field index="status" type="integer">0</field>
+			</fieldlist>
+			<related index="rels" type="array"></related>
+		</tablerow>
+		<tablerow index="tx_dlf_structures:130" type="array">
+			<fieldlist index="data" type="array">
+				<field index="uid" type="integer">130</field>
+				<field index="pid" type="integer">4</field>
+				<field index="tstamp" type="integer">1606489910</field>
+				<field index="crdate" type="integer">1606489910</field>
+				<field index="cruser_id" type="integer">1</field>
+				<field index="deleted" type="integer">0</field>
+				<field index="sys_language_uid" type="integer">0</field>
+				<field index="l18n_parent" type="integer">0</field>
+				<field index="l18n_diffsource">a:7:{s:8:&quot;toplevel&quot;;N;s:5:&quot;label&quot;;N;s:10:&quot;index_name&quot;;N;s:8:&quot;oai_name&quot;;N;s:16:&quot;sys_language_uid&quot;;N;s:6:&quot;hidden&quot;;N;s:6:&quot;status&quot;;N;}</field>
+				<field index="hidden" type="integer">0</field>
+				<field index="l10n_state" type="NULL"></field>
+				<field index="toplevel" type="integer">0</field>
+				<field index="label">Personenregister</field>
+				<field index="index_name">index_persons</field>
+				<field index="oai_name">index</field>
+				<field index="thumbnail" type="integer">0</field>
+				<field index="status" type="integer">0</field>
+			</fieldlist>
+			<related index="rels" type="array"></related>
+		</tablerow>
+		<tablerow index="tx_dlf_structures:129" type="array">
+			<fieldlist index="data" type="array">
+				<field index="uid" type="integer">129</field>
+				<field index="pid" type="integer">4</field>
+				<field index="tstamp" type="integer">1606489910</field>
+				<field index="crdate" type="integer">1606489910</field>
+				<field index="cruser_id" type="integer">1</field>
+				<field index="deleted" type="integer">0</field>
+				<field index="sys_language_uid" type="integer">0</field>
+				<field index="l18n_parent" type="integer">0</field>
+				<field index="l18n_diffsource">a:7:{s:8:&quot;toplevel&quot;;N;s:5:&quot;label&quot;;N;s:10:&quot;index_name&quot;;N;s:8:&quot;oai_name&quot;;N;s:16:&quot;sys_language_uid&quot;;N;s:6:&quot;hidden&quot;;N;s:6:&quot;status&quot;;N;}</field>
+				<field index="hidden" type="integer">0</field>
+				<field index="l10n_state" type="NULL"></field>
+				<field index="toplevel" type="integer">0</field>
+				<field index="label">Protokoll</field>
+				<field index="index_name">protocol</field>
+				<field index="oai_name">section</field>
+				<field index="thumbnail" type="integer">0</field>
+				<field index="status" type="integer">0</field>
+			</fieldlist>
+			<related index="rels" type="array"></related>
+		</tablerow>
+		<tablerow index="tx_dlf_structures:128" type="array">
+			<fieldlist index="data" type="array">
+				<field index="uid" type="integer">128</field>
+				<field index="pid" type="integer">4</field>
+				<field index="tstamp" type="integer">1606489910</field>
+				<field index="crdate" type="integer">1606489910</field>
+				<field index="cruser_id" type="integer">1</field>
+				<field index="deleted" type="integer">0</field>
+				<field index="sys_language_uid" type="integer">0</field>
+				<field index="l18n_parent" type="integer">0</field>
+				<field index="l18n_diffsource">a:7:{s:8:&quot;toplevel&quot;;N;s:5:&quot;label&quot;;N;s:10:&quot;index_name&quot;;N;s:8:&quot;oai_name&quot;;N;s:16:&quot;sys_language_uid&quot;;N;s:6:&quot;hidden&quot;;N;s:6:&quot;status&quot;;N;}</field>
+				<field index="hidden" type="integer">0</field>
+				<field index="l10n_state" type="NULL"></field>
+				<field index="toplevel" type="integer">0</field>
+				<field index="label">Redebeitrag</field>
+				<field index="index_name">speech</field>
+				<field index="oai_name">section</field>
+				<field index="thumbnail" type="integer">0</field>
+				<field index="status" type="integer">0</field>
+			</fieldlist>
+			<related index="rels" type="array"></related>
+		</tablerow>
+		<tablerow index="tx_dlf_structures:127" type="array">
+			<fieldlist index="data" type="array">
+				<field index="uid" type="integer">127</field>
+				<field index="pid" type="integer">4</field>
+				<field index="tstamp" type="integer">1606489910</field>
+				<field index="crdate" type="integer">1606489910</field>
+				<field index="cruser_id" type="integer">1</field>
+				<field index="deleted" type="integer">0</field>
+				<field index="sys_language_uid" type="integer">0</field>
+				<field index="l18n_parent" type="integer">0</field>
+				<field index="l18n_diffsource">a:7:{s:8:&quot;toplevel&quot;;N;s:5:&quot;label&quot;;N;s:10:&quot;index_name&quot;;N;s:8:&quot;oai_name&quot;;N;s:16:&quot;sys_language_uid&quot;;N;s:6:&quot;hidden&quot;;N;s:6:&quot;status&quot;;N;}</field>
+				<field index="hidden" type="integer">0</field>
+				<field index="l10n_state" type="NULL"></field>
+				<field index="toplevel" type="integer">0</field>
+				<field index="label">Register</field>
+				<field index="index_name">index</field>
+				<field index="oai_name"></field>
+				<field index="thumbnail" type="integer">0</field>
+				<field index="status" type="integer">0</field>
+			</fieldlist>
+			<related index="rels" type="array"></related>
+		</tablerow>
+		<tablerow index="tx_dlf_structures:126" type="array">
+			<fieldlist index="data" type="array">
+				<field index="uid" type="integer">126</field>
+				<field index="pid" type="integer">4</field>
+				<field index="tstamp" type="integer">1606489910</field>
+				<field index="crdate" type="integer">1606489910</field>
+				<field index="cruser_id" type="integer">1</field>
+				<field index="deleted" type="integer">0</field>
+				<field index="sys_language_uid" type="integer">0</field>
+				<field index="l18n_parent" type="integer">0</field>
+				<field index="l18n_diffsource">a:7:{s:8:&quot;toplevel&quot;;N;s:5:&quot;label&quot;;N;s:10:&quot;index_name&quot;;N;s:8:&quot;oai_name&quot;;N;s:16:&quot;sys_language_uid&quot;;N;s:6:&quot;hidden&quot;;N;s:6:&quot;status&quot;;N;}</field>
+				<field index="hidden" type="integer">0</field>
+				<field index="l10n_state" type="NULL"></field>
+				<field index="toplevel" type="integer">0</field>
+				<field index="label">Rücken</field>
+				<field index="index_name">spine</field>
+				<field index="oai_name"></field>
+				<field index="thumbnail" type="integer">0</field>
+				<field index="status" type="integer">0</field>
+			</fieldlist>
+			<related index="rels" type="array"></related>
+		</tablerow>
+		<tablerow index="tx_dlf_structures:125" type="array">
+			<fieldlist index="data" type="array">
+				<field index="uid" type="integer">125</field>
+				<field index="pid" type="integer">4</field>
+				<field index="tstamp" type="integer">1606489910</field>
+				<field index="crdate" type="integer">1606489910</field>
+				<field index="cruser_id" type="integer">1</field>
+				<field index="deleted" type="integer">0</field>
+				<field index="sys_language_uid" type="integer">0</field>
+				<field index="l18n_parent" type="integer">0</field>
+				<field index="l18n_diffsource">a:7:{s:8:&quot;toplevel&quot;;N;s:5:&quot;label&quot;;N;s:10:&quot;index_name&quot;;N;s:8:&quot;oai_name&quot;;N;s:16:&quot;sys_language_uid&quot;;N;s:6:&quot;hidden&quot;;N;s:6:&quot;status&quot;;N;}</field>
+				<field index="hidden" type="integer">0</field>
+				<field index="l10n_state" type="NULL"></field>
+				<field index="toplevel" type="integer">0</field>
+				<field index="label">Sachregister</field>
+				<field index="index_name">index_subject</field>
+				<field index="oai_name">index</field>
+				<field index="thumbnail" type="integer">0</field>
+				<field index="status" type="integer">0</field>
+			</fieldlist>
+			<related index="rels" type="array"></related>
+		</tablerow>
+		<tablerow index="tx_dlf_structures:124" type="array">
+			<fieldlist index="data" type="array">
+				<field index="uid" type="integer">124</field>
+				<field index="pid" type="integer">4</field>
+				<field index="tstamp" type="integer">1606489910</field>
+				<field index="crdate" type="integer">1606489910</field>
+				<field index="cruser_id" type="integer">1</field>
+				<field index="deleted" type="integer">0</field>
+				<field index="sys_language_uid" type="integer">0</field>
+				<field index="l18n_parent" type="integer">0</field>
+				<field index="l18n_diffsource">a:7:{s:8:&quot;toplevel&quot;;N;s:5:&quot;label&quot;;N;s:10:&quot;index_name&quot;;N;s:8:&quot;oai_name&quot;;N;s:16:&quot;sys_language_uid&quot;;N;s:6:&quot;hidden&quot;;N;s:6:&quot;status&quot;;N;}</field>
+				<field index="hidden" type="integer">0</field>
+				<field index="l10n_state" type="NULL"></field>
+				<field index="toplevel" type="integer">0</field>
+				<field index="label">Seite</field>
+				<field index="index_name">page</field>
+				<field index="oai_name"></field>
+				<field index="thumbnail" type="integer">0</field>
+				<field index="status" type="integer">0</field>
+			</fieldlist>
+			<related index="rels" type="array"></related>
+		</tablerow>
+		<tablerow index="tx_dlf_structures:123" type="array">
+			<fieldlist index="data" type="array">
+				<field index="uid" type="integer">123</field>
+				<field index="pid" type="integer">4</field>
+				<field index="tstamp" type="integer">1606489910</field>
+				<field index="crdate" type="integer">1606489910</field>
+				<field index="cruser_id" type="integer">1</field>
+				<field index="deleted" type="integer">0</field>
+				<field index="sys_language_uid" type="integer">0</field>
+				<field index="l18n_parent" type="integer">0</field>
+				<field index="l18n_diffsource">a:1:{s:6:&quot;hidden&quot;;N;}</field>
+				<field index="hidden" type="integer">0</field>
+				<field index="l10n_state" type="NULL"></field>
+				<field index="toplevel" type="integer">0</field>
+				<field index="label">Sonstiges</field>
+				<field index="index_name">other</field>
+				<field index="oai_name">section</field>
+				<field index="thumbnail" type="integer">0</field>
+				<field index="status" type="integer">0</field>
+			</fieldlist>
+			<related index="rels" type="array"></related>
+		</tablerow>
+		<tablerow index="tx_dlf_structures:122" type="array">
+			<fieldlist index="data" type="array">
+				<field index="uid" type="integer">122</field>
+				<field index="pid" type="integer">4</field>
+				<field index="tstamp" type="integer">1606489910</field>
+				<field index="crdate" type="integer">1606489910</field>
+				<field index="cruser_id" type="integer">1</field>
+				<field index="deleted" type="integer">0</field>
+				<field index="sys_language_uid" type="integer">0</field>
+				<field index="l18n_parent" type="integer">0</field>
+				<field index="l18n_diffsource">a:7:{s:8:&quot;toplevel&quot;;N;s:5:&quot;label&quot;;N;s:10:&quot;index_name&quot;;N;s:8:&quot;oai_name&quot;;N;s:16:&quot;sys_language_uid&quot;;N;s:6:&quot;hidden&quot;;N;s:6:&quot;status&quot;;N;}</field>
+				<field index="hidden" type="integer">0</field>
+				<field index="l10n_state" type="NULL"></field>
+				<field index="toplevel" type="integer">0</field>
+				<field index="label">Spezialregister</field>
+				<field index="index_name">index_special</field>
+				<field index="oai_name">index</field>
+				<field index="thumbnail" type="integer">0</field>
+				<field index="status" type="integer">0</field>
+			</fieldlist>
+			<related index="rels" type="array"></related>
+		</tablerow>
+		<tablerow index="tx_dlf_structures:121" type="array">
+			<fieldlist index="data" type="array">
+				<field index="uid" type="integer">121</field>
+				<field index="pid" type="integer">4</field>
+				<field index="tstamp" type="integer">1606489910</field>
+				<field index="crdate" type="integer">1606489910</field>
+				<field index="cruser_id" type="integer">1</field>
+				<field index="deleted" type="integer">0</field>
+				<field index="sys_language_uid" type="integer">0</field>
+				<field index="l18n_parent" type="integer">0</field>
+				<field index="l18n_diffsource">a:7:{s:8:&quot;toplevel&quot;;N;s:5:&quot;label&quot;;N;s:10:&quot;index_name&quot;;N;s:8:&quot;oai_name&quot;;N;s:16:&quot;sys_language_uid&quot;;N;s:6:&quot;hidden&quot;;N;s:6:&quot;status&quot;;N;}</field>
+				<field index="hidden" type="integer">0</field>
+				<field index="l10n_state" type="NULL"></field>
+				<field index="toplevel" type="integer">0</field>
+				<field index="label">Spiegel</field>
+				<field index="index_name">paste_down</field>
+				<field index="oai_name"></field>
+				<field index="thumbnail" type="integer">0</field>
+				<field index="status" type="integer">0</field>
+			</fieldlist>
+			<related index="rels" type="array"></related>
+		</tablerow>
+		<tablerow index="tx_dlf_structures:120" type="array">
+			<fieldlist index="data" type="array">
+				<field index="uid" type="integer">120</field>
+				<field index="pid" type="integer">4</field>
+				<field index="tstamp" type="integer">1606489910</field>
+				<field index="crdate" type="integer">1606489910</field>
+				<field index="cruser_id" type="integer">1</field>
+				<field index="deleted" type="integer">0</field>
+				<field index="sys_language_uid" type="integer">0</field>
+				<field index="l18n_parent" type="integer">0</field>
+				<field index="l18n_diffsource">a:7:{s:8:&quot;toplevel&quot;;N;s:5:&quot;label&quot;;N;s:10:&quot;index_name&quot;;N;s:8:&quot;oai_name&quot;;N;s:16:&quot;sys_language_uid&quot;;N;s:6:&quot;hidden&quot;;N;s:6:&quot;status&quot;;N;}</field>
+				<field index="hidden" type="integer">0</field>
+				<field index="l10n_state" type="NULL"></field>
+				<field index="toplevel" type="integer">0</field>
+				<field index="label">Sprungmarke</field>
+				<field index="index_name">mark</field>
+				<field index="oai_name">mark</field>
+				<field index="thumbnail" type="integer">0</field>
+				<field index="status" type="integer">0</field>
+			</fieldlist>
+			<related index="rels" type="array"></related>
+		</tablerow>
+		<tablerow index="tx_dlf_structures:119" type="array">
+			<fieldlist index="data" type="array">
+				<field index="uid" type="integer">119</field>
+				<field index="pid" type="integer">4</field>
+				<field index="tstamp" type="integer">1606489910</field>
+				<field index="crdate" type="integer">1606489910</field>
+				<field index="cruser_id" type="integer">1</field>
+				<field index="deleted" type="integer">0</field>
+				<field index="sys_language_uid" type="integer">0</field>
+				<field index="l18n_parent" type="integer">0</field>
+				<field index="l18n_diffsource">a:7:{s:8:&quot;toplevel&quot;;N;s:5:&quot;label&quot;;N;s:10:&quot;index_name&quot;;N;s:8:&quot;oai_name&quot;;N;s:16:&quot;sys_language_uid&quot;;N;s:6:&quot;hidden&quot;;N;s:6:&quot;status&quot;;N;}</field>
+				<field index="hidden" type="integer">0</field>
+				<field index="l10n_state" type="NULL"></field>
+				<field index="toplevel" type="integer">0</field>
+				<field index="label">Stimme</field>
+				<field index="index_name">music_part</field>
+				<field index="oai_name">musical_notation</field>
+				<field index="thumbnail" type="integer">0</field>
+				<field index="status" type="integer">0</field>
+			</fieldlist>
+			<related index="rels" type="array"></related>
+		</tablerow>
+		<tablerow index="tx_dlf_structures:118" type="array">
+			<fieldlist index="data" type="array">
+				<field index="uid" type="integer">118</field>
+				<field index="pid" type="integer">4</field>
+				<field index="tstamp" type="integer">1606489910</field>
+				<field index="crdate" type="integer">1606489910</field>
+				<field index="cruser_id" type="integer">1</field>
+				<field index="deleted" type="integer">0</field>
+				<field index="sys_language_uid" type="integer">0</field>
+				<field index="l18n_parent" type="integer">0</field>
+				<field index="l18n_diffsource">a:7:{s:8:&quot;toplevel&quot;;N;s:5:&quot;label&quot;;N;s:10:&quot;index_name&quot;;N;s:8:&quot;oai_name&quot;;N;s:16:&quot;sys_language_uid&quot;;N;s:6:&quot;hidden&quot;;N;s:6:&quot;status&quot;;N;}</field>
+				<field index="hidden" type="integer">0</field>
+				<field index="l10n_state" type="NULL"></field>
+				<field index="toplevel" type="integer">0</field>
+				<field index="label">Straße</field>
+				<field index="index_name">street</field>
+				<field index="oai_name">entry</field>
+				<field index="thumbnail" type="integer">0</field>
+				<field index="status" type="integer">0</field>
+			</fieldlist>
+			<related index="rels" type="array"></related>
+		</tablerow>
+		<tablerow index="tx_dlf_structures:117" type="array">
+			<fieldlist index="data" type="array">
+				<field index="uid" type="integer">117</field>
+				<field index="pid" type="integer">4</field>
+				<field index="tstamp" type="integer">1606489910</field>
+				<field index="crdate" type="integer">1606489910</field>
+				<field index="cruser_id" type="integer">1</field>
+				<field index="deleted" type="integer">0</field>
+				<field index="sys_language_uid" type="integer">0</field>
+				<field index="l18n_parent" type="integer">0</field>
+				<field index="l18n_diffsource">a:7:{s:8:&quot;toplevel&quot;;N;s:5:&quot;label&quot;;N;s:10:&quot;index_name&quot;;N;s:8:&quot;oai_name&quot;;N;s:16:&quot;sys_language_uid&quot;;N;s:6:&quot;hidden&quot;;N;s:6:&quot;status&quot;;N;}</field>
+				<field index="hidden" type="integer">0</field>
+				<field index="l10n_state" type="NULL"></field>
+				<field index="toplevel" type="integer">0</field>
+				<field index="label">Tabelle</field>
+				<field index="index_name">table</field>
+				<field index="oai_name"></field>
+				<field index="thumbnail" type="integer">0</field>
+				<field index="status" type="integer">0</field>
+			</fieldlist>
+			<related index="rels" type="array"></related>
+		</tablerow>
+		<tablerow index="tx_dlf_structures:116" type="array">
+			<fieldlist index="data" type="array">
+				<field index="uid" type="integer">116</field>
+				<field index="pid" type="integer">4</field>
+				<field index="tstamp" type="integer">1606489910</field>
+				<field index="crdate" type="integer">1606489910</field>
+				<field index="cruser_id" type="integer">1</field>
+				<field index="deleted" type="integer">0</field>
+				<field index="sys_language_uid" type="integer">0</field>
+				<field index="l18n_parent" type="integer">0</field>
+				<field index="l18n_diffsource">a:7:{s:8:&quot;toplevel&quot;;N;s:5:&quot;label&quot;;N;s:10:&quot;index_name&quot;;N;s:8:&quot;oai_name&quot;;N;s:16:&quot;sys_language_uid&quot;;N;s:6:&quot;hidden&quot;;N;s:6:&quot;status&quot;;N;}</field>
+				<field index="hidden" type="integer">0</field>
+				<field index="l10n_state" type="NULL"></field>
+				<field index="toplevel" type="integer">0</field>
+				<field index="label">Tabellenbeschreibung</field>
+				<field index="index_name">table_description</field>
+				<field index="oai_name">section</field>
+				<field index="thumbnail" type="integer">0</field>
+				<field index="status" type="integer">0</field>
+			</fieldlist>
+			<related index="rels" type="array"></related>
+		</tablerow>
+		<tablerow index="tx_dlf_structures:115" type="array">
+			<fieldlist index="data" type="array">
+				<field index="uid" type="integer">115</field>
+				<field index="pid" type="integer">4</field>
+				<field index="tstamp" type="integer">1606489910</field>
+				<field index="crdate" type="integer">1606489910</field>
+				<field index="cruser_id" type="integer">1</field>
+				<field index="deleted" type="integer">0</field>
+				<field index="sys_language_uid" type="integer">0</field>
+				<field index="l18n_parent" type="integer">0</field>
+				<field index="l18n_diffsource">a:7:{s:8:&quot;toplevel&quot;;N;s:5:&quot;label&quot;;N;s:10:&quot;index_name&quot;;N;s:8:&quot;oai_name&quot;;N;s:16:&quot;sys_language_uid&quot;;N;s:6:&quot;hidden&quot;;N;s:6:&quot;status&quot;;N;}</field>
+				<field index="hidden" type="integer">0</field>
+				<field index="l10n_state" type="NULL"></field>
+				<field index="toplevel" type="integer">0</field>
+				<field index="label">Tabellenliste</field>
+				<field index="index_name">list_tables</field>
+				<field index="oai_name">index</field>
+				<field index="thumbnail" type="integer">0</field>
+				<field index="status" type="integer">0</field>
+			</fieldlist>
+			<related index="rels" type="array"></related>
+		</tablerow>
+		<tablerow index="tx_dlf_structures:114" type="array">
+			<fieldlist index="data" type="array">
+				<field index="uid" type="integer">114</field>
+				<field index="pid" type="integer">4</field>
+				<field index="tstamp" type="integer">1606489910</field>
+				<field index="crdate" type="integer">1606489910</field>
+				<field index="cruser_id" type="integer">1</field>
+				<field index="deleted" type="integer">0</field>
+				<field index="sys_language_uid" type="integer">0</field>
+				<field index="l18n_parent" type="integer">0</field>
+				<field index="l18n_diffsource">a:7:{s:8:&quot;toplevel&quot;;N;s:5:&quot;label&quot;;N;s:10:&quot;index_name&quot;;N;s:8:&quot;oai_name&quot;;N;s:16:&quot;sys_language_uid&quot;;N;s:6:&quot;hidden&quot;;N;s:6:&quot;status&quot;;N;}</field>
+				<field index="hidden" type="integer">0</field>
+				<field index="l10n_state" type="NULL"></field>
+				<field index="toplevel" type="integer">0</field>
+				<field index="label">Tag</field>
+				<field index="index_name">day</field>
+				<field index="oai_name">day</field>
+				<field index="thumbnail" type="integer">0</field>
+				<field index="status" type="integer">0</field>
+			</fieldlist>
+			<related index="rels" type="array"></related>
+		</tablerow>
+		<tablerow index="tx_dlf_structures:113" type="array">
+			<fieldlist index="data" type="array">
+				<field index="uid" type="integer">113</field>
+				<field index="pid" type="integer">4</field>
+				<field index="tstamp" type="integer">1606489910</field>
+				<field index="crdate" type="integer">1606489910</field>
+				<field index="cruser_id" type="integer">1</field>
+				<field index="deleted" type="integer">0</field>
+				<field index="sys_language_uid" type="integer">0</field>
+				<field index="l18n_parent" type="integer">0</field>
+				<field index="l18n_diffsource">a:1:{s:9:&quot;thumbnail&quot;;N;}</field>
+				<field index="hidden" type="integer">0</field>
+				<field index="l10n_state" type="NULL"></field>
+				<field index="toplevel" type="integer">1</field>
+				<field index="label">Teil einer Handschrift</field>
+				<field index="index_name">manuscript_part</field>
+				<field index="oai_name">fragment</field>
+				<field index="thumbnail" type="integer">109</field>
+				<field index="status" type="integer">0</field>
+			</fieldlist>
+			<related index="rels" type="array">
+				<field index="thumbnail" type="array">
+					<type>db</type>
+					<relations index="itemArray" type="array">
+						<element index="0" type="array">
+							<id>109</id>
+							<table>tx_dlf_structures</table>
+						</element>
+					</relations>
+				</field>
+			</related>
+		</tablerow>
+		<tablerow index="tx_dlf_structures:112" type="array">
+			<fieldlist index="data" type="array">
+				<field index="uid" type="integer">112</field>
+				<field index="pid" type="integer">4</field>
+				<field index="tstamp" type="integer">1606489910</field>
+				<field index="crdate" type="integer">1606489910</field>
+				<field index="cruser_id" type="integer">1</field>
+				<field index="deleted" type="integer">0</field>
+				<field index="sys_language_uid" type="integer">0</field>
+				<field index="l18n_parent" type="integer">0</field>
+				<field index="l18n_diffsource">a:7:{s:8:&quot;toplevel&quot;;N;s:5:&quot;label&quot;;N;s:10:&quot;index_name&quot;;N;s:8:&quot;oai_name&quot;;N;s:16:&quot;sys_language_uid&quot;;N;s:6:&quot;hidden&quot;;N;s:6:&quot;status&quot;;N;}</field>
+				<field index="hidden" type="integer">0</field>
+				<field index="l10n_state" type="NULL"></field>
+				<field index="toplevel" type="integer">0</field>
+				<field index="label">Teilwerk</field>
+				<field index="index_name">part</field>
+				<field index="oai_name">fragment</field>
+				<field index="thumbnail" type="integer">0</field>
+				<field index="status" type="integer">0</field>
+			</fieldlist>
+			<related index="rels" type="array"></related>
+		</tablerow>
+		<tablerow index="tx_dlf_structures:111" type="array">
+			<fieldlist index="data" type="array">
+				<field index="uid" type="integer">111</field>
+				<field index="pid" type="integer">4</field>
+				<field index="tstamp" type="integer">1606489910</field>
+				<field index="crdate" type="integer">1606489910</field>
+				<field index="cruser_id" type="integer">1</field>
+				<field index="deleted" type="integer">0</field>
+				<field index="sys_language_uid" type="integer">0</field>
+				<field index="l18n_parent" type="integer">0</field>
+				<field index="l18n_diffsource">a:5:{s:8:&quot;toplevel&quot;;N;s:5:&quot;label&quot;;N;s:10:&quot;index_name&quot;;N;s:16:&quot;sys_language_uid&quot;;N;s:6:&quot;hidden&quot;;N;}</field>
+				<field index="hidden" type="integer">0</field>
+				<field index="l10n_state" type="NULL"></field>
+				<field index="toplevel" type="integer">0</field>
+				<field index="label">Text</field>
+				<field index="index_name">text</field>
+				<field index="oai_name"></field>
+				<field index="thumbnail" type="integer">0</field>
+				<field index="status" type="integer">0</field>
+			</fieldlist>
+			<related index="rels" type="array"></related>
+		</tablerow>
+		<tablerow index="tx_dlf_structures:110" type="array">
+			<fieldlist index="data" type="array">
+				<field index="uid" type="integer">110</field>
+				<field index="pid" type="integer">4</field>
+				<field index="tstamp" type="integer">1606489910</field>
+				<field index="crdate" type="integer">1606489910</field>
+				<field index="cruser_id" type="integer">1</field>
+				<field index="deleted" type="integer">0</field>
+				<field index="sys_language_uid" type="integer">0</field>
+				<field index="l18n_parent" type="integer">0</field>
+				<field index="l18n_diffsource">a:7:{s:8:&quot;toplevel&quot;;N;s:5:&quot;label&quot;;N;s:10:&quot;index_name&quot;;N;s:8:&quot;oai_name&quot;;N;s:16:&quot;sys_language_uid&quot;;N;s:6:&quot;hidden&quot;;N;s:6:&quot;status&quot;;N;}</field>
+				<field index="hidden" type="integer">0</field>
+				<field index="l10n_state" type="NULL"></field>
+				<field index="toplevel" type="integer">0</field>
+				<field index="label">Thesen</field>
+				<field index="index_name">theses</field>
+				<field index="oai_name">section</field>
+				<field index="thumbnail" type="integer">0</field>
+				<field index="status" type="integer">0</field>
+			</fieldlist>
+			<related index="rels" type="array"></related>
+		</tablerow>
+		<tablerow index="tx_dlf_structures:109" type="array">
+			<fieldlist index="data" type="array">
+				<field index="uid" type="integer">109</field>
+				<field index="pid" type="integer">4</field>
+				<field index="tstamp" type="integer">1606489910</field>
+				<field index="crdate" type="integer">1606489910</field>
+				<field index="cruser_id" type="integer">1</field>
+				<field index="deleted" type="integer">0</field>
+				<field index="sys_language_uid" type="integer">0</field>
+				<field index="l18n_parent" type="integer">0</field>
+				<field index="l18n_diffsource">a:7:{s:8:&quot;toplevel&quot;;N;s:5:&quot;label&quot;;N;s:10:&quot;index_name&quot;;N;s:8:&quot;oai_name&quot;;N;s:16:&quot;sys_language_uid&quot;;N;s:6:&quot;hidden&quot;;N;s:6:&quot;status&quot;;N;}</field>
+				<field index="hidden" type="integer">0</field>
+				<field index="l10n_state" type="NULL"></field>
+				<field index="toplevel" type="integer">0</field>
+				<field index="label">Titelblatt</field>
+				<field index="index_name">title_page</field>
+				<field index="oai_name"></field>
+				<field index="thumbnail" type="integer">0</field>
+				<field index="status" type="integer">0</field>
+			</fieldlist>
+			<related index="rels" type="array"></related>
+		</tablerow>
+		<tablerow index="tx_dlf_structures:108" type="array">
+			<fieldlist index="data" type="array">
+				<field index="uid" type="integer">108</field>
+				<field index="pid" type="integer">4</field>
+				<field index="tstamp" type="integer">1606489910</field>
+				<field index="crdate" type="integer">1606489910</field>
+				<field index="cruser_id" type="integer">1</field>
+				<field index="deleted" type="integer">0</field>
+				<field index="sys_language_uid" type="integer">0</field>
+				<field index="l18n_parent" type="integer">0</field>
+				<field index="l18n_diffsource">a:7:{s:8:&quot;toplevel&quot;;N;s:5:&quot;label&quot;;N;s:10:&quot;index_name&quot;;N;s:8:&quot;oai_name&quot;;N;s:16:&quot;sys_language_uid&quot;;N;s:6:&quot;hidden&quot;;N;s:6:&quot;status&quot;;N;}</field>
+				<field index="hidden" type="integer">0</field>
+				<field index="l10n_state" type="NULL"></field>
+				<field index="toplevel" type="integer">0</field>
+				<field index="label">Umschlag</field>
+				<field index="index_name">jacket</field>
+				<field index="oai_name"></field>
+				<field index="thumbnail" type="integer">0</field>
+				<field index="status" type="integer">0</field>
+			</fieldlist>
+			<related index="rels" type="array"></related>
+		</tablerow>
+		<tablerow index="tx_dlf_structures:107" type="array">
+			<fieldlist index="data" type="array">
+				<field index="uid" type="integer">107</field>
+				<field index="pid" type="integer">4</field>
+				<field index="tstamp" type="integer">1606489910</field>
+				<field index="crdate" type="integer">1606489910</field>
+				<field index="cruser_id" type="integer">1</field>
+				<field index="deleted" type="integer">0</field>
+				<field index="sys_language_uid" type="integer">0</field>
+				<field index="l18n_parent" type="integer">0</field>
+				<field index="l18n_diffsource">a:5:{s:8:&quot;toplevel&quot;;N;s:5:&quot;label&quot;;N;s:10:&quot;index_name&quot;;N;s:16:&quot;sys_language_uid&quot;;N;s:6:&quot;hidden&quot;;N;}</field>
+				<field index="hidden" type="integer">0</field>
+				<field index="l10n_state" type="NULL"></field>
+				<field index="toplevel" type="integer">0</field>
+				<field index="label">Unterbestand</field>
+				<field index="index_name">subinventory</field>
+				<field index="oai_name"></field>
+				<field index="thumbnail" type="integer">0</field>
+				<field index="status" type="integer">0</field>
+			</fieldlist>
+			<related index="rels" type="array"></related>
+		</tablerow>
+		<tablerow index="tx_dlf_structures:106" type="array">
+			<fieldlist index="data" type="array">
+				<field index="uid" type="integer">106</field>
+				<field index="pid" type="integer">4</field>
+				<field index="tstamp" type="integer">1606489910</field>
+				<field index="crdate" type="integer">1606489910</field>
+				<field index="cruser_id" type="integer">1</field>
+				<field index="deleted" type="integer">0</field>
+				<field index="sys_language_uid" type="integer">0</field>
+				<field index="l18n_parent" type="integer">0</field>
+				<field index="l18n_diffsource">a:5:{s:8:&quot;toplevel&quot;;N;s:5:&quot;label&quot;;N;s:10:&quot;index_name&quot;;N;s:16:&quot;sys_language_uid&quot;;N;s:6:&quot;hidden&quot;;N;}</field>
+				<field index="hidden" type="integer">0</field>
+				<field index="l10n_state" type="NULL"></field>
+				<field index="toplevel" type="integer">0</field>
+				<field index="label">Vermerk</field>
+				<field index="index_name">note</field>
+				<field index="oai_name"></field>
+				<field index="thumbnail" type="integer">0</field>
+				<field index="status" type="integer">0</field>
+			</fieldlist>
+			<related index="rels" type="array"></related>
+		</tablerow>
+		<tablerow index="tx_dlf_structures:105" type="array">
+			<fieldlist index="data" type="array">
+				<field index="uid" type="integer">105</field>
+				<field index="pid" type="integer">4</field>
+				<field index="tstamp" type="integer">1606489910</field>
+				<field index="crdate" type="integer">1606489910</field>
+				<field index="cruser_id" type="integer">1</field>
+				<field index="deleted" type="integer">0</field>
+				<field index="sys_language_uid" type="integer">0</field>
+				<field index="l18n_parent" type="integer">0</field>
+				<field index="l18n_diffsource">a:7:{s:8:&quot;toplevel&quot;;N;s:5:&quot;label&quot;;N;s:10:&quot;index_name&quot;;N;s:8:&quot;oai_name&quot;;N;s:16:&quot;sys_language_uid&quot;;N;s:6:&quot;hidden&quot;;N;s:6:&quot;status&quot;;N;}</field>
+				<field index="hidden" type="integer">0</field>
+				<field index="l10n_state" type="NULL"></field>
+				<field index="toplevel" type="integer">0</field>
+				<field index="label">Vorsatz</field>
+				<field index="index_name">endsheet</field>
+				<field index="oai_name"></field>
+				<field index="thumbnail" type="integer">0</field>
+				<field index="status" type="integer">0</field>
+			</fieldlist>
+			<related index="rels" type="array"></related>
+		</tablerow>
+		<tablerow index="tx_dlf_structures:104" type="array">
+			<fieldlist index="data" type="array">
+				<field index="uid" type="integer">104</field>
+				<field index="pid" type="integer">4</field>
+				<field index="tstamp" type="integer">1606489910</field>
+				<field index="crdate" type="integer">1606489910</field>
+				<field index="cruser_id" type="integer">1</field>
+				<field index="deleted" type="integer">0</field>
+				<field index="sys_language_uid" type="integer">0</field>
+				<field index="l18n_parent" type="integer">0</field>
+				<field index="l18n_diffsource">a:7:{s:8:&quot;toplevel&quot;;N;s:5:&quot;label&quot;;N;s:10:&quot;index_name&quot;;N;s:8:&quot;oai_name&quot;;N;s:16:&quot;sys_language_uid&quot;;N;s:6:&quot;hidden&quot;;N;s:6:&quot;status&quot;;N;}</field>
+				<field index="hidden" type="integer">0</field>
+				<field index="l10n_state" type="NULL"></field>
+				<field index="toplevel" type="integer">0</field>
+				<field index="label">Vorwort</field>
+				<field index="index_name">preface</field>
+				<field index="oai_name"></field>
+				<field index="thumbnail" type="integer">0</field>
+				<field index="status" type="integer">0</field>
+			</fieldlist>
+			<related index="rels" type="array"></related>
+		</tablerow>
+		<tablerow index="tx_dlf_structures:103" type="array">
+			<fieldlist index="data" type="array">
+				<field index="uid" type="integer">103</field>
+				<field index="pid" type="integer">4</field>
+				<field index="tstamp" type="integer">1606489910</field>
+				<field index="crdate" type="integer">1606489910</field>
+				<field index="cruser_id" type="integer">1</field>
+				<field index="deleted" type="integer">0</field>
+				<field index="sys_language_uid" type="integer">0</field>
+				<field index="l18n_parent" type="integer">0</field>
+				<field index="l18n_diffsource">a:7:{s:8:&quot;toplevel&quot;;N;s:5:&quot;label&quot;;N;s:10:&quot;index_name&quot;;N;s:8:&quot;oai_name&quot;;N;s:16:&quot;sys_language_uid&quot;;N;s:6:&quot;hidden&quot;;N;s:6:&quot;status&quot;;N;}</field>
+				<field index="hidden" type="integer">0</field>
+				<field index="l10n_state" type="NULL"></field>
+				<field index="toplevel" type="integer">0</field>
+				<field index="label">Wasserzeichen</field>
+				<field index="index_name">watermark</field>
+				<field index="oai_name"></field>
+				<field index="thumbnail" type="integer">0</field>
+				<field index="status" type="integer">0</field>
+			</fieldlist>
+			<related index="rels" type="array"></related>
+		</tablerow>
+		<tablerow index="tx_dlf_structures:102" type="array">
+			<fieldlist index="data" type="array">
+				<field index="uid" type="integer">102</field>
+				<field index="pid" type="integer">4</field>
+				<field index="tstamp" type="integer">1606489910</field>
+				<field index="crdate" type="integer">1606489910</field>
+				<field index="cruser_id" type="integer">1</field>
+				<field index="deleted" type="integer">0</field>
+				<field index="sys_language_uid" type="integer">0</field>
+				<field index="l18n_parent" type="integer">0</field>
+				<field index="l18n_diffsource">a:7:{s:8:&quot;toplevel&quot;;N;s:5:&quot;label&quot;;N;s:10:&quot;index_name&quot;;N;s:8:&quot;oai_name&quot;;N;s:16:&quot;sys_language_uid&quot;;N;s:6:&quot;hidden&quot;;N;s:6:&quot;status&quot;;N;}</field>
+				<field index="hidden" type="integer">0</field>
+				<field index="l10n_state" type="NULL"></field>
+				<field index="toplevel" type="integer">0</field>
+				<field index="label">Werbung</field>
+				<field index="index_name">advertising</field>
+				<field index="oai_name">section</field>
+				<field index="thumbnail" type="integer">0</field>
+				<field index="status" type="integer">0</field>
+			</fieldlist>
+			<related index="rels" type="array"></related>
+		</tablerow>
+		<tablerow index="tx_dlf_structures:101" type="array">
+			<fieldlist index="data" type="array">
+				<field index="uid" type="integer">101</field>
+				<field index="pid" type="integer">4</field>
+				<field index="tstamp" type="integer">1606489910</field>
+				<field index="crdate" type="integer">1606489910</field>
+				<field index="cruser_id" type="integer">1</field>
+				<field index="deleted" type="integer">0</field>
+				<field index="sys_language_uid" type="integer">0</field>
+				<field index="l18n_parent" type="integer">0</field>
+				<field index="l18n_diffsource">a:7:{s:8:&quot;toplevel&quot;;N;s:5:&quot;label&quot;;N;s:10:&quot;index_name&quot;;N;s:8:&quot;oai_name&quot;;N;s:16:&quot;sys_language_uid&quot;;N;s:6:&quot;hidden&quot;;N;s:6:&quot;status&quot;;N;}</field>
+				<field index="hidden" type="integer">0</field>
+				<field index="l10n_state" type="NULL"></field>
+				<field index="toplevel" type="integer">0</field>
+				<field index="label">Widmung</field>
+				<field index="index_name">dedication</field>
+				<field index="oai_name"></field>
+				<field index="thumbnail" type="integer">0</field>
+				<field index="status" type="integer">0</field>
+			</fieldlist>
+			<related index="rels" type="array"></related>
+		</tablerow>
+		<tablerow index="tx_dlf_structures:100" type="array">
+			<fieldlist index="data" type="array">
+				<field index="uid" type="integer">100</field>
+				<field index="pid" type="integer">4</field>
+				<field index="tstamp" type="integer">1606489910</field>
+				<field index="crdate" type="integer">1606489910</field>
+				<field index="cruser_id" type="integer">1</field>
+				<field index="deleted" type="integer">0</field>
+				<field index="sys_language_uid" type="integer">0</field>
+				<field index="l18n_parent" type="integer">0</field>
+				<field index="l18n_diffsource">a:1:{s:9:&quot;thumbnail&quot;;N;}</field>
+				<field index="hidden" type="integer">0</field>
+				<field index="l10n_state" type="NULL"></field>
+				<field index="toplevel" type="integer">1</field>
+				<field index="label">Zeitschrift</field>
+				<field index="index_name">periodical</field>
+				<field index="oai_name"></field>
+				<field index="thumbnail" type="integer">109</field>
+				<field index="status" type="integer">0</field>
+			</fieldlist>
+			<related index="rels" type="array">
+				<field index="thumbnail" type="array">
+					<type>db</type>
+					<relations index="itemArray" type="array">
+						<element index="0" type="array">
+							<id>109</id>
+							<table>tx_dlf_structures</table>
+						</element>
+					</relations>
+				</field>
+			</related>
+		</tablerow>
+		<tablerow index="tx_dlf_structures:99" type="array">
+			<fieldlist index="data" type="array">
+				<field index="uid" type="integer">99</field>
+				<field index="pid" type="integer">4</field>
+				<field index="tstamp" type="integer">1606489910</field>
+				<field index="crdate" type="integer">1606489910</field>
+				<field index="cruser_id" type="integer">1</field>
+				<field index="deleted" type="integer">0</field>
+				<field index="sys_language_uid" type="integer">0</field>
+				<field index="l18n_parent" type="integer">0</field>
+				<field index="l18n_diffsource">a:7:{s:8:&quot;toplevel&quot;;N;s:5:&quot;label&quot;;N;s:10:&quot;index_name&quot;;N;s:8:&quot;oai_name&quot;;N;s:16:&quot;sys_language_uid&quot;;N;s:6:&quot;hidden&quot;;N;s:6:&quot;status&quot;;N;}</field>
+				<field index="hidden" type="integer">0</field>
+				<field index="l10n_state" type="NULL"></field>
+				<field index="toplevel" type="integer">0</field>
+				<field index="label">Zeitschriftenteil</field>
+				<field index="index_name">periodical_part</field>
+				<field index="oai_name">fragment</field>
+				<field index="thumbnail" type="integer">0</field>
+				<field index="status" type="integer">0</field>
+			</fieldlist>
+			<related index="rels" type="array"></related>
+		</tablerow>
+		<tablerow index="tx_dlf_structures:98" type="array">
+			<fieldlist index="data" type="array">
+				<field index="uid" type="integer">98</field>
+				<field index="pid" type="integer">4</field>
+				<field index="tstamp" type="integer">1606489910</field>
+				<field index="crdate" type="integer">1606489910</field>
+				<field index="cruser_id" type="integer">1</field>
+				<field index="deleted" type="integer">0</field>
+				<field index="sys_language_uid" type="integer">0</field>
+				<field index="l18n_parent" type="integer">0</field>
+				<field index="l18n_diffsource">a:1:{s:9:&quot;thumbnail&quot;;N;}</field>
+				<field index="hidden" type="integer">0</field>
+				<field index="l10n_state" type="NULL"></field>
+				<field index="toplevel" type="integer">1</field>
+				<field index="label">Zeitung</field>
+				<field index="index_name">newspaper</field>
+				<field index="oai_name">newspaper</field>
+				<field index="thumbnail" type="integer">109</field>
+				<field index="status" type="integer">0</field>
+			</fieldlist>
+			<related index="rels" type="array">
+				<field index="thumbnail" type="array">
+					<type>db</type>
+					<relations index="itemArray" type="array">
+						<element index="0" type="array">
+							<id>109</id>
+							<table>tx_dlf_structures</table>
+						</element>
+					</relations>
+				</field>
+			</related>
+		</tablerow>
+		<tablerow index="tx_dlf_structures:97" type="array">
+			<fieldlist index="data" type="array">
+				<field index="uid" type="integer">97</field>
+				<field index="pid" type="integer">4</field>
+				<field index="tstamp" type="integer">1606489910</field>
+				<field index="crdate" type="integer">1606489910</field>
+				<field index="cruser_id" type="integer">1</field>
+				<field index="deleted" type="integer">0</field>
+				<field index="sys_language_uid" type="integer">0</field>
+				<field index="l18n_parent" type="integer">0</field>
+				<field index="l18n_diffsource">a:7:{s:8:&quot;toplevel&quot;;N;s:5:&quot;label&quot;;N;s:10:&quot;index_name&quot;;N;s:8:&quot;oai_name&quot;;N;s:16:&quot;sys_language_uid&quot;;N;s:6:&quot;hidden&quot;;N;s:6:&quot;status&quot;;N;}</field>
+				<field index="hidden" type="integer">0</field>
+				<field index="l10n_state" type="NULL"></field>
+				<field index="toplevel" type="integer">0</field>
+				<field index="label">Zensur</field>
+				<field index="index_name">censorship</field>
+				<field index="oai_name">section</field>
+				<field index="thumbnail" type="integer">0</field>
+				<field index="status" type="integer">0</field>
+			</fieldlist>
+			<related index="rels" type="array"></related>
+		</tablerow>
+	</records>
+</T3RecordDocument>

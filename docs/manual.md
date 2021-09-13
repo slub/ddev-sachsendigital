@@ -89,9 +89,12 @@ ddev typo3cms database:updateschema
   - `config.solrCore = 1`
 - In *List* tab, open the `Kitodo.Presenation` folder and switch to `Solr Core (PID 2)`. Enter "dlfCore0" as Solr Core.
 
-## Import Metadata Records
+## Import Metadata and Structure Records
 
-- Clear existing metadata records, e.g. by truncating (in phpMyAdmin or via `ddev mysql`):
+- Clear existing metadata and structure records, e.g. by truncating (in phpMyAdmin or via `ddev mysql`):
   - `tx_dlf_metadata`
   - `tx_dlf_metadataformat`
-- In TYPO3 backend, import `data/metadata.xml` into the `Kitodo.Presentation` folder.
+  - `tx_dlf_structures`
+- In TYPO3 backend, import into the `Kitodo.Presentation` folder:
+  - `data/metadata.xml`
+  - `data/structures.xml`
