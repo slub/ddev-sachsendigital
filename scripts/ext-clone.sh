@@ -9,7 +9,16 @@ EXTDIR=$(realpath "$SCRIPTDIR/../extensions")
 set -x
 
 mkdir -p "$EXTDIR"
-cd "$EXTDIR"
-git clone git@github.com:kitodo/kitodo-presentation.git
-git clone git@github.com:slub/slub_digitalcollections.git
-git clone git@git.slub-dresden.de:slub-webseite/slub-web-ldp.git
+
+function clone_conf()
+{
+    REPO_NAME=$(basename "$2")
+    DIR_NAME=${REPO_NAME%.git}
+    
+    ddev composer config "repositories.$1" path "./extensions/$DIR_NAME"
+    git clone "$2" "$EXTDIR/$DIR_NAME"
+}
+
+clone_conf kitodo-presentation git@github.com:kitodo/kitodo-presentation.git
+clone_conf slub-digitalcollections git@github.com:slub/slub_digitalcollections.git
+clone_conf slub-web-ldp git@git.slub-dresden.de:slub-webseite/slub-web-ldp.git

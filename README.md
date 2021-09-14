@@ -27,6 +27,47 @@ This repository provides a [DDEV](https://ddev.readthedocs.io/)-based developmen
    ddev launch
    ```
 
+## Extension Development
+
+This repository is configured to allow an easy local setup of Sachsen.Digital. If you would like to develop on one of the custom TYPO3 extensions, some adjustments are required.
+
+### Pre-configured
+
+You may use the convenience script `scripts/ext-clone.sh` to clone the extensions into a subfolder `extensions/` and reconfigure `composer.json`:
+
+```bash
+./scripts/ext-clone.sh
+ddev composer update
+```
+
+### Manually
+
+1. Clone the extension repositories somewhere.
+1. If the extensions are outside of the directory tree of this repository (symlinking is not enough!), create a file `.ddev/docker-compose.mounts.yaml` like this:
+   ```yaml
+   version: '3.6'
+   services:
+     web:
+       volumes:
+         - /your/path/to/extensions:/var/www/extensions
+   ```
+   Be aware that in relative paths, "`.`" points to `.ddev/`.
+1. In `composer.json`, update the `repositories` field; for example:
+   ```yaml
+   "repositories": {
+       "kitodo-presentation": {
+           "type": "path",
+           "url": "/var/www/extensions/kitodo-presentation"
+       },
+       // ...
+   }
+   ```
+1. (Re-)Start DDEV, then tell Composer about the changes to `composer.json`:
+   ```bash
+   ddev start
+   ddev composer update
+   ```
+
 ## URLs
 
 - Backend Login: [https://sachsendigital.ddev.site/typo3/](https://sachsendigital.ddev.site/typo3/)
