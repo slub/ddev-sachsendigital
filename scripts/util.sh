@@ -3,14 +3,19 @@
 KITODO_SOLR=1
 KITODO_PID=2
 
-function db_file()
+function file_or_default()
 {
     if [ -z $1 ]; then
         SCRIPTDIR=$(dirname "$0")
-        DBFILE="$SCRIPTDIR/../data/db.sql"
+        DBFILE=$2
     else
         DBFILE=$1
     fi
 
     realpath "$DBFILE"
+}
+
+function db_file()
+{
+    file_or_default $1 "$SCRIPTDIR/../data/db.sql"
 }
