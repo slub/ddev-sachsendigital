@@ -13,6 +13,10 @@ SET
 
 TRUNCATE TABLE db.be_sessions;
 
+UPDATE db.sys_registry
+SET entry_value=NULL
+WHERE entry_namespace='core' AND entry_key LIKE 'formProtectionSessionToken:%';
+
 TRUNCATE TABLE db.cache_treelist;
 TRUNCATE TABLE db.cf_adminpanel_requestcache;
 TRUNCATE TABLE db.cf_adminpanel_requestcache_tags;
