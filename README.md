@@ -1,7 +1,5 @@
 # ddev-sachsendigital
 
-> :warning: This project depends upon the `slub-web-ldp` TYPO3 extension, which is not publicly available yet.
-
 This repository provides a [DDEV](https://ddev.readthedocs.io/)-based development environment for Sachsen.Digital.
 
 ## Quick Start

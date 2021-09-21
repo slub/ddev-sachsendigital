@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "cdaaeb2dfe7b7796c0f43f158e5c124e",
+    "content-hash": "ce939ea0c1db8a5ee7eb2604dac87cf8",
     "packages": [
         {
             "name": "caseyamcl/phpoaipmh",
@@ -1873,12 +1873,12 @@
             "time": "2021-07-27T09:17:00+00:00"
         },
         {
-            "name": "slub/slub-web-ldp",
-            "version": "dev-master",
+            "name": "slub/slub-web-sachsendigital",
+            "version": "dev-main",
             "source": {
                 "type": "git",
-                "url": "https://git.slub-dresden.de/slub-webseite/slub-web-ldp.git",
-                "reference": "6a07542c30735c22fef6c2395cc85553cc721703"
+                "url": "https://github.com/slub/slub_web_sachsendigital.git",
+                "reference": "c7f1cb99a6b6d3b2526bc084bee43db9178fba58"
             },
             "require": {
                 "kitodo/presentation": "~3.2|dev-master",
@@ -1889,12 +1889,12 @@
             "type": "typo3-cms-extension",
             "extra": {
                 "typo3/cms": {
-                    "extension-key": "slub_web_ldp"
+                    "extension-key": "slub_web_sachsendigital"
                 }
             },
             "autoload": {
                 "psr-4": {
-                    "Slub\\SlubWebLdp\\": "Classes/"
+                    "Slub\\SlubWebSachsendigital\\": "Classes/"
                 }
             },
             "license": [
@@ -1918,13 +1918,13 @@
                 }
             ],
             "description": "Templates, Styles and Configuration for Sachsen.Digital",
-            "homepage": "https://git.slub-dresden.de/slub-webseite/slub-web-ldp",
+            "homepage": "https://github.com/slub/slub_web_sachsendigital",
             "keywords": [
                 "TYPO3",
                 "extension",
-                "slub_web_ldp"
+                "slub_web_sachsendigital"
             ],
-            "time": "2021-05-07T15:31:28+00:00"
+            "time": "2021-09-22T08:22:03+00:00"
         },
         {
             "name": "solarium/solarium",
@@ -5842,7 +5842,7 @@
     "stability-flags": {
         "kitodo/presentation": 20,
         "slub/slub-digitalcollections": 20,
-        "slub/slub-web-ldp": 20
+        "slub/slub-web-sachsendigital": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,

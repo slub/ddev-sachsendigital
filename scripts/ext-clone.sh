@@ -21,4 +21,4 @@ function clone_conf()
 
 clone_conf kitodo-presentation git@github.com:kitodo/kitodo-presentation.git
 clone_conf slub-digitalcollections git@github.com:slub/slub_digitalcollections.git
-clone_conf slub-web-ldp git@git.slub-dresden.de:slub-webseite/slub-web-ldp.git
+clone_conf slub-web-sachsendigital git@github.com:slub/slub_web_sachsendigital.git
