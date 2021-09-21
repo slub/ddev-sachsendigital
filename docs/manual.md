@@ -50,10 +50,12 @@ echo '!/public/.htaccess' >> .gitignore
 
 echo '/extensions' >> .gitignore
 
-ddev composer config repositories.kitodo-presentation vcs git@github.com:kitodo/kitodo-presentation.git
-ddev composer config repositories.slub-web-ldp vcs git@git.slub-dresden.de:slub-webseite/slub-web-ldp.git
+ddev composer config repositories.kitodo-presentation vcs https://github.com/kitodo/kitodo-presentation.git
+ddev composer config repositories.slub-digitalcollections vcs https://github.com/slub/slub_digitalcollections.git
+ddev composer config repositories.slub-web-ldp vcs https://git.slub-dresden.de/slub-webseite/slub-web-ldp.git
 
 ddev composer require kitodo/presentation:dev-master
+ddev composer require slub/slub-digitalcollections:dev-master
 ddev composer require slub/slub-web-ldp:dev-master
 
 ddev typo3cms database:updateschema
