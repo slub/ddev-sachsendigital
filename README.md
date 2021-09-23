@@ -75,13 +75,10 @@ ddev composer update
 
 ## Database Dump
 
-```bash
-# Cleanup running database to keep dumps tidy.
-# Note that this will log you out.
-./scripts/db-cleanup.sh
+You may use the utility script `db-precommit.sh` to cleanup the database and export a dump to `data/db.sql`. Note that doing this will log you out.
 
-# Dump into `data/db.sql`
-./scripts/db-export.sh
+```bash
+./scripts/db-precommit.sh
 ```
 
 If you find anything in the published database dump that should not be shared, please feel free to open an issue or a pull request.
