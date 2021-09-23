@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ce939ea0c1db8a5ee7eb2604dac87cf8",
+    "content-hash": "4cd1831b9799a7971771b7a608683265",
     "packages": [
         {
             "name": "caseyamcl/phpoaipmh",
@@ -1172,7 +1172,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/kitodo/kitodo-presentation.git",
-                "reference": "8a96e40fe0122ff6ba1c374f9e3647eeeddcbc52"
+                "reference": "cd5414fe083bbd21e9d935cfda67445b2ce5219e"
             },
             "require": {
                 "caseyamcl/phpoaipmh": "^3.0",
@@ -1227,7 +1227,7 @@
                 "source": "https://github.com/kitodo/kitodo-presentation",
                 "docs": "https://docs.typo3.org/p/kitodo/presentation/master/en-us/"
             },
-            "time": "2021-09-20T20:55:50+00:00"
+            "time": "2021-09-22T12:07:48+00:00"
         },
         {
             "name": "masterminds/html5",
@@ -4980,6 +4980,63 @@
             "homepage": "https://typo3.org",
             "support": {
                 "source": "https://github.com/TYPO3-CMS/install/tree/v9.5.31"
+            },
+            "time": "2021-09-21T08:48:08+00:00"
+        },
+        {
+            "name": "typo3/cms-lowlevel",
+            "version": "v9.5.31",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/TYPO3-CMS/lowlevel.git",
+                "reference": "0f9c1b9595f866247b8f714b7a97f019c3533f31"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/TYPO3-CMS/lowlevel/zipball/0f9c1b9595f866247b8f714b7a97f019c3533f31",
+                "reference": "0f9c1b9595f866247b8f714b7a97f019c3533f31",
+                "shasum": ""
+            },
+            "require": {
+                "typo3/cms-core": "9.5.31"
+            },
+            "conflict": {
+                "typo3/cms": "*"
+            },
+            "type": "typo3-cms-framework",
+            "extra": {
+                "typo3/cms": {
+                    "Package": {
+                        "partOfFactoryDefault": true
+                    },
+                    "extension-key": "lowlevel"
+                },
+                "typo3/class-alias-loader": {
+                    "class-alias-maps": [
+                        "Migrations/Code/ClassAliasMap.php"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "TYPO3\\CMS\\Lowlevel\\": "Classes/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "TYPO3 Core Team",
+                    "email": "typo3cms@typo3.org",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Enables the 'Config' and 'DB Check' modules for technical analysis of the system. This includes raw database search, checking relations, counting pages and records etc.",
+            "homepage": "https://typo3.org",
+            "support": {
+                "source": "https://github.com/TYPO3-CMS/lowlevel/tree/v9.5.31"
             },
             "time": "2021-09-21T08:48:08+00:00"
         },
