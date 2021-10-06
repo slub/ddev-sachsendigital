@@ -14,5 +14,19 @@ languages:
     hreflang: de-DE
     direction: ltr
     flag: de
+  -
+    title: English
+    enabled: true
+    base: /en/
+    typo3Language: default
+    locale: en_US.UTF-8
+    iso-639-1: en
+    navigationTitle: English
+    hreflang: en-US
+    direction: ltr
+    fallbackType: fallback
+    fallbacks: '0'
+    flag: us
+    languageId: '1'
 rootPageId: 1
 routes: {  }
