@@ -43,6 +43,14 @@ wget -O public/.htaccess https://raw.githubusercontent.com/TYPO3/typo3/v9.5.30/t
 echo '!/public/.htaccess' >> .gitignore
 ```
 
+## cHash
+
+Tolerate cHash errors, which is necessary when URLs containin a `tx_dlf[id]` parameter are generated on the client.
+
+```bash
+ddev typo3cms configuration:set FE/pageNotFoundOnCHashError 0
+```
+
 ## Extensions
 
 ```bash
