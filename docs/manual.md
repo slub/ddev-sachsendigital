@@ -74,6 +74,10 @@ ddev typo3cms database:updateschema
 - Create folder `Kitodo.Presentation`
 - Let the `Kitodo.Presentation` extension create structures and metadata
 - Open configuration modal for `dlf` extension (this is just to amend `LocalConfiguration.php`)
+- In List module of root page, add the following data format:
+  - Format Name: `SLUB`
+  - Root Element: `slub`
+  - Namespace URI: `http://slub-dresden.de`
 
 ## Solr
 
