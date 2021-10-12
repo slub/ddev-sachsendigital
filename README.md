@@ -60,6 +60,15 @@ ddev composer update
        // ...
    }
    ```
+   Composer also supports using wildcards:
+   ```yaml
+   "repositories": {
+       "local": {
+           "type": "path",
+           "url": "/var/www/extensions/*"
+       },
+       // ...
+   }
 1. (Re-)Start DDEV, then tell Composer about the changes to `composer.json`:
    ```bash
    ddev start

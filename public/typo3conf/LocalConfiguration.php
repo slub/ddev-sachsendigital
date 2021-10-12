@@ -1,7 +1,7 @@
 <?php
 return [
     'BE' => [
-        'debug' => false,
+        'debug' => true,
         'explicitADmode' => 'explicitAllow',
         'installToolPassword' => '$argon2i$v=19$m=65536,t=16,p=1$MnNURERQNnVJTXRKckVQbg$Z0Z5tx6paohzSn57fNDTlO3wzkN54H3e+L8bDXGhRnY',
         'loginSecurityLevel' => 'normal',
@@ -103,8 +103,9 @@ return [
         ],
     ],
     'FE' => [
-        'debug' => false,
+        'debug' => true,
         'loginSecurityLevel' => 'normal',
+        'pageNotFoundOnCHashError' => false,
         'passwordHashing' => [
             'className' => 'TYPO3\\CMS\\Core\\Crypto\\PasswordHashing\\Argon2iPasswordHash',
             'options' => [],
@@ -126,7 +127,7 @@ return [
                     'writerConfiguration' => [
                         5 => [
                             'TYPO3\CMS\Core\Log\Writer\FileWriter' => [
-                                'disabled' => true,
+                                'disabled' => false,
                             ],
                         ],
                     ],
@@ -143,16 +144,16 @@ return [
         'transport_smtp_username' => '',
     ],
     'SYS' => [
-        'devIPmask' => '',
-        'displayErrors' => 0,
+        'devIPmask' => '*',
+        'displayErrors' => 1,
         'encryptionKey' => '797def1f10a0c7f90b82d5bb6a22cac55fffa4badce8e3ce7a58c14ae4ce624051fe048688cc58f9b7f044d1d84cbbeb',
-        'exceptionalErrors' => 4096,
+        'exceptionalErrors' => 12290,
         'features' => [
             'newTranslationServer' => true,
             'unifiedPageTranslationHandling' => true,
         ],
         'sitename' => 'Sachsen.Digital',
-        'systemLogLevel' => 2,
+        'systemLogLevel' => 0,
         'systemMaintainers' => [
             1,
         ],

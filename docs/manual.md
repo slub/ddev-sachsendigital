@@ -43,6 +43,14 @@ wget -O public/.htaccess https://raw.githubusercontent.com/TYPO3/typo3/v9.5.30/t
 echo '!/public/.htaccess' >> .gitignore
 ```
 
+## cHash
+
+Tolerate cHash errors, which is necessary when URLs containin a `tx_dlf[id]` parameter are generated on the client.
+
+```bash
+ddev typo3cms configuration:set FE/pageNotFoundOnCHashError 0
+```
+
 ## Extensions
 
 ```bash
@@ -66,6 +74,10 @@ ddev typo3cms database:updateschema
 - Create folder `Kitodo.Presentation`
 - Let the `Kitodo.Presentation` extension create structures and metadata
 - Open configuration modal for `dlf` extension (this is just to amend `LocalConfiguration.php`)
+- In List module of root page, add the following data format:
+  - Format Name: `SLUB`
+  - Root Element: `slub`
+  - Namespace URI: `http://slub-dresden.de`
 
 ## Solr
 
