@@ -84,7 +84,7 @@ ddev typo3cms database:updateschema
 - Adopt the Solr recipe file from DDEV:
   ```bash
   wget -O .ddev/docker-compose.solr.yaml https://raw.githubusercontent.com/drud/ddev/v1.18.0-rc1/pkg/servicetest/testdata/TestServices/docker-compose.solr.yaml
-  sed -i 's@- ./solr:/solr-conf@- ./solr/configsets:/var/solr/data/configsets@g' .ddev/docker-compose.solr.yaml
+  sed -i 's@^      - ./solr:/solr-conf@      - ./solr/configsets:/var/solr/data/configsets\n      - ./solr/contrib/ocrsearch:/opt/solr/contrib/ocrsearch@g' .ddev/docker-compose.solr.yaml
   sed -i 's@solr-precreate dev /solr-conf@solr-precreate dlfCore0 /var/solr/data/configsets/dlf@g' .ddev/docker-compose.solr.yaml
   ```
 
