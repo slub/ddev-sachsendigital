@@ -5,13 +5,14 @@
 
 (
 cat << END
-UPDATE db.be_users 
+UPDATE db.be_users
 SET
     userMods=NULL,
     uc='',
     lastlogin=0;
 
 TRUNCATE TABLE db.be_sessions;
+TRUNCATE TABLE db.fe_sessions;
 
 UPDATE db.sys_registry
 SET entry_value=NULL
