@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4cd1831b9799a7971771b7a608683265",
+    "content-hash": "7309d49ab80e14d9d470d1658abd33f8",
     "packages": [
         {
             "name": "caseyamcl/phpoaipmh",
@@ -1882,6 +1882,47 @@
                 "source": "https://github.com/ralouphie/getallheaders/tree/develop"
             },
             "time": "2019-03-08T08:55:37+00:00"
+        },
+        {
+            "name": "sgalinski/lfeditor",
+            "version": "6.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://gitlab.sgalinski.de/typo3/lfeditor.git",
+                "reference": "4a1a49579628c16e33f7d9900e2e04a5a2ebfed5"
+            },
+            "require": {
+                "typo3/cms-core": "^9.5.2 || ^10.4.0"
+            },
+            "replace": {
+                "sgalinski/lfeditor": "self.version",
+                "typo3-ter/lfeditor": "self.version"
+            },
+            "require-dev": {
+                "roave/security-advisories": "dev-master"
+            },
+            "type": "typo3-cms-extension",
+            "extra": {
+                "typo3/cms": {
+                    "extension-key": "lfeditor"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "SGalinski\\Lfeditor\\": "Classes/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "description": "Language File Editor",
+            "homepage": "https://www.sgalinski.de",
+            "support": {
+                "issues": "https://gitlab.sgalinski.de/typo3/lfeditor/issues",
+                "source": "https://gitlab.sgalinski.de/typo3/lfeditor/"
+            },
+            "time": "2021-05-28T20:22:10+00:00"
         },
         {
             "name": "slub/slub-digitalcollections",

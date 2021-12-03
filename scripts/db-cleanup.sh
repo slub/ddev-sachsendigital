@@ -31,6 +31,8 @@ TRUNCATE TABLE db.cf_cache_pagesection;
 TRUNCATE TABLE db.cf_cache_pagesection_tags;
 TRUNCATE TABLE db.cf_cache_rootline;
 TRUNCATE TABLE db.cf_cache_rootline_tags;
+TRUNCATE TABLE db.cf_lfeditor_select_options_cache;
+TRUNCATE TABLE db.cf_lfeditor_select_options_cache_tags;
 
 TRUNCATE TABLE db.cf_extbase_datamapfactory_datamap;
 TRUNCATE TABLE db.cf_extbase_datamapfactory_datamap_tags;
