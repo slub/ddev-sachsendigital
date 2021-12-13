@@ -83,6 +83,24 @@ ddev composer update
 - Solr: [http://sachsendigital.ddev.site:8983/solr](http://sachsendigital.ddev.site:8983/solr)
 - XHProf (if enabled): [https://sachsendigital.ddev.site/xhprof/](https://sachsendigital.ddev.site/xhprof/)
 
+### Access Within Local Network
+
+To make the site accessible on your local network—e.g., to test it on a mobile device—, one option is to expose the web container:
+
+- Set a new base URL in [config/sites/main/config.yaml](config/sites/main/config.yaml):
+  ```yaml
+  base: 'http://<local-ip-address>:8080'
+  ```
+
+- Make the web container reachable, then restart:
+  ```bash
+  ddev config --host-webserver-port=8080 --bind-all-interfaces  # .ddev/config.yaml
+  ddev restart
+  ddev typo3cms cache:flush
+  ```
+
+Some more options are described in the [official documentation](https://ddev.readthedocs.io/en/stable/users/topics/sharing/).
+
 ## Performance
 
 DDEV comes bundled with XHProf, which may be used to profile web requests and CLI commands.
