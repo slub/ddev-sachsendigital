@@ -130,4 +130,4 @@ If you find anything in the published database dump that should not be shared, p
 ## Dependencies
 
 - (Optional) [mkcert](https://github.com/FiloSottile/mkcert) for locally trusted TLS certificates
-- [DDEV](https://sachsendigital.ddev.site)
+- [DDEV](https://ddev.readthedocs.io/)
