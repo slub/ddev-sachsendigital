@@ -10,3 +10,6 @@ ddev composer install
 
 # Import database dump
 "$SCRIPTDIR/db-import.sh"
+
+# Download images (institutions)
+"$SCRIPTDIR/download-images.sh"
