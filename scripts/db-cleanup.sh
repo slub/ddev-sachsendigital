@@ -3,6 +3,8 @@
 # This script truncates tables that need not be exported
 # within the DDEV-hosted database.
 
+ddev typo3cms cache:flush > /dev/null
+
 (
 cat << END
 UPDATE db.be_users
@@ -17,25 +19,6 @@ TRUNCATE TABLE db.fe_sessions;
 UPDATE db.sys_registry
 SET entry_value=NULL
 WHERE entry_namespace='core' AND entry_key LIKE 'formProtectionSessionToken:%';
-
-TRUNCATE TABLE db.cache_treelist;
-TRUNCATE TABLE db.cf_adminpanel_requestcache;
-TRUNCATE TABLE db.cf_adminpanel_requestcache_tags;
-TRUNCATE TABLE db.cf_cache_hash;
-TRUNCATE TABLE db.cf_cache_hash_tags;
-TRUNCATE TABLE db.cf_cache_imagesizes;
-TRUNCATE TABLE db.cf_cache_imagesizes_tags;
-TRUNCATE TABLE db.cf_cache_pages;
-TRUNCATE TABLE db.cf_cache_pages_tags;
-TRUNCATE TABLE db.cf_cache_pagesection;
-TRUNCATE TABLE db.cf_cache_pagesection_tags;
-TRUNCATE TABLE db.cf_cache_rootline;
-TRUNCATE TABLE db.cf_cache_rootline_tags;
-TRUNCATE TABLE db.cf_lfeditor_select_options_cache;
-TRUNCATE TABLE db.cf_lfeditor_select_options_cache_tags;
-
-TRUNCATE TABLE db.cf_extbase_datamapfactory_datamap;
-TRUNCATE TABLE db.cf_extbase_datamapfactory_datamap_tags;
 
 TRUNCATE TABLE db.sys_file_processedfile;
 
