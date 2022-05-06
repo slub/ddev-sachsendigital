@@ -49,7 +49,8 @@
         "typo3/cms-viewpage": "^9.5",
         "kitodo/presentation": "dev-master",
         "slub/slub-digitalcollections": "dev-master",
-        "slub/slub-web-sachsendigital": "dev-main"
+        "slub/slub-web-sachsendigital": "dev-main",
+        "sgalinski/lfeditor": "^6.0"
     },
     "scripts": {
         "typo3-cms-scripts": [

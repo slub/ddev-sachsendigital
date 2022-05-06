@@ -3,4 +3,4 @@
 SCRIPTDIR=$(dirname "$0")
 
 "$SCRIPTDIR/db-cleanup.sh"
-"$SCRIPTDIR/db-export.sh"
+"$SCRIPTDIR/db-export.sh" "$1"

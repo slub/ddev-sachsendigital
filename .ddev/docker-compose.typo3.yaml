@@ -4,3 +4,5 @@ services:
   web:
     environment:
       - TYPO3_CONTEXT=Development
+    volumes:
+      - ./xhprof:/tmp/xhprof
