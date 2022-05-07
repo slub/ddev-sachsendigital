@@ -9,6 +9,8 @@ nbproject
 !/public/typo3conf/LocalConfiguration.php
 !/public/typo3conf/AdditionalConfiguration.php
 !/public/.htaccess
+!/public/fileadmin/
+/public/fileadmin/*
 !/public/fileadmin/.htaccess
-!/public/fileadmin/user_upload
+!/public/fileadmin/groups/
 /extensions
