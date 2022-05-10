@@ -1,5 +1,9 @@
 {
     "repositories": {
+        "amt-feed-importer": {
+            "type": "git",
+            "url": "https://github.com/slub/amt_feed_importer.git"
+        },
         "kitodo-presentation": {
             "type": "git",
             "url": "https://github.com/kitodo/kitodo-presentation.git"
@@ -23,6 +27,11 @@
     "config": {
         "platform": {
             "php": "7.3"
+        },
+        "allow-plugins": {
+            "typo3/cms-composer-installers": true,
+            "typo3/class-alias-loader": true,
+            "helhum/typo3-console-plugin": true
         }
     },
     "require": {
@@ -50,7 +59,9 @@
         "kitodo/presentation": "dev-master",
         "slub/slub-digitalcollections": "dev-master",
         "slub/slub-web-sachsendigital": "dev-main",
-        "sgalinski/lfeditor": "^6.0"
+        "sgalinski/lfeditor": "^6.0",
+        "georgringer/news": "^8.6",
+        "amt/amt-feed-importer": "dev-master"
     },
     "scripts": {
         "typo3-cms-scripts": [
