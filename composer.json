@@ -56,9 +56,9 @@
         "typo3/cms-t3editor": "^9.5",
         "typo3/cms-tstemplate": "^9.5",
         "typo3/cms-viewpage": "^9.5",
-        "kitodo/presentation": "^3.3",
-        "slub/slub-digitalcollections": "^2.2",
-        "slub/slub-web-sachsendigital": "^2.2",
+        "kitodo/presentation": "^4.0",
+        "slub/slub-digitalcollections": "^dev-master",
+        "slub/slub-web-sachsendigital": "^dev-master",
         "sgalinski/lfeditor": "^6.0",
         "georgringer/news": "^8.6",
         "amt/amt-feed-importer": "dev-master"
