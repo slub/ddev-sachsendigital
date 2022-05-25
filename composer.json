@@ -63,7 +63,7 @@
         "georgringer/news": "^9.4",
         "typo3/cms-scheduler": "^10.4",
         "typo3/cms-recycler": "^10.4",
-        "amt/amt-feed-importer": "dev-master"
+        "amt/amt-feed-importer": "^2.0"
     },
     "scripts": {
         "typo3-cms-scripts": [

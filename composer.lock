@@ -4,15 +4,15 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "bf8d30479a469e5e5446ec16f82c7773",
+    "content-hash": "3f3f85f80f616e47dbceaa3bcfe18e4b",
     "packages": [
         {
             "name": "amt/amt-feed-importer",
-            "version": "dev-master",
-            "dist": {
-                "type": "path",
-                "url": "/var/www/extensions/amt_feed_importer",
-                "reference": "ec4e3f71d55fc447813cd5eb4001b7e958bea078"
+            "version": "v2.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/slub/amt_feed_importer.git",
+                "reference": "d6e7de4673877114625d5ca94522e6c216a8346f"
             },
             "require": {
                 "typo3/cms-core": "^9.5 || ^10.4"
@@ -29,9 +29,7 @@
                 }
             },
             "description": "Extension to import news from feeds (e.g. RSS2, Atom, etc). Fast and simple configuration which is quite similar to configuration rss2_import",
-            "transport-options": {
-                "relative": false
-            }
+            "time": "2022-05-25T08:13:52+00:00"
         },
         {
             "name": "caseyamcl/phpoaipmh",
@@ -171,16 +169,16 @@
         },
         {
             "name": "doctrine/cache",
-            "version": "2.1.1",
+            "version": "2.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/cache.git",
-                "reference": "331b4d5dbaeab3827976273e9356b3b453c300ce"
+                "reference": "1ca8f21980e770095a31456042471a57bc4c68fb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/cache/zipball/331b4d5dbaeab3827976273e9356b3b453c300ce",
-                "reference": "331b4d5dbaeab3827976273e9356b3b453c300ce",
+                "url": "https://api.github.com/repos/doctrine/cache/zipball/1ca8f21980e770095a31456042471a57bc4c68fb",
+                "reference": "1ca8f21980e770095a31456042471a57bc4c68fb",
                 "shasum": ""
             },
             "require": {
@@ -190,18 +188,12 @@
                 "doctrine/common": ">2.2,<2.4"
             },
             "require-dev": {
-                "alcaeus/mongo-php-adapter": "^1.1",
                 "cache/integration-tests": "dev-master",
-                "doctrine/coding-standard": "^8.0",
-                "mongodb/mongodb": "^1.1",
-                "phpunit/phpunit": "^7.0 || ^8.0 || ^9.0",
-                "predis/predis": "~1.0",
+                "doctrine/coding-standard": "^9",
+                "phpunit/phpunit": "^7.5 || ^8.5 || ^9.5",
                 "psr/cache": "^1.0 || ^2.0 || ^3.0",
-                "symfony/cache": "^4.4 || ^5.2 || ^6.0@dev",
-                "symfony/var-exporter": "^4.4 || ^5.2 || ^6.0@dev"
-            },
-            "suggest": {
-                "alcaeus/mongo-php-adapter": "Required to use legacy MongoDB driver"
+                "symfony/cache": "^4.4 || ^5.4 || ^6",
+                "symfony/var-exporter": "^4.4 || ^5.4 || ^6"
             },
             "type": "library",
             "autoload": {
@@ -250,7 +242,7 @@
             ],
             "support": {
                 "issues": "https://github.com/doctrine/cache/issues",
-                "source": "https://github.com/doctrine/cache/tree/2.1.1"
+                "source": "https://github.com/doctrine/cache/tree/2.2.0"
             },
             "funding": [
                 {
@@ -266,7 +258,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-07-17T14:49:29+00:00"
+            "time": "2022-05-20T20:07:39+00:00"
         },
         {
             "name": "doctrine/dbal",
@@ -1223,16 +1215,16 @@
         },
         {
             "name": "helhum/typo3-console",
-            "version": "v6.7.2",
+            "version": "v6.7.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TYPO3-Console/TYPO3-Console.git",
-                "reference": "faa96c02ed58c135fcd98b530f5aadeb5ff1ecf3"
+                "reference": "b3a4823a93266928f9e3304e46d33aa52a184dcf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TYPO3-Console/TYPO3-Console/zipball/faa96c02ed58c135fcd98b530f5aadeb5ff1ecf3",
-                "reference": "faa96c02ed58c135fcd98b530f5aadeb5ff1ecf3",
+                "url": "https://api.github.com/repos/TYPO3-Console/TYPO3-Console/zipball/b3a4823a93266928f9e3304e46d33aa52a184dcf",
+                "reference": "b3a4823a93266928f9e3304e46d33aa52a184dcf",
                 "shasum": ""
             },
             "require": {
@@ -1322,7 +1314,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2022-04-11T09:55:08+00:00"
+            "time": "2022-05-22T12:40:43+00:00"
         },
         {
             "name": "kitodo/presentation",
@@ -1330,7 +1322,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/kitodo/kitodo-presentation.git",
-                "reference": "645de12c7fe1c64c2fa939a9ae49ed496a85716b"
+                "reference": "e2d2d862a67b0b2ab73c7f93939b23375d43c0d3"
             },
             "require": {
                 "caseyamcl/phpoaipmh": "^3.0",
@@ -1442,20 +1434,20 @@
                 "source": "https://github.com/kitodo/kitodo-presentation",
                 "docs": "https://docs.typo3.org/p/kitodo/presentation/master/en-us/"
             },
-            "time": "2022-05-13T07:14:05+00:00"
+            "time": "2022-05-25T07:31:25+00:00"
         },
         {
             "name": "lolli42/finediff",
-            "version": "1.0.1",
+            "version": "1.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lolli42/FineDiff.git",
-                "reference": "72b57e1355c6bbe2f51921e6a3a5bb7441471a7a"
+                "reference": "f72cd968b663fc09bc73ef0ab5a3288583d0d59d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lolli42/FineDiff/zipball/72b57e1355c6bbe2f51921e6a3a5bb7441471a7a",
-                "reference": "72b57e1355c6bbe2f51921e6a3a5bb7441471a7a",
+                "url": "https://api.github.com/repos/lolli42/FineDiff/zipball/f72cd968b663fc09bc73ef0ab5a3288583d0d59d",
+                "reference": "f72cd968b663fc09bc73ef0ab5a3288583d0d59d",
                 "shasum": ""
             },
             "require": {
@@ -1466,8 +1458,8 @@
                 "cogpowered/finediff": "*"
             },
             "require-dev": {
-                "friendsofphp/php-cs-fixer": "^3.2",
-                "phpstan/phpstan": "^0.12.99",
+                "friendsofphp/php-cs-fixer": "^3.4",
+                "phpstan/phpstan": "^1.6",
                 "phpunit/phpunit": "^8 || ^9"
             },
             "type": "library",
@@ -1505,9 +1497,9 @@
             ],
             "support": {
                 "issues": "https://github.com/lolli42/FineDiff/issues",
-                "source": "https://github.com/lolli42/FineDiff/tree/1.0.1"
+                "source": "https://github.com/lolli42/FineDiff/tree/1.0.2"
             },
-            "time": "2022-05-11T13:15:52+00:00"
+            "time": "2022-05-23T07:44:28+00:00"
         },
         {
             "name": "masterminds/html5",
@@ -2349,7 +2341,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/slub/slub_digitalcollections.git",
-                "reference": "f864b560295916876277cb1fd63dce25a03624b8"
+                "reference": "bbcf54426c32e1c1743cedd01863be7844995ec1"
             },
             "require": {
                 "kitodo/presentation": "^4.0|dev-master",
@@ -2394,21 +2386,22 @@
                 "extension",
                 "slub_digitalcollections"
             ],
-            "time": "2022-05-12T11:26:48+00:00"
+            "time": "2022-05-25T07:50:36+00:00"
         },
         {
             "name": "slub/slub-web-sachsendigital",
             "version": "dev-main",
-            "dist": {
-                "type": "path",
-                "url": "/var/www/extensions/slub_web_sachsendigital",
-                "reference": "a9ebdd4a9a2132a485a6ede8b60a2749113910f0"
+            "source": {
+                "type": "git",
+                "url": "https://github.com/slub/slub_web_sachsendigital.git",
+                "reference": "fd6dc283161f2f8177093e1a3ade9aa1ebc888a8"
             },
             "require": {
-                "kitodo/presentation": "~3.2|dev-master",
+                "kitodo/presentation": "^3.3|^4.0|dev-master",
                 "slub/slub-digitalcollections": "^2.2|dev-master",
                 "typo3/cms-core": "~9.5.26|^10.4"
             },
+            "default-branch": true,
             "type": "typo3-cms-extension",
             "extra": {
                 "typo3/cms": {
@@ -2452,9 +2445,7 @@
                 "extension",
                 "slub_web_sachsendigital"
             ],
-            "transport-options": {
-                "relative": false
-            }
+            "time": "2022-05-25T07:43:46+00:00"
         },
         {
             "name": "solarium/solarium",
@@ -7635,8 +7626,7 @@
     "stability-flags": {
         "kitodo/presentation": 20,
         "slub/slub-digitalcollections": 20,
-        "slub/slub-web-sachsendigital": 20,
-        "amt/amt-feed-importer": 20
+        "slub/slub-web-sachsendigital": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
