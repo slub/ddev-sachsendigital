@@ -15,5 +15,5 @@ source "$SCRIPTDIR/util.sh"
 DOCUMENTS=$(cat "$1")
 
 for doc in $DOCUMENTS; do
-    ddev typo3 kitodo:index --pid "$KITODO_PID" --solr "$KITODO_SOLR" --doc "$doc" --verbose
+    ddev typo3 kitodo:index --pid "$KITODO_PID" --solr "$KITODO_SOLR" --doc "\"$doc\"" --verbose
 done
