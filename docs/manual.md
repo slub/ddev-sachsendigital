@@ -13,14 +13,14 @@ ddev config \
     --project-type=typo3 \
     --docroot=public \
     --create-docroot \
-    --php-version=7.3 \
+    --php-version=8.2 \
     --webserver-type=apache-fpm \
     --mariadb-version=10.3
 
 ddev start
 
-ddev composer create "typo3/cms-base-distribution:^9.5" --prefer-dist
-ddev composer config platform.php "7.3"
+ddev composer create "typo3/cms-base-distribution:^11.5" --prefer-dist
+ddev composer config platform.php "8.2"
 
 ddev typo3cms install:setup \
     --no-interaction \
