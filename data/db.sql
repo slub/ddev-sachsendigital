@@ -882,16 +882,16 @@ UNLOCK TABLES;
 DROP TABLE IF EXISTS `sys_be_shortcuts`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `sys_be_shortcuts` (
-  `uid` int(10) unsigned NOT NULL AUTO_INCREMENT,
-  `userid` int(10) unsigned NOT NULL DEFAULT 0,
-  `module_name` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
-  `url` text COLLATE utf8_unicode_ci DEFAULT NULL,
-  `description` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
-  `sorting` int(11) NOT NULL DEFAULT 0,
-  `sc_group` smallint(6) NOT NULL DEFAULT 0,
-  PRIMARY KEY (`uid`),
-  KEY `event` (`userid`)
+CREATE TABLE sys_be_shortcuts (
+    uid int(11) unsigned NOT NULL auto_increment,
+    userid int(11) unsigned DEFAULT '0' NOT NULL,
+    route varchar(255) DEFAULT '' NOT NULL,
+    arguments text,
+    description varchar(255) DEFAULT '' NOT NULL,
+    sorting int(11) DEFAULT '0' NOT NULL,
+    sc_group tinyint(4) DEFAULT '0' NOT NULL,
+    PRIMARY KEY (uid),
+    KEY event (userid)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -1494,38 +1494,40 @@ UNLOCK TABLES;
 DROP TABLE IF EXISTS `sys_log`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `sys_log` (
-  `uid` int(10) unsigned NOT NULL AUTO_INCREMENT,
-  `pid` int(10) unsigned NOT NULL DEFAULT 0,
-  `tstamp` int(10) unsigned NOT NULL DEFAULT 0,
-  `userid` int(10) unsigned NOT NULL DEFAULT 0,
-  `action` smallint(5) unsigned NOT NULL DEFAULT 0,
-  `recuid` int(10) unsigned NOT NULL DEFAULT 0,
-  `tablename` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
-  `recpid` int(11) NOT NULL DEFAULT 0,
-  `error` smallint(5) unsigned NOT NULL DEFAULT 0,
-  `details` text COLLATE utf8_unicode_ci DEFAULT NULL,
-  `type` smallint(5) unsigned NOT NULL DEFAULT 0,
-  `details_nr` smallint(6) NOT NULL DEFAULT 0,
-  `IP` varchar(39) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
-  `log_data` text COLLATE utf8_unicode_ci DEFAULT NULL,
-  `event_pid` int(11) NOT NULL DEFAULT -1,
-  `workspace` int(11) NOT NULL DEFAULT 0,
-  `NEWid` varchar(30) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
-  `request_id` varchar(13) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
-  `time_micro` double NOT NULL DEFAULT 0,
-  `component` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
-  `level` smallint(5) unsigned NOT NULL DEFAULT 0,
-  `message` text COLLATE utf8_unicode_ci DEFAULT NULL,
-  `data` text COLLATE utf8_unicode_ci DEFAULT NULL,
-  PRIMARY KEY (`uid`),
-  KEY `event` (`userid`,`event_pid`),
-  KEY `recuidIdx` (`recuid`),
-  KEY `user_auth` (`type`,`action`,`tstamp`),
-  KEY `request` (`request_id`),
-  KEY `combined_1` (`tstamp`,`type`,`userid`),
-  KEY `parent` (`pid`),
-  KEY `errorcount` (`tstamp`,`error`)
+CREATE TABLE sys_log (
+    uid int(11) unsigned NOT NULL auto_increment,
+    tstamp int(11) unsigned DEFAULT '0' NOT NULL,
+    userid int(11) unsigned DEFAULT '0' NOT NULL,
+    action tinyint(4) unsigned DEFAULT '0' NOT NULL,
+    recuid int(11) unsigned DEFAULT '0' NOT NULL,
+    tablename varchar(255) DEFAULT '' NOT NULL,
+    recpid int(11) DEFAULT '0' NOT NULL,
+    error tinyint(4) unsigned DEFAULT '0' NOT NULL,
+    details text,
+    type tinyint(3) unsigned DEFAULT '0' NOT NULL,
+    channel varchar(20) DEFAULT 'default' NOT NULL,
+    details_nr tinyint(3) DEFAULT '0' NOT NULL,
+    IP varchar(39) DEFAULT '' NOT NULL,
+    log_data text,
+    event_pid int(11) DEFAULT '-1' NOT NULL,
+    workspace int(11) DEFAULT '0' NOT NULL,
+    NEWid varchar(30) DEFAULT '' NOT NULL,
+    request_id varchar(13) DEFAULT '' NOT NULL,
+    time_micro float DEFAULT '0' NOT NULL,
+    component varchar(255) DEFAULT '' NOT NULL,
+    level varchar(10) DEFAULT 'info' NOT NULL,
+    message text,
+    data text,
+
+    PRIMARY KEY (uid),
+    KEY event (userid, event_pid),
+    KEY recuidIdx (recuid),
+    KEY user_auth (type, action, tstamp),
+    KEY request (request_id),
+    KEY combined_1 (tstamp, type, userid),
+    KEY errorcount (tstamp, error),
+    KEY index_channel (channel),
+    KEY index_level (level)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
