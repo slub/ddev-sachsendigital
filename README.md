@@ -131,3 +131,7 @@ If you find anything in the published database dump that should not be shared, p
 
 - (Optional) [mkcert](https://github.com/FiloSottile/mkcert) for locally trusted TLS certificates
 - [DDEV](https://ddev.readthedocs.io/)
+
+## Maintainer
+
+typo3@slub-dresden.de
